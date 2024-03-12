@@ -9,10 +9,11 @@ app = FastAPI()
 orders_db = {}
 
 class Order(BaseModel):
-    type: str  # "buy" or "sell"
-    price: float
-    quantity: int
-    asset: str
+    Market: int # Market ID
+    Price : int # Price
+    Quantity : int # n times base quantity
+    Side: str #P for producer, B for buyer
+    Producer_name: str # Producer ID
 
 @app.post("/orders/")
 async def create_order(order: Order):
