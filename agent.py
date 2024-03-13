@@ -3,7 +3,8 @@ import random
 import numpy as np
 
 
-def random_agent():
+def random_agent(agent_id):
+    #historical_price(days, agent_id)
     agent_num = 3
     agent_pool = np.arange(0, agent_num, 1).tolist()
 

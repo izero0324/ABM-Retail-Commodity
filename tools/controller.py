@@ -13,11 +13,7 @@ state_machine = {
     "Check_pair": False
 }
 
-def init():
-    agent_list = ('agent1', 'agent2')
-    tick_num = 2
-    api_connection = 'http://0.0.0.0:8000/'
-    return agent_list, tick_num, api_connection
+
 
 def state_now():
     for key, value in state_machine.items():
@@ -52,9 +48,7 @@ def get_orders(agent_list):
         except:
             print("Agent ", agent, " failed to retrun order")
 
-
-if __name__ == '__main__':
-    agent_list, tick_num, api_connection = init()
+def controller(agent_list, tick_num, api_connection):
     for tick in range(tick_num):
         assert state_now() == "Get_order" 
         get_orders(agent_list)
