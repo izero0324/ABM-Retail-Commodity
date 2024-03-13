@@ -8,4 +8,5 @@ def init():
 
 
 if __name__ == '__main__':
-    controller(init())
+    agent_list, tick_num, api_connection = init()
+    controller(agent_list, tick_num, api_connection)

@@ -45,7 +45,7 @@ async def next_step():
 # clear order book
 @app.post("/clear/")
 async def clear_all_orders():
-    orders_db = {}
+    orders_db.clear()
     return {"Order list cleared"}
 
 if __name__ == "__main__":

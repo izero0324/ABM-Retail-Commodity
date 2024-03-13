@@ -1,4 +1,5 @@
 from agent import random_agent
+from tools.p_mech import pairing
 '''
 A finite state machine controlling the flow of simulation
 1. Call agents to post orders
@@ -43,7 +44,7 @@ def get_orders(agent_list):
     for agent in agent_list:
         print("call ", agent, "to start posting order!")
         try:
-            random_agent()
+            random_agent('id')
             print("Get return from agent ", agent,", next agent ready...")
         except:
             print("Agent ", agent, " failed to retrun order")
@@ -56,6 +57,7 @@ def controller(agent_list, tick_num, api_connection):
         assert state_now() == "Check_order"
         next_state()
         assert state_now() == "Pairing"
+        pairing(api_connection)
         next_state()
         assert state_now() == "Check_pair"
         next_state()
