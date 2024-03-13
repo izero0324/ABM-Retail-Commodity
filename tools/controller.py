@@ -1,5 +1,6 @@
 from agent import random_agent
 from tools.p_mech import pairing
+from market_env.api_interface import post_clear_order
 '''
 A finite state machine controlling the flow of simulation
 1. Call agents to post orders
@@ -61,4 +62,6 @@ def controller(agent_list, tick_num, api_connection):
         next_state()
         assert state_now() == "Check_pair"
         next_state()
+        post_clear_order()
+
     
