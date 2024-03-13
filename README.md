@@ -35,7 +35,7 @@ Retail Commodity Pricing Strategy by ABM
 
 #### Controller:
 1. Call all agents to submit price to Markets.
-2. Check all markets if all the agents submitted their price, then start calling markets to match orders.
+2. Check all markets if all the agents submitted their price, then start calling markets to match orders. Matching price due to sell price.
 3. Get returns from all markets, Store (Price, Quantity) to trade_history. 
 4. Calculate Surplus, Store surplus to surplus_history.
 5. repeat 1-4 for n times (we set n to 50)
