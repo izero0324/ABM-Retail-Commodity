@@ -6,7 +6,7 @@ class MySQLConnectionManager:
         # Remember to change the configs below!!!
         self.config = {
             "user": "root",
-            "password": "Izero0324@TW", 
+            "password": "********", 
             "host": "localhost",
             "database": "ABM_EXCHANGE",
             "raise_on_warnings": True
