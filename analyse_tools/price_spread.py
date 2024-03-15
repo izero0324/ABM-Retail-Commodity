@@ -1,11 +1,11 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from tools.sql_connection import MySQLConnectionManager
+from tools.sql_connection import DatabaseConnectionManager
 
 
 
 def get_price_spread(exp_name):
-    with MySQLConnectionManager() as cursor:
+    with DatabaseConnectionManager() as cursor:
         query = f"SELECT tick, LowestSuccessTradePrice, HighestSuccessTradePrice FROM PriceSpread_{exp_name} ORDER BY tick"
         cursor.execute(query)
         rows = cursor.fetchall()
