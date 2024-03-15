@@ -6,7 +6,7 @@ class MySQLConnectionManager:
         # Remember to change the configs below!!!
         self.config = {
             "user": "root",
-            "password": "Izero0324@TW", 
+            "password": "********", 
             "host": "localhost",
             "database": "ABM_EXCHANGE",
             "raise_on_warnings": True
@@ -31,13 +31,13 @@ class MySQLConnectionManager:
         if exc_type:
             print(f"Error: {exc_val}")
 
-def create_or_truncate_tables(cursor, agent_list, experiment_name):
-    # Construct columns for agents dynamically
-    agent_columns = ', '.join([f"`{agent}` varchar(255)" for agent in agent_list])
+def create_or_truncate_tables(cursor, experiment_name):
+    # Construct new tables for new experiment names
     OrderBook_table = 'OrderBook_' + experiment_name
     PriceSpread_table = 'PriceSpread_' + experiment_name
     SuccessTrade_table = 'SuccessTrade_' + experiment_name
-    # Define the SQL command with the dynamically constructed columns
+    
+    # SQLs for Creating TABLES
     TABLES = {
 
         f"{OrderBook_table}": (
@@ -68,6 +68,7 @@ def create_or_truncate_tables(cursor, agent_list, experiment_name):
 
     }
 
+    # Execute creating table one-by-one
     for table_name, table_description in TABLES.items():
         try:
             cursor.execute(table_description)

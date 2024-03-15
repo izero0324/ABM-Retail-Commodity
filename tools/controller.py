@@ -1,4 +1,4 @@
-from agent_pool.sample_agent import random_agent, single_random_agent
+from agent_pool.agent_controller import agent_choose
 from tools.p_mech import pairing
 from tools.api_interface import post_clear_order
 '''
@@ -45,7 +45,7 @@ def get_orders(agent_list):
     for agent in agent_list:
         print("call ", agent, "to start posting order!")
         try:
-            single_random_agent(agent)
+            agent_choose(agent)
             print("Get return from agent ", agent,", next agent ready...")
         except:
             print("Agent ", agent, " failed to retrun order")
