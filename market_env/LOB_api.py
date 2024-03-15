@@ -13,7 +13,7 @@ class Order(BaseModel):
     Price : int # Price
     Quantity : int # n times base quantity
     Side: str #P for producer, B for buyer
-    Producer_name: str # Producer ID
+    agent_name: str # agent_name
 
 # post order
 @app.post("/orders/")

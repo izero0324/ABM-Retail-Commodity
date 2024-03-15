@@ -17,7 +17,7 @@ Retail Commodity Pricing Strategy by ABM
         Price : float, # Price
         Quantity : Int, # n times base quantity
         Side: Char, #P for producer, B for buyer
-        Producer_name: Char # Producer ID
+        agent_name: Char # Producer ID
         )
 2. Buyer:
     - S: Strategy

@@ -12,7 +12,7 @@ def post_order(Market: int, Price: int, Quantity: int, Name: str, side: str):
         "Price" : Price,
         "Quantity" :  Quantity,
         "Side": side ,
-        "Producer_name": Name
+        "agent_name": Name
     }
 
     response = requests.post(url, json=order_data)

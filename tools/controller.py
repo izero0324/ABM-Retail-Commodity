@@ -1,4 +1,4 @@
-from agent import random_agent
+from agent import random_agent, single_random_agent
 from tools.p_mech import pairing
 from market_env.api_interface import post_clear_order
 '''
@@ -9,7 +9,8 @@ A finite state machine controlling the flow of simulation
 4. Check if the pairing is done
 '''
 state_machine = {
-    "Get_order" : True,
+    "Clear_tempLOB" : True,
+    "Get_order" : False,
     "Check_order" : False,
     "Pairing": False,
     "Check_pair": False
@@ -45,23 +46,26 @@ def get_orders(agent_list):
     for agent in agent_list:
         print("call ", agent, "to start posting order!")
         try:
-            random_agent('id')
+            single_random_agent(agent)
             print("Get return from agent ", agent,", next agent ready...")
         except:
             print("Agent ", agent, " failed to retrun order")
 
-def controller(agent_list, tick_num, api_connection):
+def controller(agent_list, tick_num, api_connection, exp_name):
     for tick in range(tick_num):
+        assert state_now() == "Clear_tempLOB" 
+        post_clear_order()
+        next_state()
         assert state_now() == "Get_order" 
         get_orders(agent_list)
         next_state()
         assert state_now() == "Check_order"
         next_state()
         assert state_now() == "Pairing"
-        pairing(api_connection)
+        pairing(api_connection, tick, exp_name)
         next_state()
         assert state_now() == "Check_pair"
         next_state()
-        post_clear_order()
+        
 
     

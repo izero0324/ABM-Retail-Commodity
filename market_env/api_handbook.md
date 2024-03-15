@@ -8,7 +8,7 @@ curl -X 'POST' 'http://0.0.0.0:8000/orders/' -H 'accept: application/json'  -H '
     "Price" : 100,
     "Quantity" :  10,
     "Side": "B" ,
-    "Producer_name": "B00001"
+    "agent_name": "B00001"
 }
 
 # LOB
