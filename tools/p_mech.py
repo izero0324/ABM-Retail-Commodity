@@ -1,5 +1,5 @@
 import requests
-from tools.sql_connection import MySQLConnectionManager
+from tools.sql_connection import DatabaseConnectionManager
 def get_order_book(url):
     response = requests.get(url)
     if response.status_code == 200:
@@ -23,7 +23,7 @@ def process_pairs(order_book, tick_num, exp_name):
     sell_orders.sort(key=lambda x: (x['Price'], -x['Quantity']))
     success_trades = []
 
-    with MySQLConnectionManager() as cursor:
+    with DatabaseConnectionManager() as cursor:
         # Save original order book
         for order in order_book:
             cursor.execute(f"INSERT INTO OrderBook_{exp_name} (tick, agent_name, trade_price, quantity) VALUES (%s, %s, %s, %s)",
