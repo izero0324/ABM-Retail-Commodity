@@ -14,5 +14,5 @@ def init():
 if __name__ == '__main__':
     agent_list, tick_num, api_connection, exp_name = init()
     with MySQLConnectionManager() as cursor:
-        create_or_truncate_tables(cursor, agent_list, exp_name)
+        create_or_truncate_tables(cursor, exp_name)
     controller(agent_list, tick_num, api_connection, exp_name)
