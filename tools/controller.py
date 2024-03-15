@@ -9,8 +9,7 @@ A finite state machine controlling the flow of simulation
 4. Check if the pairing is done
 '''
 state_machine = {
-    "Clear_tempLOB" : True,
-    "Get_order" : False,
+    "Get_order" : True,
     "Check_order" : False,
     "Pairing": False,
     "Check_pair": False
@@ -52,10 +51,8 @@ def get_orders(agent_list):
             print("Agent ", agent, " failed to retrun order")
 
 def controller(agent_list, tick_num, api_connection, exp_name):
+    post_clear_order()
     for tick in range(tick_num):
-        assert state_now() == "Clear_tempLOB" 
-        post_clear_order()
-        next_state()
         assert state_now() == "Get_order" 
         get_orders(agent_list)
         next_state()
@@ -66,6 +63,8 @@ def controller(agent_list, tick_num, api_connection, exp_name):
         next_state()
         assert state_now() == "Check_pair"
         next_state()
+        post_clear_order()
+
         
 
     

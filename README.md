@@ -8,6 +8,7 @@ Retail Commodity Pricing Strategy by ABM
 3. Multiple Markets (Limit order books)
 
 ### Enviroment Framework
+![System](./picture/system.png)
 #### Agents:
 1. Producer: 
     - S: Strategy

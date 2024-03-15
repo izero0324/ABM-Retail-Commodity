@@ -38,9 +38,8 @@ async def get_all_orders():
 # next tick
 @app.post("/next/")
 async def next_step():
-    
     clear_all_orders()
-    return {"Next tick"}
+    return {"Next tick" }
 
 # clear order book
 @app.post("/clear/")
