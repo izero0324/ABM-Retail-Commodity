@@ -1,4 +1,4 @@
-from Environment_and_ZI import Everyday_Table
+from agent_pool.Environment_and_ZI import Everyday_Table
 
 #your own data
 ID = ['CustomerA','CustomerB','SellerA','SellerB']

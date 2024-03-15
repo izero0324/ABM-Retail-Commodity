@@ -1,7 +1,8 @@
+import uuid
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import Optional, List
-import uuid
+from tools.get_history import *
 
 app = FastAPI()
 
@@ -13,7 +14,7 @@ class Order(BaseModel):
     Price : int # Price
     Quantity : int # n times base quantity
     Side: str #P for producer, B for buyer
-    Producer_name: str # Producer ID
+    agent_name: str # agent_name
 
 # post order
 @app.post("/orders/")
@@ -38,15 +39,21 @@ async def get_all_orders():
 # next tick
 @app.post("/next/")
 async def next_step():
-    
     clear_all_orders()
-    return {"Next tick"}
+    return {"Next tick" }
 
 # clear order book
 @app.post("/clear/")
 async def clear_all_orders():
     orders_db.clear()
     return {"Order list cleared"}
+
+# Get history price
+@app.get("/history_price/{day}")
+async def get_history_price(day:int):
+    price_list = historical_price(day)
+    return price_list
+    
 
 if __name__ == "__main__":
     import uvicorn

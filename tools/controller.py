@@ -1,6 +1,6 @@
-from agent import random_agent
+from agent_pool.sample_agent import random_agent, single_random_agent
 from tools.p_mech import pairing
-from market_env.api_interface import post_clear_order
+from tools.api_interface import post_clear_order
 '''
 A finite state machine controlling the flow of simulation
 1. Call agents to post orders
@@ -45,12 +45,13 @@ def get_orders(agent_list):
     for agent in agent_list:
         print("call ", agent, "to start posting order!")
         try:
-            random_agent('id')
+            single_random_agent(agent)
             print("Get return from agent ", agent,", next agent ready...")
         except:
             print("Agent ", agent, " failed to retrun order")
 
-def controller(agent_list, tick_num, api_connection):
+def controller(agent_list, tick_num, api_connection, exp_name):
+    post_clear_order()
     for tick in range(tick_num):
         assert state_now() == "Get_order" 
         get_orders(agent_list)
@@ -58,10 +59,12 @@ def controller(agent_list, tick_num, api_connection):
         assert state_now() == "Check_order"
         next_state()
         assert state_now() == "Pairing"
-        pairing(api_connection)
+        pairing(api_connection, tick, exp_name)
         next_state()
         assert state_now() == "Check_pair"
         next_state()
         post_clear_order()
+
+        
 
     
