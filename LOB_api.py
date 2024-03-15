@@ -1,7 +1,8 @@
+import uuid
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import Optional, List
-import uuid
+from tools.get_history import *
 
 app = FastAPI()
 
@@ -46,6 +47,13 @@ async def next_step():
 async def clear_all_orders():
     orders_db.clear()
     return {"Order list cleared"}
+
+# Get history price
+@app.get("/history_price/{day}")
+async def get_history_price(day:int):
+    price_list = historical_price(day)
+    return price_list
+    
 
 if __name__ == "__main__":
     import uvicorn

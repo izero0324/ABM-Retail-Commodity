@@ -62,8 +62,32 @@ Thoughts:
     - Skimming strategy: high price is charged for a product till such time as competitors allow after which prices can be dropped. The idea is to recover maximum money before the product or segment attracts more competitors who will lower profits for all concerned. Example: the earliest prices for mobile phones, VCRs and other electronic items where a few players ruled attracted lower cost Asian players. 
 
 
+## API handbook
+### Start server
+`python3 LOB_api.py` -> this will start a local api server  by uvicorn
+
+### Post orders
+curl -X 'POST' 'http://0.0.0.0:8000/orders/' -H 'accept: application/json'  -H 'Content-Type: application/json' 
+  -d '{
+    "Market": 1,
+    "Price" : 100,
+    "Quantity" :  10,
+    "Side": "B" ,
+    "agent_name": "B00001"
+}
+
+### LOB
+tick | Order1 | Order2 | ... | Order n
+---
+1    |  (Price, Volumn, side) | 
+
+### Self record
+tick | Agent1 | Agent 2 | Agent 3
+---
+1    | [Price, Amount, total_amount]
 
 ## Reference
 1. [An Agent-Based Modeling and Simulation Approach to Commodity Markets(paper)](https://journals.sagepub.com/doi/10.1177/0894439318768454?icid=int.sj-abstract.similar-articles.1)
 2. [Cocoa statistics](https://www.statista.com/outlook/cmo/hot-drinks/cocoa/worldwide#key-players)
 3. 
+
