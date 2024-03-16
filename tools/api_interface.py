@@ -32,6 +32,14 @@ def post_clear_order():
         print("Failed to post order:", response.content)
 
 def get_agent_history(type:str, agent_name: str, n: int):
+    '''
+    Input:
+    type: str #'order'/ 'trade'
+    agent__name: str # agent_name
+    n: int # day
+    Output:
+    dataframe of the specific agent on Trade/Order
+    '''
     url = 'http://0.0.0.0:8000/hist/'+type+'/'+agent_name+'/'+n
     response = requests.get(url)
     if response.status_code == 200:
@@ -41,7 +49,13 @@ def get_agent_history(type:str, agent_name: str, n: int):
         print("Failed to post order:", response.content)
         return 0
     
-def get_price_history(type:str, n: int):
+def get_price_history(n: int):
+    '''
+    Input: 
+    n: int # days
+    Output:
+    df: Price interval
+    '''
     url = 'http://0.0.0.0:8000/hist/price/'+n
     response = requests.get(url)
     if response.status_code == 200:
