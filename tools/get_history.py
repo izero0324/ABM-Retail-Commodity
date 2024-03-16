@@ -53,3 +53,7 @@ def trade_quantity_list(exp_name: str, n: int):
 def last_trade_price_list(exp_name: str, n: int):
     query = f"SELECT trade_price FROM SuccessTrade_{exp_name} WHERE tick = (SELECT MAX(tick) FROM PriceSpread_{exp_name})-{n};"
     return fetch_df_by_sql(query)
+
+def LOB_list(exp_name: str, n: int):
+    query = f"SELECT * FROM LOB_{exp_name} WHERE tick = (SELECT MAX(tick) FROM PriceSpread_{exp_name})-{n}"
+    return fetch_df_by_sql(query)

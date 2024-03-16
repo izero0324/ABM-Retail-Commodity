@@ -43,7 +43,7 @@ class functions:
         # Latest limit order book, namely, limit order book after matching from yesterday 
         # limit_order_book = [ n lists [price, quantity,S/B]]
         # Sample output
-        limit_order_book = [[10.257, 10, "S"], [1.50, 20, "B"], [0.9, 3, "B"]] # MOD HERE
+        limit_order_book = get_order_book_after_pairing(1)
         
         # Calculate the quantity of all unexecuted order
         buy_num = 0
@@ -64,14 +64,22 @@ class functions:
         # Three_execuation(n,ID) = execuation_history -> [n days (bid/ask_price, 
         #                                                 trading_volumne, total_volumne) ]
         # Sample output                                              
-        Three_execuation = [[1.55, 2, 5],[1.04, 0, 7],[1.1, 3, 0]] # [Price, traded_Q, Total_Q]
-        Three_execuation = get_agent_history('order', agent_name, n) + get_agent_history('trade', agent_name, n)
+        #n_execuation = [[1.55, 2, 5],[1.04, 0, 7],[1.1, 3, 0]] # [Price, traded_Q, Total_Q]
+        n_execuation = []
+        for t in range(n):
+            n_execuation_success = get_agent_history('trade', agent_name, t+1)
+            n_execuation_total = get_agent_history('order', agent_name, t+1)
+            traded = n_execuation_success[0][3:]
+            total = float(n_execuation_total[-1][-1])
+            result = traded.append(total)
+            n_execuation.append(result)
+        
         
         # Detect if the agent has not executed for more than 3 days
         # 4. trade situation (do or do not exeucute for more than 3 days)
         Trade_situation = -1
-        for i in range(len(Three_execuation)):
-            if Three_execuation[i][1] != 0:
+        for i in range(len(n_execuation)):
+            if n_execuation[i][1] != 0:
                 Trade_situation = 1
         return(Trade_situation)
 
@@ -111,9 +119,11 @@ class functions:
         # The n days hitorical execuation quantities
         # Ten_hist_exec_quant = exec_quant_history(n) -> [ n days execuation quantities ]
         # Sample output
-        Ten_hist_exec_quant = [15, 18, 19, 5, 25, 7, 15, 18, 0, 22] # get quant only
-        
-        average_sales = np.mean(Ten_hist_exec_quant)
+        #Ten_hist_exec_quant = [15, 18, 19, 5, 25, 7, 15, 18, 0, 22] # get quant only
+        n_hist_exec_quant = get_trade_quant_list(n)
+        n_hist_exec_quant = [item for sublist in n_hist_exec_quant for item in sublist]
+
+        average_sales = np.mean(n_hist_exec_quant)
         if average_sales < market_demand_threshold_low:
             demand_level = 'low'
         elif market_demand_threshold_low <= average_sales < market_demand_threshold_high:
@@ -144,14 +154,14 @@ class functions:
         
     
     #Func_1 : competitor_price
-    def competitor_price_history_f(agent__name):   
-        if if_trade_yesterday(agent_name) == 0:
+    def competitor_price_history_f(self,agent_name):   
+        if self.if_trade_yesterday(agent_name) == 0:
             
 ######### Here's function need to be defined
         # Latest limit order book, namely, limit order book after matching from yesterday 
         # limit_order_book = [ n lists [price, quantity,S/B]]
         # Sample output
-            limit_order_book = [[10.257, 10, "S"], [1.50, 20, "B"], [0.9, 3, "B"]] # ADD WHOLE LOB
+            limit_order_book = get_order_book_after_pairing(1) # ADD WHOLE LOB
            
             competitor_price_history = [sublist[0] for sublist in limit_order_book if sublist[2] == "S"]
         else:
@@ -160,6 +170,7 @@ class functions:
         # The n days hitorical price and quantity intervals
         # One_hist = history(n) -> [ n days [deal_1_price, deal_1_quantity] , [deal_2_price, deal_2_quantity] ]
         # Sample output
+            One_hist = get_trade_price_list(1)
             competitor_price_history = [sublist[0] for sublist in One_hist] # Trade price list single tick n price [price, price, price]
             
         return competitor_price_history
@@ -170,12 +181,13 @@ class functions:
         if deal == 0:
 
         # Sample output
-            limit_order_book = [[10.257, 10, "S"], [1.50, 20, "B"], [0.9, 3, "B"]]
+            limit_order_book = get_order_book_after_pairing(1)
             
             buyer_price_willingness_history = [sublist[0] for sublist in limit_order_book if sublist[2] == "B"]
         else:
             
        # Sample output
+            One_hist = get_trade_price_list(1)
             buyer_price_willingness_history = [sublist[0] for sublist in One_hist] # trade price
              
         return buyer_price_willingness_history
@@ -186,12 +198,13 @@ class functions:
         if  deal == 0:
             
         # Sample output
-            limit_order_book = [[10.257, 10, "S"], [1.50, 20, "B"], [0.9, 3, "B"]]
+            limit_order_book = get_order_book_after_pairing(1)
             
             buyer_order_quantities = [sublist[1] for sublist in limit_order_book if sublist[2] == "B"]
         else:
             
         # Sample output
+            One_hist = get_trade_price_list(1)
             buyer_order_quantities = [sublist[1] for sublist in One_hist] #Trade quantity list [quant1, quant2, .. qaunt10]
             
         return buyer_order_quantities

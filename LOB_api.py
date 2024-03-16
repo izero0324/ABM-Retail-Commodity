@@ -79,6 +79,12 @@ async def get_trade_quant_list(tick: int):
     quant_list = trade_quantity_list(exp_name, tick)
     return quant_list
 
+# Get lob after pair
+@app.get("/LOB/{tick}")
+async def get_LOB(tick:int):
+    lob = LOB_list(exp_name, tick)
+    return lob
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)

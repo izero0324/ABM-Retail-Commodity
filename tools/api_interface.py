@@ -40,7 +40,7 @@ def get_agent_history(type:str, agent_name: str, n: int):
     Output:
     dataframe of the specific agent on Trade/Order
     '''
-    url = 'http://0.0.0.0:8000/hist/'+type+'/'+agent_name+'/'+n
+    url = 'http://0.0.0.0:8000/hist/'+type+'/'+agent_name+'/'+str(n)
     response = requests.get(url)
     if response.status_code == 200:
         print("Hist get successfully!")
@@ -56,7 +56,7 @@ def get_price_history(n: int):
     Output:
     df: Price interval
     '''
-    url = 'http://0.0.0.0:8000/hist/price/'+n
+    url = 'http://0.0.0.0:8000/hist/price/'+str(n)
     response = requests.get(url)
     if response.status_code == 200:
         print("Hist get successfully!")
@@ -66,7 +66,7 @@ def get_price_history(n: int):
         return 0
     
 def get_trade_quant_list(n: int):
-    url = 'http://0.0.0.0:8000/whole/quant/'+n
+    url = 'http://0.0.0.0:8000/whole/quant/'+str(n)
     response = requests.get(url)
     if response.status_code == 200:
         print("Last quant get successfully!")
@@ -76,11 +76,21 @@ def get_trade_quant_list(n: int):
         return 0
 
 def get_trade_price_list(n: int):
-    url = 'http://0.0.0.0:8000/whole/price/'+n
+    url = 'http://0.0.0.0:8000/whole/price/'+str(n)
     response = requests.get(url)
     if response.status_code == 200:
         print("Last price list get successfully!")
         return response.json()
     else:
         print("Failed to get price list:", response.content)
+        return 0
+
+def get_order_book_after_pairing(n: int):
+    url = 'http://0.0.0.0:8000/LOB/'+str(n)
+    response = requests.get(url)
+    if response.status_code == 200:
+        print("LOB get successfully!")
+        return response.json()
+    else:
+        print("Failed to get LOB:", response.content)
         return 0
