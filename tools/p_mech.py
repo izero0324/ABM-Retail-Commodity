@@ -56,11 +56,15 @@ def process_pairs(order_book, tick_num, exp_name):
                            (tick_num, trade['Buyer'], trade['Seller'], trade['Price'], trade['Quantity']))
         
         # Record lowest and highest success trade prices
-        lowest_price = min(trade['Price'] for trade in success_trades)
-        highest_price = max(trade['Price'] for trade in success_trades)
-
-        price_spread_sql = f"INSERT INTO PriceSpread_{exp_name} (tick, LowestSuccessTradePrice, HighestSuccessTradePrice) VALUES (%s, %s, %s)"
-        cursor.execute(price_spread_sql, (tick_num, lowest_price, highest_price))
+        try:
+            lowest_price = min(trade['Price'] for trade in success_trades)
+            highest_price = max(trade['Price'] for trade in success_trades)
+            price_spread_sql = f"INSERT INTO PriceSpread_{exp_name} (tick, LowestSuccessTradePrice, HighestSuccessTradePrice) VALUES (%s, %s, %s)"
+            cursor.execute(price_spread_sql, (tick_num, lowest_price, highest_price))
+        except:
+            pass
+        
+        
 
         # Store Leftover Order book
         for order in buy_orders:

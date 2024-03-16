@@ -216,7 +216,9 @@ class functions:
         return quantity
 
 
-
+    def buy_quantity(mean_qty, std_dev):
+        quantity = np.random.normal(mean_qty, std_dev)
+        return quantity
 
 
     

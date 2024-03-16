@@ -3,8 +3,27 @@ from tools.sql_connection import DatabaseConnectionManager, create_or_truncate_t
 
 def init():
     agent_list = []
-    for n in range(20):
-        agent_list.append('agent' + str(n))
+    '''
+    for n in range(1,11):
+        agent_list.append('ZI_Buy' + str(n))
+        agent_list.append('ZI_Sell' + str(n))
+    for n in range(1,3):
+        agent_list.append('DT_Sell'+ str(n))
+        agent_list.append('DT_Buy' + str(n))
+    '''
+    n = 1
+    agent_list.append('ZI_Buy' + str(n))
+    agent_list.append('ZI_Sell' + str(n))
+    agent_list.append('ZIP_Buy' + str(n))
+    agent_list.append('ZIP_Sell' + str(n))
+    agent_list.append('MD_Buy' + str(n))
+    agent_list.append('MD_Sell' + str(n))
+    agent_list.append('PN_Buy' + str(n))
+    agent_list.append('PN_Sell' + str(n))
+    agent_list.append('DT_Buy' + str(n))
+    agent_list.append('DT_Sell' + str(n))
+    agent_list.append('DYN_Sell' + str(n))
+    
     tick_num = 50
     api_connection = 'http://0.0.0.0:8000/'
     exp_name = 'exp'

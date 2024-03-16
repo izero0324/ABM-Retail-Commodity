@@ -12,7 +12,7 @@ exp_name = 'exp'
 
 class Order(BaseModel):
     Market: int # Market ID
-    Price : int # Price
+    Price : float # Price
     Quantity : int # n times base quantity
     Side: str #P for producer, B for buyer
     agent_name: str # agent_name
