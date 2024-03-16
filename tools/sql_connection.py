@@ -7,7 +7,7 @@ class DatabaseConnectionManager:
         self.config ={
             'type': 'mysql',
             'user': 'root',
-            'password': '********', 
+            'password': 'Izero0324@TW', 
             'host': 'localhost',
             'database': 'ABM_EXCHANGE',
             'raise_on_warnings': True

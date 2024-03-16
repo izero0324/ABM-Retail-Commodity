@@ -8,6 +8,7 @@ app = FastAPI()
 
 # Simulating NoSQL storage with in-memory dict.
 orders_db = {}
+exp_name = 'exp'
 
 class Order(BaseModel):
     Market: int # Market ID
@@ -49,11 +50,22 @@ async def clear_all_orders():
     return {"Order list cleared"}
 
 # Get history price
-@app.get("/history_price/{day}")
-async def get_history_price(day:int):
-    price_list = historical_price(day)
+@app.get("/hist/price/{tick}")
+async def get_history_price(tick:int):
+    price_list = hist_n_price(exp_name, tick)
     return price_list
-    
+
+# Get history order by agent
+@app.get("/hist/order/{agent}/{tick}")
+async def get_history_order(agent:str, tick:int):
+    order_list = hist_n_order_by_agent(exp_name,agent, tick)
+    return order_list
+
+# Get history trade by agent
+@app.get("/hist/trade/{agent}/{tick}")
+async def get_history_trade(agent:str, tick:int):
+    trade_list = hist_n_trade_by_agent(exp_name,agent, tick)
+    return trade_list
 
 if __name__ == "__main__":
     import uvicorn

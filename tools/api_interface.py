@@ -30,3 +30,26 @@ def post_clear_order():
         print("Order cleared successfully:", response.json())
     else:
         print("Failed to post order:", response.content)
+
+def get_agent_history(type:str, agent_name: str, n: int):
+    url = 'http://0.0.0.0:8000/hist/'+type+'/'+agent_name+'/'+n
+    response = requests.get(url)
+    if response.status_code == 200:
+        print("Hist get successfully!")
+        return response.json()
+    else:
+        print("Failed to post order:", response.content)
+        return 0
+    
+def get_price_history(type:str, n: int):
+    url = 'http://0.0.0.0:8000/hist/price/'+n
+    response = requests.get(url)
+    if response.status_code == 200:
+        print("Hist get successfully!")
+        return response.json()
+    else:
+        print("Failed to post order:", response.content)
+        return 0
+    
+
+
