@@ -2,2640 +2,2454 @@ Error creating/checking table OrderBook_exp: Table 'OrderBook_exp' already exist
 Error creating/checking table PriceSpread_exp: Table 'PriceSpread_exp' already exists
 Error creating/checking table SuccessTrade_exp: Table 'SuccessTrade_exp' already exists
 Error creating/checking table LOB_exp: Table 'LOB_exp' already exists
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 0 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '3f79f158-19d8-4e32-8c46-a58636f82d44', 'Market': 1, 'Price': 121.15053287936053, 'Quantity': 103, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '170ac2ad-603b-41f2-8b1e-0d721f517ea4', 'Market': 1, 'Price': 150.51066101088725, 'Quantity': 100, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '83e9eab9-07e7-43a2-8ad4-c3611f25d6b8', 'Market': 1, 'Price': 136.35138922051934, 'Quantity': 147, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': 'ea3c55f4-deaa-4d1a-a6fb-368a76931e7e', 'Market': 1, 'Price': 151.8312249959539, 'Quantity': 136, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 1 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'ca39e035-ea06-4e4b-870c-7235509dca29', 'Market': 1, 'Price': 117.86629868992027, 'Quantity': 111, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': 'b1e8f4b2-8c19-4bf5-92eb-dc9ccab4df70', 'Market': 1, 'Price': 113.24059152073656, 'Quantity': 106, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '3361d1d5-0395-4d2d-84ab-0a3d10e6fa67', 'Market': 1, 'Price': 144.5767353800634, 'Quantity': 131, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '1015bbde-c677-434e-9549-f2c6b21b5813', 'Market': 1, 'Price': 140.82896404117355, 'Quantity': 152, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 2 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '0d21f9e6-9967-44ec-bd70-81e3d962ee36', 'Market': 1, 'Price': 129.10933112733807, 'Quantity': 103, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '837161b8-2ea7-4248-92b9-53d25501a7c5', 'Market': 1, 'Price': 108.94089328724166, 'Quantity': 88, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '38279c35-ccd9-457d-9d87-a03e364530a2', 'Market': 1, 'Price': 148.82774963902472, 'Quantity': 132, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': 'd15bb75c-f794-49ae-9a9e-b85c07ab0d81', 'Market': 1, 'Price': 140.90010768187244, 'Quantity': 156, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 3 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'd69299dd-29e4-491c-9b87-284e8fa6202b', 'Market': 1, 'Price': 87.53127095515339, 'Quantity': 99, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '1705bc22-eb73-4de7-ae1e-d1e958d6d651', 'Market': 1, 'Price': 108.91314852254075, 'Quantity': 113, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'f5fc6e5d-47c6-4b65-a3a8-743f440083ac', 'Market': 1, 'Price': 163.74248835191844, 'Quantity': 132, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '24eb15e6-0328-4a9e-9866-897c5abac50a', 'Market': 1, 'Price': 156.5449091504891, 'Quantity': 152, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 4 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'faebb5c8-e04e-4004-92fe-e9851225309e', 'Market': 1, 'Price': 122.94234677719388, 'Quantity': 77, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '32ffab72-c8d7-4bb1-93a7-3c36cb403cb7', 'Market': 1, 'Price': 130.3952406738702, 'Quantity': 104, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'b5346d34-3c74-4365-a12b-b164a574734c', 'Market': 1, 'Price': 161.76686894646707, 'Quantity': 154, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '9363aa4c-81a5-4db6-8136-ed04aa91eb54', 'Market': 1, 'Price': 144.9881966979103, 'Quantity': 148, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 5 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'af60e080-c8d2-4bf7-a6f0-0d3029a2dbd5', 'Market': 1, 'Price': 118.81048063191503, 'Quantity': 94, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '57937625-b8c9-489e-aebf-32c11b8310ca', 'Market': 1, 'Price': 105.04904556508572, 'Quantity': 103, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '4b46f2a8-2a9b-4fae-8333-c42271688f80', 'Market': 1, 'Price': 150.23839432095892, 'Quantity': 154, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '645b1304-21ea-45ce-a37f-e736a56ad4ab', 'Market': 1, 'Price': 165.0922893205141, 'Quantity': 135, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 6 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '8b1a2b6b-f60e-48eb-b606-959bfa947c6c', 'Market': 1, 'Price': 124.94375586029516, 'Quantity': 97, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '336a93df-c1f3-4550-8af6-a959b583ce95', 'Market': 1, 'Price': 126.85026248632337, 'Quantity': 100, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'b8683d86-8b51-410d-9513-14cf1a29ebf5', 'Market': 1, 'Price': 157.0849903284339, 'Quantity': 148, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': 'a4d7ba77-4939-48d5-b907-8562bf21b248', 'Market': 1, 'Price': 157.7219891128944, 'Quantity': 168, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 7 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '27b18ed4-c09a-45f8-bf5c-89c0cf6f6ad9', 'Market': 1, 'Price': 102.25196619300037, 'Quantity': 132, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': 'a7fa214b-051d-4b9b-9507-75acd43c8d30', 'Market': 1, 'Price': 132.15323556174425, 'Quantity': 99, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'e22cfef2-2865-47ac-a438-f5cab11bccc2', 'Market': 1, 'Price': 146.69749036856982, 'Quantity': 186, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '452198e8-d0b8-44a5-8e10-7952c472179f', 'Market': 1, 'Price': 138.72600850860778, 'Quantity': 143, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 8 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '542a9ad2-1b8f-43e1-8ab9-b0b3ed55a087', 'Market': 1, 'Price': 130.14101064855126, 'Quantity': 90, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': 'ed1648cf-0063-4664-9ff0-8736a102b2c6', 'Market': 1, 'Price': 105.31459403795938, 'Quantity': 90, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'b91dfc5b-3e93-4644-87f9-012539155d19', 'Market': 1, 'Price': 157.51298884190936, 'Quantity': 182, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': 'd75a016c-799a-4473-a1fb-2aeba79f3ec6', 'Market': 1, 'Price': 158.97239139705135, 'Quantity': 150, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 9 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '863b30fa-a89c-44e2-9088-e2e9778379f0', 'Market': 1, 'Price': 133.33448506106555, 'Quantity': 87, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '7dbb31be-51f1-4ad3-928a-18dab3e124ab', 'Market': 1, 'Price': 133.7709684722894, 'Quantity': 103, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'a932165b-4b68-43e4-b550-c002a5358664', 'Market': 1, 'Price': 142.67592095692922, 'Quantity': 159, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '44a61f77-f580-4378-b106-f56a545094ef', 'Market': 1, 'Price': 163.07042873439505, 'Quantity': 160, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 10 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '8858dd6c-35f8-48ab-8099-6a7a509538fd', 'Market': 1, 'Price': 138.6099671027357, 'Quantity': 95, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': 'a38e949c-1b79-48aa-87be-74b6f7cd210c', 'Market': 1, 'Price': 106.41849335217205, 'Quantity': 90, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '5acf125b-b587-4596-ae7e-07da8595c9b7', 'Market': 1, 'Price': 141.69289563713434, 'Quantity': 145, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': 'ea76e5d1-2d6d-4807-853a-32b61cee7019', 'Market': 1, 'Price': 160.73335006208382, 'Quantity': 156, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 11 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '4cb41f9e-306a-444f-a5e4-15237a745344', 'Market': 1, 'Price': 124.88490738015561, 'Quantity': 114, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '48297f39-bbcc-40c0-8f67-494f46bc7916', 'Market': 1, 'Price': 122.12843117246096, 'Quantity': 81, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '777149d1-72ad-4ea8-8c13-8a10afcd1193', 'Market': 1, 'Price': 163.18807814853466, 'Quantity': 137, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '7a8372fe-87bd-4b04-9b79-b83123da8eb2', 'Market': 1, 'Price': 156.69930455215763, 'Quantity': 167, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 12 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '598b4465-cc6f-4994-9b53-9f99d2197236', 'Market': 1, 'Price': 132.51470595182377, 'Quantity': 87, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': 'f35e27ec-874d-42f4-b3ba-962a877dbdbb', 'Market': 1, 'Price': 111.27508101959951, 'Quantity': 104, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '5ea987bf-9930-4480-a072-d12327b2c840', 'Market': 1, 'Price': 152.21593633968507, 'Quantity': 146, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '753f206e-2d54-4622-b597-fad90911dff3', 'Market': 1, 'Price': 150.44680990377245, 'Quantity': 129, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 13 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '7c8b3935-5a33-4b46-91db-1f0745d1615e', 'Market': 1, 'Price': 97.50470797639213, 'Quantity': 104, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '686b9dde-5620-462a-8738-7f928f7afe8a', 'Market': 1, 'Price': 128.9397696133226, 'Quantity': 103, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '984a5a9d-4d73-4316-84fb-114218459529', 'Market': 1, 'Price': 150.916303380219, 'Quantity': 140, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '3c22f4f1-3534-4a32-9ecf-6e668bd4471d', 'Market': 1, 'Price': 160.04394504424954, 'Quantity': 158, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 14 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'd8d3b4fb-d640-42c6-a3d2-ba3dc15bf2d4', 'Market': 1, 'Price': 117.00866511989567, 'Quantity': 114, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': 'accae620-3697-4cd6-9d61-b05e75d941f2', 'Market': 1, 'Price': 107.59958605392508, 'Quantity': 107, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '859d950d-15b0-48a5-ab1a-2e84e07851e2', 'Market': 1, 'Price': 165.42178580412462, 'Quantity': 125, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '8206e8ea-1b59-4f6d-959e-37900a5e80a0', 'Market': 1, 'Price': 152.1018118675296, 'Quantity': 158, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 15 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '1d2c6f9e-7cc7-4c80-8e08-1f225ae4d595', 'Market': 1, 'Price': 131.99275330161012, 'Quantity': 111, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': 'e75327aa-c55d-4fc7-aeac-a2571994517c', 'Market': 1, 'Price': 102.6146310281554, 'Quantity': 88, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '0f5fcb26-86c8-434e-ae91-70c19ee82a45', 'Market': 1, 'Price': 142.3595815651012, 'Quantity': 162, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '4115e030-95fd-4426-ba8a-7a1a4a57d09a', 'Market': 1, 'Price': 137.9761982559986, 'Quantity': 142, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 16 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '11b01dd1-c2d9-45e9-8a4c-d1fbef901a19', 'Market': 1, 'Price': 118.80784184459102, 'Quantity': 95, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': 'e7d91913-cc45-4399-a405-6fdeec79866a', 'Market': 1, 'Price': 114.15176680854013, 'Quantity': 93, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '43ced92d-7d19-4a5b-8525-bff9fc79f023', 'Market': 1, 'Price': 145.78572642134657, 'Quantity': 169, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '98ac71fe-36ac-4852-8e96-fbe906a21ad7', 'Market': 1, 'Price': 136.8293838952367, 'Quantity': 152, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 17 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '1f200289-1c15-4139-9703-35f64dd3b3b8', 'Market': 1, 'Price': 130.3880333619403, 'Quantity': 89, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '004a7793-c0df-4ccc-b880-836a14da3a36', 'Market': 1, 'Price': 129.0798338806833, 'Quantity': 108, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '4be8314a-9d61-4e77-9437-e163c47e8a5c', 'Market': 1, 'Price': 126.08687080202326, 'Quantity': 142, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '8d69747e-13ef-4645-89de-8af8ddccb484', 'Market': 1, 'Price': 135.40871873974143, 'Quantity': 164, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
 Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'ZI_Sell1', 'Quantity': 89, 'Price': 126.08687080202326}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 18 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '485f91d3-1828-49f3-a368-7fe565666e75', 'Market': 1, 'Price': 104.80839683255795, 'Quantity': 74, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '07a45b49-d3d9-4e83-98fd-310cb18024d3', 'Market': 1, 'Price': 122.10797545901964, 'Quantity': 105, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '42d873d1-6350-4660-bde3-208f516ddada', 'Market': 1, 'Price': 165.55666288836352, 'Quantity': 162, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '232cf7d3-3f51-41a0-8a89-0516c6e09a41', 'Market': 1, 'Price': 150.3558730372476, 'Quantity': 152, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'b3ed2e56-cbdd-4240-83a8-91ab27c63f7a', 'Market': 1, 'Price': 20.5, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'cabc4221-0f0f-4ec9-9dc8-f3bd413ff2df', 'Market': 1, 'Price': 100.8696, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 74, 'Price': 100.8696}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 19 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '76be37d3-6ada-497c-8dee-317e73b54212', 'Market': 1, 'Price': 96.52405497653098, 'Quantity': 95, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '879eed31-5920-40d8-b4f1-87bbcb959427', 'Market': 1, 'Price': 130.9965962951784, 'Quantity': 92, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '430329cb-82f8-4dff-a1f2-fb0158ec57c7', 'Market': 1, 'Price': 144.4071829477809, 'Quantity': 155, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '6fe28ac4-09b2-49e9-accc-21863382d822', 'Market': 1, 'Price': 139.8296745993143, 'Quantity': 167, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'd4c4a003-cb70-4d22-ae26-8fc4b2ebce2a', 'Market': 1, 'Price': 20.5, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '54051975-c620-484e-af2f-5c6b5febea1e', 'Market': 1, 'Price': 80.69600000000001, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 95, 'Price': 80.69600000000001}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 20 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'bf45b02b-a03a-4231-82f0-2236ab005388', 'Market': 1, 'Price': 110.44347368419814, 'Quantity': 75, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '2bb2e5c3-2ede-4f57-93ce-c8688d284ef1', 'Market': 1, 'Price': 124.51268288264293, 'Quantity': 94, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'c2b00e01-4df8-4bd7-b9a1-11e260f670c9', 'Market': 1, 'Price': 136.78041635303245, 'Quantity': 119, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '3b2e1a8d-b501-4a3f-b464-68fd4a6b693d', 'Market': 1, 'Price': 145.9431130339558, 'Quantity': 144, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'df1fed1a-8cc8-48a7-860c-a3b6268a6e56', 'Market': 1, 'Price': 20.5, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'b5805761-53e7-48f9-993b-0290de3eaeab', 'Market': 1, 'Price': 64.5568, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 75, 'Price': 64.5568}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 21 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '659cc4ec-90a1-400d-b4f2-a49fee6ba0bc', 'Market': 1, 'Price': 119.17643849011783, 'Quantity': 86, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '1805a251-d841-4ee6-ac46-8397ffc0fa3e', 'Market': 1, 'Price': 116.71403942565796, 'Quantity': 101, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'fce4ee8b-8d30-48eb-ade3-8c88a42ac728', 'Market': 1, 'Price': 163.20544473736553, 'Quantity': 150, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': 'a3ce9d5c-1cdf-4e9b-a632-82b4e4707779', 'Market': 1, 'Price': 154.03780827747073, 'Quantity': 170, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '920c430b-1390-47e4-bd1c-7e921ff5534f', 'Market': 1, 'Price': 20.5, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '73172ee2-2911-4976-82c2-76ca8299fb7b', 'Market': 1, 'Price': 51.64544, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 86, 'Price': 51.64544}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 22 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'd4427af3-7eaf-47eb-baa5-c305c0f7b3db', 'Market': 1, 'Price': 127.87416876834071, 'Quantity': 108, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '8d11f29a-3f0a-4ddd-8a79-8fda915b0139', 'Market': 1, 'Price': 138.99771078355442, 'Quantity': 104, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '76b445c1-4110-4472-869f-920cd60cd3ac', 'Market': 1, 'Price': 146.44714014754555, 'Quantity': 175, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '7b023c25-602b-491f-b444-16522f3b6d67', 'Market': 1, 'Price': 154.3489209330702, 'Quantity': 161, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'ce94294d-8615-4f32-934b-34ccca02be2f', 'Market': 1, 'Price': 20.5, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '60c0a51a-98c9-4d41-bc04-8b1f4394083b', 'Market': 1, 'Price': 41.316320000000005, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 100, 'Price': 41.316320000000005}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 23 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'aa3dbd35-ab76-444f-9470-a5bf147893f7', 'Market': 1, 'Price': 101.22350312849005, 'Quantity': 120, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': 'c7b0b827-df7a-46f4-8104-19a7b4b880f8', 'Market': 1, 'Price': 135.95716413311553, 'Quantity': 88, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '4420533e-3e1f-4021-8ab4-a70217aec34f', 'Market': 1, 'Price': 152.41372160634052, 'Quantity': 145, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '7eee1eba-9b1d-4d4a-8513-0d5e76431cab', 'Market': 1, 'Price': 157.2863867182102, 'Quantity': 132, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '60615d63-c354-45d2-a747-ec29b3256cbb', 'Market': 1, 'Price': 20.5, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '688edf84-d42e-4cfa-8bc9-3790d28e5657', 'Market': 1, 'Price': 33.05304, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 100, 'Price': 33.05304}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 24 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '0065ccee-51b9-4966-bba3-e854cda44f8e', 'Market': 1, 'Price': 130.7067216708644, 'Quantity': 103, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '707dc74d-0f13-4df0-9b13-4a0949a800d0', 'Market': 1, 'Price': 132.28134305966933, 'Quantity': 93, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'e4e973f6-39d7-43c0-b3e3-ce533e6e5416', 'Market': 1, 'Price': 142.76843787669756, 'Quantity': 138, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': 'b5cfa983-e5e2-4e00-b4fa-2d9ddf93c4d3', 'Market': 1, 'Price': 162.6782838917839, 'Quantity': 127, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '671cbad3-5f5a-4ee5-ae57-a4b8aca488a2', 'Market': 1, 'Price': 20.5, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '21817186-09cc-43fe-ba3f-853afabd48b2', 'Market': 1, 'Price': 26.4424, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 100, 'Price': 26.4424}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 25 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '333a5d38-da7b-44aa-9aae-dc85d9bc3d62', 'Market': 1, 'Price': 99.54077684907392, 'Quantity': 93, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '7c1d6763-c474-461b-8b97-33c6c6b64aa2', 'Market': 1, 'Price': 134.2242495654752, 'Quantity': 117, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '03f08976-1ffb-4a20-8dd9-49b5d6424024', 'Market': 1, 'Price': 134.68832067044895, 'Quantity': 138, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '5ff79d79-2777-4b8d-82de-3cce5aedea23', 'Market': 1, 'Price': 144.31020213286433, 'Quantity': 163, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'd63dbe3d-c069-4876-8868-0a28dac0d7b5', 'Market': 1, 'Price': 20.5, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'a782d47a-a9b5-4ad1-b3d4-092bc2211271', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 93, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 26 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '3b91d0ce-ecb0-41f5-9a22-936c4de85a78', 'Market': 1, 'Price': 129.84719820427597, 'Quantity': 105, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '2fcf0319-24cb-4ed8-b3d1-d4e2b1df6904', 'Market': 1, 'Price': 112.55641000952448, 'Quantity': 92, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '91f19243-7b92-40e0-bc03-e89158675f83', 'Market': 1, 'Price': 140.84809661261303, 'Quantity': 142, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '7f63b8e4-abd7-4872-b54f-dbf5c8085a47', 'Market': 1, 'Price': 132.78160198909936, 'Quantity': 150, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'cb3cd54a-cc63-4036-b91f-d6c516c11978', 'Market': 1, 'Price': 18.72, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '414a8c82-2b9e-46b2-bec3-13aa90e9e6da', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 100, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 27 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'aba07882-f44e-4dd4-88c9-96c158f413b1', 'Market': 1, 'Price': 123.41985271425125, 'Quantity': 99, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '070c66ed-ede4-41f0-95fa-5a6037e9ba5a', 'Market': 1, 'Price': 119.0394856905283, 'Quantity': 108, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '05d2410b-c2f5-4f07-b20c-005b6902cc5d', 'Market': 1, 'Price': 154.52060294172358, 'Quantity': 146, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '2b1bad3d-8ea8-4124-aa82-b2bf676edcd6', 'Market': 1, 'Price': 139.9072612058624, 'Quantity': 165, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '38a3b3fc-e1f4-45c1-94b7-7324e9f4c763', 'Market': 1, 'Price': 18.72, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '0aa45947-ef8c-476c-9f47-59153b8a19d0', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 99, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 28 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '79c8bfe2-a779-43eb-9f92-822d64364533', 'Market': 1, 'Price': 146.26471331479058, 'Quantity': 99, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '069fa2fd-4bd8-429d-8e3c-b70cbb9f5962', 'Market': 1, 'Price': 134.8696740069938, 'Quantity': 106, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '2e2ee2bc-a007-4dc5-854a-4f7ec319bf17', 'Market': 1, 'Price': 157.5179015088342, 'Quantity': 164, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '709076a9-31a4-4cf5-8c8e-586eedb9b61b', 'Market': 1, 'Price': 144.41842490522214, 'Quantity': 165, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'd7663362-dd84-4afb-845d-d359d8e4645a', 'Market': 1, 'Price': 11.7, 'Quantity': 200, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '9fc14429-0598-44e5-a60e-3e14fe6347dc', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 99, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 29 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'f65b6e4e-4f83-462d-a33c-9d26602215a0', 'Market': 1, 'Price': 102.27072673737955, 'Quantity': 126, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '4b86400d-7dcd-4c11-8d6d-fed260c04ec5', 'Market': 1, 'Price': 126.8811407018433, 'Quantity': 106, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'e7db2e82-ff47-40e7-a140-0561a5583b16', 'Market': 1, 'Price': 142.211678033017, 'Quantity': 153, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '293cc9a3-313e-46bb-992f-2cbe86468c93', 'Market': 1, 'Price': 143.76122967801876, 'Quantity': 176, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '4837d6ee-a755-4bd9-9464-5720166ed5d8', 'Market': 1, 'Price': 11.7, 'Quantity': 200, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '76e91af9-0526-47c9-9872-a81446194b41', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 100, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 30 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'fc2add5a-facc-4146-b357-75993195ce56', 'Market': 1, 'Price': 117.29905849164467, 'Quantity': 78, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '6035b671-ce94-4ca1-a0ef-da7dd8f6a783', 'Market': 1, 'Price': 126.67610858846075, 'Quantity': 98, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '3b4af2bd-66d0-4dbd-a344-12c92c52ed43', 'Market': 1, 'Price': 162.51898020818197, 'Quantity': 132, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': 'aadbed59-1aaf-4507-817c-391ae91ba28f', 'Market': 1, 'Price': 157.19193703465083, 'Quantity': 141, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '18dff015-6282-428e-bf2e-9ad3b4c40ff8', 'Market': 1, 'Price': 11.7, 'Quantity': 200, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '677bd8d6-9bed-45b9-bd27-3985bafc5f68', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 78, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 31 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '530f2ee2-6377-49fa-bbc3-4e40262ddaac', 'Market': 1, 'Price': 117.09808408974766, 'Quantity': 82, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '60244876-a7d1-4f81-8b73-f7755de87c17', 'Market': 1, 'Price': 108.16183194061821, 'Quantity': 91, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '24ca04ae-37ec-4e3c-8641-c377de992720', 'Market': 1, 'Price': 139.35897511152987, 'Quantity': 150, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '847264c3-d1f0-41b1-bc2a-5607cc449890', 'Market': 1, 'Price': 152.5232055123565, 'Quantity': 137, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '54f8c0fb-ae73-41cb-85ad-77f3aeab0cc3', 'Market': 1, 'Price': 11.7, 'Quantity': 200, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '71479541-1910-4618-9c28-fec67ede9fff', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 82, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 32 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'ba67bcec-354c-4134-98f9-3d043c46b7d0', 'Market': 1, 'Price': 108.96161048476668, 'Quantity': 91, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': 'ec64b4b5-1065-4288-8a14-9bc1f1767470', 'Market': 1, 'Price': 121.5937978900863, 'Quantity': 106, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'cfb84b54-b1bc-480e-b93f-7f8dc5c414b3', 'Market': 1, 'Price': 153.15469130026537, 'Quantity': 143, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '361b45c5-e4cb-4f99-a0ce-283ce2b71d16', 'Market': 1, 'Price': 162.76077259664856, 'Quantity': 147, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'ddf66044-f589-43d8-8561-3a37197f11bb', 'Market': 1, 'Price': 11.7, 'Quantity': 200, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '76c8bbc1-c369-46fd-945f-7878a335c882', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 91, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 33 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '47c58496-f031-4eea-ab8c-0536a267b4e2', 'Market': 1, 'Price': 111.95431469771088, 'Quantity': 120, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '0ab38a92-2eb7-495a-a5b9-7506c6cc126e', 'Market': 1, 'Price': 114.32673766003364, 'Quantity': 96, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '2ddb2f73-6e0f-4e2a-ba6f-be0418b0279d', 'Market': 1, 'Price': 166.45403863072866, 'Quantity': 144, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '540a596e-5871-42e9-a1f2-1524acc6e31f', 'Market': 1, 'Price': 145.0515486966853, 'Quantity': 156, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '5d3ba89e-0706-4d6a-8e88-f208f657ef6f', 'Market': 1, 'Price': 18.72, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '72b5d304-1355-4cb5-80ce-64291f2ed564', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 100, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 34 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'f7eb861c-9a1d-4a7a-9d34-9c7b7741a320', 'Market': 1, 'Price': 129.86737495607136, 'Quantity': 88, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '138a908f-4fb6-4425-9931-fbf7ebd3b251', 'Market': 1, 'Price': 112.867628628806, 'Quantity': 85, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'a57febd4-b63a-4944-9402-9239ce0ad75c', 'Market': 1, 'Price': 160.40356899484354, 'Quantity': 165, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '0c770ee2-cfc7-47d6-9272-5964b57ac8c4', 'Market': 1, 'Price': 139.41758817221577, 'Quantity': 151, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'fd74bb7e-fd9a-4f82-b681-95b3c7072873', 'Market': 1, 'Price': 18.72, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '7886a6f6-05ae-4e87-b0df-b314a2917e23', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 88, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 35 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'de5e6e59-043f-4803-b7fa-f0205c957e31', 'Market': 1, 'Price': 127.62670622671243, 'Quantity': 101, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '1f5418b1-de7d-4e64-9b29-210adb07139f', 'Market': 1, 'Price': 113.57673342974823, 'Quantity': 78, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'c9414754-b09f-4b68-9fd0-fca7f3352ceb', 'Market': 1, 'Price': 142.3385208442354, 'Quantity': 149, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '003ca02b-d799-4b28-9410-a72c0e0da132', 'Market': 1, 'Price': 140.36869702036515, 'Quantity': 139, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '9d1a2a28-f907-4b6f-9669-efc1ee8720fa', 'Market': 1, 'Price': 18.72, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '66603961-45ae-470f-913e-7abe8bd72cbc', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 100, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 36 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'eca1797b-3841-43c0-a1bd-173b2eb4977c', 'Market': 1, 'Price': 117.48885852919985, 'Quantity': 87, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '47b47dbf-4178-45e2-b0ff-219d46b3d538', 'Market': 1, 'Price': 119.2525530979292, 'Quantity': 100, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '5c6380bd-c44a-4d1a-a40c-b9123f10a8bc', 'Market': 1, 'Price': 145.4255443272786, 'Quantity': 149, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': 'e4c35178-d220-4980-8b49-9f09f2d1027a', 'Market': 1, 'Price': 151.62997831576027, 'Quantity': 157, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '3f57ce2d-debf-47e2-a096-4931bcb7e67d', 'Market': 1, 'Price': 11.7, 'Quantity': 200, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'c9452ea4-9841-4352-b292-8afadc9e1a1a', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 87, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 37 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '8c15c59e-ddd6-4c57-bd5b-fa3c333e264f', 'Market': 1, 'Price': 126.08515158275341, 'Quantity': 118, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '623524c5-274a-412b-9018-c11518cf9564', 'Market': 1, 'Price': 115.3896232604013, 'Quantity': 91, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'bfc31f62-c00d-4e43-94a8-c78373d51e10', 'Market': 1, 'Price': 151.38609706405754, 'Quantity': 157, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '757aa1df-51c8-43f0-8a31-1904eead8c96', 'Market': 1, 'Price': 148.7763007073825, 'Quantity': 153, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '32f0d9dd-6c4d-4890-b2f8-6d25b322c063', 'Market': 1, 'Price': 18.72, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'fe38223a-6ab6-4cfc-8790-ff254728b156', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 100, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 38 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '63d939e1-09f4-4d0a-b7ad-362eb21051b9', 'Market': 1, 'Price': 104.35574392787031, 'Quantity': 121, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '964dbac6-1ad8-46a1-9c4c-c30a42055575', 'Market': 1, 'Price': 113.27983479138129, 'Quantity': 90, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '627b424a-8086-461f-bac3-a10b94ae195d', 'Market': 1, 'Price': 153.12520498100406, 'Quantity': 142, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': 'b3a1f885-ed3d-4a85-b823-c46e75db2677', 'Market': 1, 'Price': 140.01452539898045, 'Quantity': 156, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'e1e2ac71-9e86-4ec0-9de7-c6984610193f', 'Market': 1, 'Price': 11.7, 'Quantity': 200, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'd349e305-6479-4bb9-9a23-d25fae97a450', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 100, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 39 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'a513a995-a04c-4aa2-8103-3205f35fb186', 'Market': 1, 'Price': 114.54472215431593, 'Quantity': 87, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '78111a84-0ef1-4f25-8905-46a624282b81', 'Market': 1, 'Price': 98.9868618090852, 'Quantity': 110, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'a8b961ed-3200-41e6-af5f-e05fa76feb35', 'Market': 1, 'Price': 144.43739050826733, 'Quantity': 137, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '9835425b-f8da-4990-8267-172694bdbf48', 'Market': 1, 'Price': 158.0717533537168, 'Quantity': 134, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'eef6c85b-9a12-4811-a918-d665043ce22d', 'Market': 1, 'Price': 11.7, 'Quantity': 200, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'a738f5f6-430b-4e38-ae25-6d47f6025e4f', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 87, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 40 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '43fb3202-fa66-49cb-95da-b4dc0432628d', 'Market': 1, 'Price': 125.23467973824476, 'Quantity': 118, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '1ac6e2e6-b233-4b23-afbc-69a0e187e8c1', 'Market': 1, 'Price': 132.02299139208475, 'Quantity': 107, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '0d77366c-5620-44d9-99f1-9a597597ee08', 'Market': 1, 'Price': 142.71661423785832, 'Quantity': 153, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': 'eb9d7195-1430-4c64-a9c5-aa4c74170cd3', 'Market': 1, 'Price': 163.37358562486494, 'Quantity': 148, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '427f55f6-5af9-4530-91f3-45521f3c709c', 'Market': 1, 'Price': 18.72, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '9a2a18e7-5f53-479a-88a7-f039eaba474d', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 100, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 41 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '4a02df37-9005-438d-bc3a-f5516092082e', 'Market': 1, 'Price': 129.21089021676548, 'Quantity': 114, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '0c39cf66-3c07-4b5e-b8c2-a37574a3e4cb', 'Market': 1, 'Price': 97.44526750097256, 'Quantity': 95, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '69525720-e6a9-470c-9e4a-7d7b83168cd5', 'Market': 1, 'Price': 171.42354428454573, 'Quantity': 171, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '836ed84d-187b-4f7d-93a3-606c8b14fd30', 'Market': 1, 'Price': 168.64344715713824, 'Quantity': 143, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '5430005d-4c41-4509-ae67-68a769ef33fb', 'Market': 1, 'Price': 11.7, 'Quantity': 200, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '40d4e273-6ec8-462f-b9d8-6fbab189d277', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 100, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 42 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '74576d95-638c-4ef1-a48f-775fda2d7983', 'Market': 1, 'Price': 113.0542751916525, 'Quantity': 95, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '902b0ede-f2ae-47a3-8f6c-9dbeaac12c6d', 'Market': 1, 'Price': 123.31859640411025, 'Quantity': 95, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '83ac3f46-459c-4b49-a662-407c305d0329', 'Market': 1, 'Price': 137.42612230708013, 'Quantity': 171, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '1780d35e-d045-4587-a3ff-9b990c0b5697', 'Market': 1, 'Price': 159.28476962398156, 'Quantity': 137, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '44700c1e-6c40-4231-95c4-b76cb5b11cc7', 'Market': 1, 'Price': 11.7, 'Quantity': 200, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'f4859779-ebbf-4c27-aae8-f6e79bc82f1e', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 95, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 43 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '605ff461-6245-4c40-910b-efab4007e2b5', 'Market': 1, 'Price': 125.43504040749555, 'Quantity': 103, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': 'f2987dce-f5e4-403d-ba4f-da7d4910b6a5', 'Market': 1, 'Price': 119.1707158632865, 'Quantity': 104, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '213f2e0c-3fe8-4534-bc81-4df3df71788d', 'Market': 1, 'Price': 133.34994265342993, 'Quantity': 150, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '78580de3-04ba-40b1-9564-340802871098', 'Market': 1, 'Price': 144.4643356023265, 'Quantity': 158, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '61798195-2a1c-44a7-b122-b31205a88073', 'Market': 1, 'Price': 11.7, 'Quantity': 200, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '6b8f384a-88b9-454a-800a-ab2b5509a7e7', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 100, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 44 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'aa8ab4e3-c013-4da3-814d-decfcf368511', 'Market': 1, 'Price': 116.23361682061893, 'Quantity': 84, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': 'a14c1063-5613-46fd-a6d8-975a51b4e51d', 'Market': 1, 'Price': 123.71715914865007, 'Quantity': 91, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '047aef25-edb5-46a3-84ac-c31f02a3018e', 'Market': 1, 'Price': 147.3111738617451, 'Quantity': 140, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': 'd487bb20-73d0-4a2c-8f33-ca2bac3a683c', 'Market': 1, 'Price': 169.75282887218265, 'Quantity': 148, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '88fcb37b-ccdb-47bf-9ce6-4dea26be9840', 'Market': 1, 'Price': 18.72, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '5a90fcef-7181-4e2a-8cc6-b6094f3115d3', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 84, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 45 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'efaba20c-74e3-498b-b217-41c5877c9c7b', 'Market': 1, 'Price': 103.41580306379443, 'Quantity': 90, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': 'fb690379-d18c-44a4-9bd4-77687e35c482', 'Market': 1, 'Price': 122.37031546675625, 'Quantity': 95, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '233f4e11-a058-494e-b3d2-e4c41bec7a8a', 'Market': 1, 'Price': 143.91043434460207, 'Quantity': 148, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': 'd5b3b0f9-6e98-45ac-8526-9c4725e8058b', 'Market': 1, 'Price': 149.22077074999643, 'Quantity': 140, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '5c1dbd63-97f3-413a-aefd-d8148c7ff2a4', 'Market': 1, 'Price': 11.7, 'Quantity': 200, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '303f6fff-8229-46b3-8422-b6fddb3007ba', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 90, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 46 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '2a3d62a0-5283-4790-8664-0400c6746300', 'Market': 1, 'Price': 125.18363123484643, 'Quantity': 115, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': 'f093a22b-c1d6-48bf-937c-d3dbf05e373c', 'Market': 1, 'Price': 118.9229907332237, 'Quantity': 101, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'af88fe6f-d76d-4c91-8194-35b7e6205724', 'Market': 1, 'Price': 150.3618789653117, 'Quantity': 159, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '6234e7e0-ea16-4490-8769-a02494353027', 'Market': 1, 'Price': 160.656714967844, 'Quantity': 157, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'c923847c-9736-4b7e-b610-bf93223a9044', 'Market': 1, 'Price': 18.72, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '5f089d68-213a-4e77-8d52-777bf7e0d984', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 100, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 47 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '718a586b-a6be-4a65-b15f-aad052a60bfe', 'Market': 1, 'Price': 106.76154626280072, 'Quantity': 124, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '3d9dbddc-10e4-4327-a098-fbc847e393a0', 'Market': 1, 'Price': 112.93033010487183, 'Quantity': 97, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': 'a82842fd-1080-4a33-8382-e3db0aeeae00', 'Market': 1, 'Price': 158.87526713674222, 'Quantity': 145, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': 'b92af77d-41be-4231-888d-7341a1a20530', 'Market': 1, 'Price': 153.49072742381767, 'Quantity': 137, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '5dc91bcc-271a-4ae7-840c-f33dee2a5e5f', 'Market': 1, 'Price': 11.7, 'Quantity': 200, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '43da0529-4ed8-43f1-8dbd-65dd2e0f25d5', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 100, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 48 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': 'b56b5545-7911-499d-af0e-2e137a63d431', 'Market': 1, 'Price': 119.0155140958827, 'Quantity': 101, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': 'aa256a24-bd15-4ad7-89dc-ba7c0b66ffad', 'Market': 1, 'Price': 121.94685277233866, 'Quantity': 86, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '3cdf7fe1-7244-4916-8fd9-aa187fce58c0', 'Market': 1, 'Price': 160.8382103541818, 'Quantity': 148, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '3c7f392b-ac21-4e77-ad16-240650644406', 'Market': 1, 'Price': 136.25920869040417, 'Quantity': 152, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '985df4e4-1696-41af-97b2-f8e9f3d7bfcd', 'Market': 1, 'Price': 18.72, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '58bf1a3e-adb5-402c-9b37-e477700eacef', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 100, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']
+================ tick 49 ===========================
 call  ZI_Buy1 to start posting order!
-I'm a ZI buy agent
-Order posted successfully: {'order_id': '664a2f13-05c9-4c90-9615-5aa87c5c648a', 'Market': 1, 'Price': 98.00425632162042, 'Quantity': 97, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
+[Agent] I'm a ZI buy agent
+[LOG] Order posted successfully: {'order_id': '63d3a6c1-9ce5-4116-8555-78fc015bcd00', 'Market': 1, 'Price': 130.5002539245358, 'Quantity': 112, 'Side': 'B', 'agent_name': 'ZI_Buy1'}
 Get return from agent  ZI_Buy1 , next agent ready...
 call  ZI_Sell1 to start posting order!
-I'm a ZI sell agent
-Order posted successfully: {'order_id': '2d275cdf-9bd8-42fe-b123-c7fc368fc3b1', 'Market': 1, 'Price': 145.84918879647995, 'Quantity': 150, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[Agent] I'm a ZI sell agent
+[LOG] Order posted successfully: {'order_id': '28b51b23-2a91-4543-856b-782408d0e97b', 'Market': 1, 'Price': 139.84836433318515, 'Quantity': 129, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP buy agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP buy agent
+[LOG] Hist get successfully!
 Agent  ZIP_Buy1  failed to retrun order
 call  ZIP_Sell1 to start posting order!
-I'm a ZIP agent
-I'm a ZIP sell agent
-Hist get successfully!
-Hist get successfully!
-LOB get successfully!
+[Agent] I'm a ZIP sell agent
+[LOG] Hist get successfully!
 Agent  ZIP_Sell1  failed to retrun order
 call  MD_Buy1 to start posting order!
-I'm a MD buy agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': '345a7554-c900-4814-9cb1-199c50f1dee1', 'Market': 1, 'Price': 18.72, 'Quantity': 40, 'Side': 'B', 'agent_name': 'MD_Buy1'}
-Get return from agent  MD_Buy1 , next agent ready...
+[Agent] I'm a MD buy agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Buy1  failed to retrun order
 call  MD_Sell1 to start posting order!
-I'm a MD sell agent
-Last quant get successfully!
-Hist get successfully!
-Order posted successfully: {'order_id': 'aedcc5b9-b1db-4188-98d0-b7d4abbb0042', 'Market': 1, 'Price': 23.4, 'Quantity': 100, 'Side': 'S', 'agent_name': 'MD_Sell1'}
-Get return from agent  MD_Sell1 , next agent ready...
+[Agent] I'm a MD sell agent
+[LOG] Last quant get successfully!
+[LOG] Hist get successfully!
+Agent  MD_Sell1  failed to retrun order
 call  PN_Buy1 to start posting order!
-I'm a PN buy agent
-Last price list get successfully!
+[Agent] I'm a PN buy agent
+[LOG] Last price list get successfully!
 Agent  PN_Buy1  failed to retrun order
 call  PN_Sell1 to start posting order!
-I'm a PN sell agent
-Last price list get successfully!
+[Agent] I'm a PN sell agent
+[LOG] Last price list get successfully!
 Agent  PN_Sell1  failed to retrun order
 call  DT_Buy1 to start posting order!
-I'm a DT buy agent
+[Agent] I'm a DT buy agent
+[LOG] Hist get successfully!
 Agent  DT_Buy1  failed to retrun order
 call  DT_Sell1 to start posting order!
-I'm a DT sell agent
+[Agent] I'm a DT sell agent
+[LOG] Hist get successfully!
 Agent  DT_Sell1  failed to retrun order
 call  DYN_Sell1 to start posting order!
-I'm a DYN sell agent
+[Agent] I'm a DYN sell agent
 Agent  DYN_Sell1  failed to retrun order
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy1', 'Seller': 'MD_Sell1', 'Quantity': 97, 'Price': 23.4}
-Order cleared successfully: ['Order list cleared']
+[LOG] Order cleared successfully: ['Order list cleared']

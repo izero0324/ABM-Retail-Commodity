@@ -52,7 +52,9 @@ def get_orders(agent_list):
 
 def controller(agent_list, tick_num, api_connection, exp_name):
     post_clear_order()
+    
     for tick in range(tick_num):
+        print(f"================ tick {tick} ===========================")
         assert state_now() == "Get_order" 
         get_orders(agent_list)
         next_state()

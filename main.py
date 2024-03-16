@@ -1,8 +1,16 @@
 from tools.controller import controller
 from tools.sql_connection import DatabaseConnectionManager, create_or_truncate_tables
+import json
+
+def add_agents(n, agent_list):
+    with open('agent_setup.json', 'r') as file:
+        agents = json.load(file)
+
+    for agent, value in agents.items():
+        if value != 0:
+            agent_list.append(agent + str(value))
 
 def init():
-    agent_list = []
     '''
     for n in range(1,11):
         agent_list.append('ZI_Buy' + str(n))
@@ -11,18 +19,9 @@ def init():
         agent_list.append('DT_Sell'+ str(n))
         agent_list.append('DT_Buy' + str(n))
     '''
+    agent_list = []
     n = 1
-    agent_list.append('ZI_Buy' + str(n))
-    agent_list.append('ZI_Sell' + str(n))
-    agent_list.append('ZIP_Buy' + str(n))
-    agent_list.append('ZIP_Sell' + str(n))
-    agent_list.append('MD_Buy' + str(n))
-    agent_list.append('MD_Sell' + str(n))
-    agent_list.append('PN_Buy' + str(n))
-    agent_list.append('PN_Sell' + str(n))
-    agent_list.append('DT_Buy' + str(n))
-    agent_list.append('DT_Sell' + str(n))
-    agent_list.append('DYN_Sell' + str(n))
+    add_agents(n, agent_list)
     
     tick_num = 50
     api_connection = 'http://0.0.0.0:8000/'
