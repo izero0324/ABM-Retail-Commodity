@@ -3,27 +3,23 @@ import numpy as np
 
 
 # The following was written by Jhao-Wei Chen:
-
-# A strategy set used by agents
-
-
 # A strategy set used by agents
 class Strategies:
     #Quantity constraint
-    Max_bid_quantity = 200
-    Min_ask_quantity = 100
-    Bid_q_mean = 100
-    Bid_q_std_dev = 10
-    Ask_q_mean = 150
-    Ask_q_std_dev = 12
+    Max_bid_quantity = 4.5
+    Min_ask_quantity = 14
+    Bid_q_mean = 3
+    Bid_q_std_dev = 0.5
+    Ask_q_mean = 20
+    Ask_q_std_dev = 2
     
     #Price constraint
-    Max_bid_price = 20.5
-    Min_ask_price =23.4
-    Bid_p_mean = 120
-    Bid_p_std_dev = 13
-    Ask_p_mean = 150
-    Ask_p_std_dev = 10
+    Max_bid_price = 18
+    Min_ask_price = 4.5
+    Bid_p_mean = 13.5
+    Bid_p_std_dev = 1.5
+    Ask_p_mean = 13.5
+    Ask_p_std_dev = 3
     
     # ID: agents name, Side: B / S
     def init(self, ID, Side):
@@ -69,13 +65,16 @@ class Strategies:
     
     # Zero intellengence plus strategy
     def ZIP(self,GreedyLevel): # GreedyLevel from 0 to 1000 
-
-        # Get 4 parameters
-        Current_Price = functions().current_price() # pounds
-        Trend_Sign = functions().price_trend() # +1 or -1
-        Quant_Ratio = functions().quant_ratio() # first element for buyer, second for seller
-        Trade_Situation = functions().trade_situation(self.ID, 3) # +1 or -1
-        
+        print('[Debug] Called ZIP strategy')
+        try:
+            # Get 4 parameters
+            Current_Price = functions().current_price() # pounds
+            Trend_Sign = functions().price_trend() # +1 or -1
+            Quant_Ratio = functions().quant_ratio() # first element for buyer, second for seller
+            Trade_Situation = functions().trade_situation(self.ID, 3) # +1 or -1
+        except Exception as error:
+            # handle the exception
+            print("An exception occurred:", error)
         # Classify thhe agent's side and mix 4 parameters
         if self.Side == "B":
             # Convert parameters into factors
@@ -95,7 +94,7 @@ class Strategies:
             p = max(p,self.Min_ask_price)
             q = GreedyLevel * Quant_Ratio[0]
             q = max(q,self.Min_ask_quantity)
-        
+        print('[Debug] ', p ,q)
         return(self.Side,p,q)
     
     def penetration(self):
@@ -133,8 +132,7 @@ class Strategies:
         return ('S', proposed_price, quantity)
     
     def decide_order_trend_strategy(self):
-        n = 10 # Past 10 trades
-        trend = functions().analyze_trend(n)
+        trend = functions().analyze_trend()
         # Classify the agent's side
         if self.Side == "B":
             quantity = functions.buy_quantity(self.Bid_q_mean, self.Bid_q_std_dev)

@@ -1,0 +1,14 @@
+{
+    "MySQL": {
+    "type": "mysql",
+    "user": "root",
+    "password": "Izero0324@TW", 
+    "host": "localhost",
+    "database": "ABM_EXCHANGE",
+    "raise_on_warnings": true
+    },
+    "sqlite": {
+        "type": "sqlite",
+        "db_file": "example.db"
+    }
+}

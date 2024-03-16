@@ -1,7 +1,9 @@
 import numpy as np
 from tools.api_interface import *
 
-
+# Initial Setting
+# price 13.5
+# quant 3
 
 # A set of functions used in strategies
 class functions:
@@ -22,9 +24,12 @@ class functions:
         # One_hist_price = price_history(n) -> [ n days [min_deal_price,max_deal_price)] ]
         # Sample output
         #One_hist_price = [[10.25,20.58]]
-        One_hist_price = get_price_history(1)
-        # Collect yesterdayexecution price
-        return(np.mean(One_hist_price [0]))
+        try:
+            One_hist_price = get_price_history(1)
+            # Collect yesterdayexecution price
+            return(np.mean(One_hist_price [0]))
+        except:
+            return 13.5
         
     # 2. the most recent price trend
     def price_trend(self):
@@ -32,10 +37,13 @@ class functions:
         # The n days hitorical price intervals
         # Two_hist_price = price_history(n) -> [ n days [min_deal_price,max_deal_price)] ]
         # Sample output
-        Two_hist_price = get_price_history(2)
-        # Identify if the most recent price trend is positive or negative
-        S = np.mean(Two_hist_price [1]) - np.mean(Two_hist_price [0])
-        return(self.sign_func(S))
+        try:
+            Two_hist_price = get_price_history(2)
+            # Identify if the most recent price trend is positive or negative
+            S = np.mean(Two_hist_price [1]) - np.mean(Two_hist_price [0])
+            return(self.sign_func(S))
+        except:
+            return 1
         
     # 3. Quantities of buy and sell orders and the ratio between them
     def quant_ratio(self):
@@ -53,9 +61,13 @@ class functions:
                 buy_num += limit_order_book[i][1]
             else:
                 sell_num += limit_order_book[i][1]
-        # 3. ratio of quantities between buy and sell orders
-        BuySell_Ratio = buy_num / sell_num         # >1 is a good signal for seller
-        SellBuy_Ratio = 1 / BuySell_Ratio          # >1 is a good signnal for buyer  
+        try:
+            # 3. ratio of quantities between buy and sell orders
+            BuySell_Ratio = buy_num / sell_num         # >1 is a good signal for seller
+            SellBuy_Ratio = 1 / BuySell_Ratio          # >1 is a good signnal for buyer  
+        except:
+            BuySell_Ratio= 1
+            SellBuy_Ratio= 1
         return([buy_num, sell_num, SellBuy_Ratio, BuySell_Ratio])
     
     # 4. trade situation (do or do not exeucute for more than 3 days)
@@ -65,25 +77,28 @@ class functions:
         #                                                 trading_volumne, total_volumne) ]
         # Sample output                                              
         #n_execuation = [[1.55, 2, 5],[1.04, 0, 7],[1.1, 3, 0]] # [Price, traded_Q, Total_Q]
-        n_execuation = []
-        for t in range(n):
-            n_execuation_success = get_agent_history('trade', agent_name, t+1)
-            n_execuation_total = get_agent_history('order', agent_name, t+1)
-            traded = n_execuation_success[0][3:]
-            total = float(n_execuation_total[-1][-1])
-            result = traded.append(total)
-            n_execuation.append(result)
-        
-        
-        # Detect if the agent has not executed for more than 3 days
-        # 4. trade situation (do or do not exeucute for more than 3 days)
-        Trade_situation = -1
-        for i in range(len(n_execuation)):
-            if n_execuation[i][1] != 0:
-                Trade_situation = 1
-        return(Trade_situation)
+        try:
+            n_execuation = []
+            for t in range(n):
+                n_execuation_success = get_agent_history('trade', agent_name, t+1)
+                n_execuation_total = get_agent_history('order', agent_name, t+1)
+                traded = n_execuation_success[0][3:]
+                total = float(n_execuation_total[-1][-1])
+                result = traded.append(total)
+                n_execuation.append(result)
+            
+            
+            # Detect if the agent has not executed for more than 3 days
+            # 4. trade situation (do or do not exeucute for more than 3 days)
+            Trade_situation = -1
+            for i in range(len(n_execuation)):
+                if n_execuation[i][1] != 0:
+                    Trade_situation = 1
+            return(Trade_situation)
+        except:
+            return 1
 
-#%% The following was written by Viola:
+# The following was written by Viola:
     
     #Make strategies based on the trend of historical prices
     def analyze_trend(self, n):
@@ -109,7 +124,7 @@ class functions:
         slope, _ = np.polyfit(x, n_day_hist_average_price, 1)
         return slope
     
-#%% The following was written by Jiaqi Xia:
+# The following was written by Jiaqi Xia:
 
     # Decide the market demand level according to the historical data
     def demand_level(self, n):
@@ -133,19 +148,19 @@ class functions:
         return demand_level
 
 
-#%% The following was wriiten by Jasmine:
+# The following was wriiten by Jasmine:
 
 ######### Here's thing need to be defined
     # deal_sign = 0 , if there is no order executed yesterday
     # deal_sign = 1 , if order(s) were executed yesterday
     # Sample output
-    def if_trade_yesterday(agent_name):
+    def if_trade_yesterday():
         '''
         deal_sign = 0 , if there is no order executed yesterday
         deal_sign = 1 , if order(s) were executed yesterday
         Sample output
         '''
-        trades = get_agent_history('trade', agent_name, 1)
+        trades = get_price_history(1)
         if len(trades) == 0:
             return 0 # deal_sign
         else:
@@ -177,8 +192,8 @@ class functions:
 
     
     #Func_2 : buyer_price
-    def buyer_price_willingness_history_f(deal):
-        if deal == 0:
+    def buyer_price_willingness_history_f(self):
+        if self.if_trade_yesterday() == 0:
 
         # Sample output
             limit_order_book = get_order_book_after_pairing(1)
@@ -194,8 +209,8 @@ class functions:
  
     
     #Func_3 : buyer_order_quantity
-    def buyer_order_quantities_f(deal):
-        if  deal == 0:
+    def buyer_order_quantities_f(self):
+        if self.if_trade_yesterday() == 0:
             
         # Sample output
             limit_order_book = get_order_book_after_pairing(1)

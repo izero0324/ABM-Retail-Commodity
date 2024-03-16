@@ -1,24 +1,19 @@
+import json
 import sqlite3
 import mysql.connector
 from mysql.connector import errorcode
 
+def load_sql_config(config_file='tools/sql_config.json'):
+    '''
+    Get sql configs from json
+    '''
+    with open(config_file, 'r') as file:
+        config = json.load(file)
+    return config['MySQL'] #change here for other DBs
+
 class DatabaseConnectionManager:
     def __init__(self):
-        self.config ={
-            'type': 'mysql',
-            'user': 'root',
-            'password': 'Izero0324@TW', 
-            'host': 'localhost',
-            'database': 'ABM_EXCHANGE',
-            'raise_on_warnings': True
-        }
-        '''
-        for sqlite, change the config to 
-        {
-            'type': 'sqlite',
-            'db_file': 'example.db'
-        }
-        '''
+        self.config = load_sql_config()
         self.connection = None
         self.cursor = None
 
