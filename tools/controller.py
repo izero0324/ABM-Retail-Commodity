@@ -23,7 +23,7 @@ def state_now():
             if value == True:
                 return key
         except:
-            raise ValueError("State machine Error")
+            raise ValueError("[Controller] State machine Error")
 
 def next_state():
     try:
@@ -38,17 +38,17 @@ def next_state():
         state_machine[next_index] = True
         return 0
     except:
-        raise IndexError("State Machine Next State failed")
+        raise IndexError("[Controller] State Machine Next State failed")
 
 
 def get_orders(agent_list):
     for agent in agent_list:
-        print("call ", agent, "to start posting order!")
+        print("[Controller] call ", agent, "to start posting order!")
         try:
             agent_choose(agent)
-            print("Get return from agent ", agent,", next agent ready...")
+            print("[Controller] Get return from agent ", agent,", next agent ready...")
         except:
-            print("Agent ", agent, " failed to retrun order")
+            print("[Controller] Agent ", agent, " failed to retrun order")
 
 def controller(agent_list, tick_num, api_connection, exp_name):
     post_clear_order()
