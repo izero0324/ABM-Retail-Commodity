@@ -5,15 +5,12 @@ Error creating/checking table LOB_exp: Table 'LOB_exp' already exists
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 0 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '2662661c-b93c-4931-890b-682d8520b2f2', 'Market': 1, 'Price': 16.31316035550771, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '304d0503-5b5a-438a-816c-776033d77ccf', 'Market': 1, 'Price': 14.195291632242682, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '9cdd36f0-25f2-4c4f-ae36-0ed0ab363074', 'Market': 1, 'Price': 13.733476627025786, 'Quantity': 17, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'bed7e4b1-3d26-422b-b030-3bf8748e5b47', 'Market': 1, 'Price': 14.106954791104304, 'Quantity': 24, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -21,10 +18,9 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [Debug]  14.850000000000001 0
-[LOG] Order posted successfully: {'order_id': 'b36b7b98-38db-4f88-870f-a28d04735264', 'Market': 1, 'Price': 14.850000000000001, 'Quantity': 0, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[LOG] Order posted successfully: {'order_id': '3d670a77-ca15-4337-ade8-3eb6128d648c', 'Market': 1, 'Price': 14.850000000000001, 'Quantity': 0, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -32,24 +28,21 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [Debug]  14.850000000000001 14
-[LOG] Order posted successfully: {'order_id': '93995865-9840-43fd-a22e-24715d9e80f6', 'Market': 1, 'Price': 14.850000000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[LOG] Order posted successfully: {'order_id': 'eae84051-a3d6-474f-9abe-81e2d9aaf948', 'Market': 1, 'Price': 14.850000000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 3, 'Price': 13.733476627025786}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 0, 'Price': 13.733476627025786}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 0, 'Price': 14.106954791104304}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 3, 'Price': 14.106954791104304}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 1 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '51b39f93-ff2a-4bfb-aca1-50f094b18fe9', 'Market': 1, 'Price': 12.467070065269944, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '58c3ee93-4719-452b-ac3b-e38d56cebd0f', 'Market': 1, 'Price': 15.128937246926085, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'a906556c-8881-41b0-b3c1-200485dbff26', 'Market': 1, 'Price': 18.696886859401, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'b2d3837f-39bb-4916-b35b-bf89bdf22e31', 'Market': 1, 'Price': 12.753203558258601, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -60,35 +53,32 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  15.10685 0
-[LOG] Order posted successfully: {'order_id': '2d397987-9c49-4c65-9010-398cfb1fc521', 'Market': 1, 'Price': 15.10685, 'Quantity': 0, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  15.517700000000001 0
+[LOG] Order posted successfully: {'order_id': 'bd368c9a-7bf7-44ee-a0d4-46a2b561a9c8', 'Market': 1, 'Price': 15.517700000000001, 'Quantity': 0, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] LOB get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  15.10685 14
-[LOG] Order posted successfully: {'order_id': 'be169f66-78c9-4628-9f8c-6b5a8b1018c4', 'Market': 1, 'Price': 15.10685, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  15.517700000000001 14
+[LOG] Order posted successfully: {'order_id': '9ce3da96-0f7f-48ee-a457-184d98055b14', 'Market': 1, 'Price': 15.517700000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 0, 'Price': 15.10685}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 0, 'Price': 12.753203558258601}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 3, 'Price': 12.753203558258601}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 2 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '75457797-f8d3-4487-a3ea-79f312592069', 'Market': 1, 'Price': 12.606944714635317, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '4cef39f0-62cd-4627-8197-2fc705599b3c', 'Market': 1, 'Price': 14.281197456122905, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '6b7db1ac-f827-40c7-9b9d-e3d0b6e16c79', 'Market': 1, 'Price': 14.6932498448556, 'Quantity': 22, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'f5a0bfdc-3f71-4f6e-b627-5321d5fb5def', 'Market': 1, 'Price': 9.604941191020295, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -99,39 +89,32 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  13.59612 4.5
-[LOG] Order posted successfully: {'order_id': 'affb1119-1aa2-4290-b523-23908722ac8a', 'Market': 1, 'Price': 13.59612, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  14.02852 4.5
+[LOG] Order posted successfully: {'order_id': 'a283e1db-e093-443e-8abd-1c7a1ec584fe', 'Market': 1, 'Price': 14.02852, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] LOB get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[Debug]  13.59612 14
-[LOG] Order posted successfully: {'order_id': '90a3c1d9-3d35-407a-8177-ed3f56c2c823', 'Market': 1, 'Price': 13.59612, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  14.02852 14
+[LOG] Order posted successfully: {'order_id': '864635cc-bcc3-40eb-92a9-4f86cc8c6ac8', 'Market': 1, 'Price': 14.02852, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 13.59612}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 2, 'Price': 9.604941191020295}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 4, 'Price': 9.604941191020295}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 3 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'd886b5c7-a337-4734-90fe-3ac5f4b8e7a6', 'Market': 1, 'Price': 14.13878444208748, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '1f2ae132-adf2-492c-8987-981d10451dc7', 'Market': 1, 'Price': 17.756577911732276, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '36790771-d298-4a81-a340-6c199049fcd8', 'Market': 1, 'Price': 13.885826694411403, 'Quantity': 24, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '0af59f59-23d1-4f8d-ad4e-a03ce29707c2', 'Market': 1, 'Price': 7.3903189824064475, 'Quantity': 19, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -142,40 +125,32 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  14.955710000000002 4.5
-[LOG] Order posted successfully: {'order_id': '1f03bc3b-7f41-41f9-8a23-7eb1c58a7876', 'Market': 1, 'Price': 14.955710000000002, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  10.565434 4.5
+[LOG] Order posted successfully: {'order_id': 'ab94ea8b-877a-4143-84e2-b8dae4929856', 'Market': 1, 'Price': 10.565434, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] LOB get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[Debug]  14.955710000000002 14
-[LOG] Order posted successfully: {'order_id': 'd97d36ff-7688-446f-995f-bcbe00776d64', 'Market': 1, 'Price': 14.955710000000002, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  10.565434 14
+[LOG] Order posted successfully: {'order_id': '33315680-0c54-4fff-bbc0-30b2fdf28da6', 'Market': 1, 'Price': 10.565434, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 4, 'Price': 13.885826694411403}
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 3, 'Price': 13.885826694411403}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 4, 'Price': 7.3903189824064475}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 4, 'Price': 7.3903189824064475}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 4 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'a8f21e65-8b5e-4532-8d2a-5c02556b0e0c', 'Market': 1, 'Price': 14.047754369238127, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '7ad37336-9801-4540-85b3-3c3fbdd99240', 'Market': 1, 'Price': 13.508989157377723, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '251be12e-0fb3-451d-adf3-a66669f44340', 'Market': 1, 'Price': 15.6787347274297, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'b817053c-78ee-4444-9696-5d6d73b5930d', 'Market': 1, 'Price': 16.659425523923225, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -186,36 +161,32 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  12.49722 4.5
-[LOG] Order posted successfully: {'order_id': 'aa192482-b587-4033-ae23-cc4ae6322b6a', 'Market': 1, 'Price': 12.49722, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  8.129352 4.5
+[LOG] Order posted successfully: {'order_id': 'da170954-3c59-4e27-ac36-6031cedb90f0', 'Market': 1, 'Price': 8.129352, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] LOB get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  12.49722 14
-[LOG] Order posted successfully: {'order_id': '5bfc9280-64b0-4d76-a3f8-a97b258d341b', 'Market': 1, 'Price': 12.49722, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  8.129352 14
+[LOG] Order posted successfully: {'order_id': 'e048cf4b-6d1a-47c3-aca4-88079ad44f81', 'Market': 1, 'Price': 8.129352, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 12.49722}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 12.49722}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 8.129352}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 8.129352}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 5 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '40ebad47-b6d0-4a60-a0a4-8c526080c231', 'Market': 1, 'Price': 12.179440970919313, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '440d827a-d63a-45d0-96e0-835428f64e59', 'Market': 1, 'Price': 14.066516878396603, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '9f7a068a-987c-4568-883e-8acf13e14fc1', 'Market': 1, 'Price': 7.748086014690805, 'Quantity': 24, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'd81ec2aa-ac92-4702-90f0-6932dbbb982f', 'Market': 1, 'Price': 9.506301438752024, 'Quantity': 19, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -226,11 +197,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  13.746920000000001 4.5
-[LOG] Order posted successfully: {'order_id': '9ecad382-1a40-4deb-8686-5dadee43a5ec', 'Market': 1, 'Price': 13.746920000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  7.316415000000001 4.5
+[LOG] Order posted successfully: {'order_id': '5a90af97-ed4a-41ad-bee6-2754fe1275c7', 'Market': 1, 'Price': 7.316415000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -241,25 +211,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  13.746920000000001 14
-[LOG] Order posted successfully: {'order_id': '99d77dec-0af1-448d-a0d1-4f9659ce8df1', 'Market': 1, 'Price': 13.746920000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  7.316415000000001 14
+[LOG] Order posted successfully: {'order_id': '8376fe1e-ad08-4f0d-aa30-5d371c1d75ac', 'Market': 1, 'Price': 7.316415000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 4, 'Price': 7.748086014690805}
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 3, 'Price': 7.748086014690805}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.316415000000001}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.316415000000001}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 6 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '6a2231d3-407a-4dee-aee8-778bf866ad9c', 'Market': 1, 'Price': 13.93044020398445, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '193d5985-12f1-4dc3-b971-52dd0fc0f785', 'Market': 1, 'Price': 14.689276078983747, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '3cddd237-7474-4238-a545-1fcaaf16a04a', 'Market': 1, 'Price': 14.274876591995087, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'e3d54ae2-88cb-4c4e-9487-59e622b44c00', 'Market': 1, 'Price': 19.54438991863235, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -270,36 +237,36 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  8.522899 4.5
-[LOG] Order posted successfully: {'order_id': '490d9c68-174e-46cf-bc19-21a8dc33920c', 'Market': 1, 'Price': 8.522899, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  8.048051000000001 4.5
+[LOG] Order posted successfully: {'order_id': '82451f20-d77a-4d72-bc0d-56906e138ba5', 'Market': 1, 'Price': 8.048051000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] LOB get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  8.522899 14
-[LOG] Order posted successfully: {'order_id': 'c2d0ec5f-cb9e-4093-bb74-76e8cc74f6da', 'Market': 1, 'Price': 8.522899, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[LOG] Hist get successfully!
+[LOG] Hist get successfully!
+[LOG] Hist get successfully!
+[LOG] Hist get successfully!
+[Debug]  8.048051000000001 14
+[LOG] Order posted successfully: {'order_id': 'ea0e4512-be8e-4d60-9625-8e36df49eb65', 'Market': 1, 'Price': 8.048051000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 8.522899}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 8.522899}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 8.048051000000001}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 8.048051000000001}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 7 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '8a518a38-2c92-42b3-bf10-3ac4e3924a25', 'Market': 1, 'Price': 10.846467837446792, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'e366ce19-04c8-4a0b-971e-5b9b7630038c', 'Market': 1, 'Price': 13.903749476555207, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '54dca0f8-bafe-48f6-b0d5-9a691665f8e7', 'Market': 1, 'Price': 11.465726325395657, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '808d2baf-6d65-4482-b422-7cda307b038b', 'Market': 1, 'Price': 14.040317379055299, 'Quantity': 18, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -310,11 +277,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.67061 4.5
-[LOG] Order posted successfully: {'order_id': '28f63e77-0f68-4d7c-a06d-a29b1e44df8a', 'Market': 1, 'Price': 7.67061, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  7.243245 4.5
+[LOG] Order posted successfully: {'order_id': '06f18da2-ac5a-469a-a55f-d6f628d97308', 'Market': 1, 'Price': 7.243245, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -325,25 +291,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.67061 14
-[LOG] Order posted successfully: {'order_id': '99e9e768-1d2f-4c2b-a5cd-dc550df559ce', 'Market': 1, 'Price': 7.67061, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  7.243245 14
+[LOG] Order posted successfully: {'order_id': 'ef7685c3-23bf-4f5f-912b-b15f25589ad7', 'Market': 1, 'Price': 7.243245, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.67061}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.67061}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.243245}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.243245}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 8 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'a8f31af8-304e-43e4-9b7e-acccec187655', 'Market': 1, 'Price': 13.84008483345928, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'f480471e-afa2-49ef-8d7b-9de7b2deb5b5', 'Market': 1, 'Price': 11.444433821162733, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'b3558001-1d9a-499d-b611-9eb49e2f045b', 'Market': 1, 'Price': 12.113426683112145, 'Quantity': 18, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '072a4a31-f937-44e1-84ba-39d17341e7ab', 'Market': 1, 'Price': 17.575537759813006, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -354,11 +317,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  8.437671 4.5
-[LOG] Order posted successfully: {'order_id': 'e589a242-480a-42f8-8b3a-a41232a7402e', 'Market': 1, 'Price': 8.437671, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  7.967575 4.5
+[LOG] Order posted successfully: {'order_id': '35b271ad-70cc-44f2-94da-ffe67b989755', 'Market': 1, 'Price': 7.967575, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -369,25 +331,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  8.437671 14
-[LOG] Order posted successfully: {'order_id': '5e95bf76-3092-4c01-a36f-d8d699982862', 'Market': 1, 'Price': 8.437671, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  7.967575 14
+[LOG] Order posted successfully: {'order_id': '1ab589e6-ee81-4de4-bd5a-410d8fb14ff8', 'Market': 1, 'Price': 7.967575, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 8.437671}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 8.437671}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.967575}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.967575}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 9 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'f351de83-f434-4186-ad6c-8c6334d9cd73', 'Market': 1, 'Price': 11.974449252764906, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'bfe22d1e-b05e-4784-b42c-0319ca2f341e', 'Market': 1, 'Price': 12.208439511659208, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '9fd5d5fe-5bd8-4cbb-a4df-cb8bc4fd219c', 'Market': 1, 'Price': 10.963550347211413, 'Quantity': 22, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '6a95356c-2df5-4ffb-a350-bd86521c5094', 'Market': 1, 'Price': 13.206303238821716, 'Quantity': 18, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -398,11 +357,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.593903000000001 4.5
-[LOG] Order posted successfully: {'order_id': 'e85e9ba6-5abf-47b8-9e3e-925163c5865a', 'Market': 1, 'Price': 7.593903000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  7.170822 4.5
+[LOG] Order posted successfully: {'order_id': '304b14ef-9b70-4b4b-8d65-7ca34caabb3f', 'Market': 1, 'Price': 7.170822, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -413,25 +371,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.593903000000001 14
-[LOG] Order posted successfully: {'order_id': 'f769117d-6f3a-49a1-a77c-03c547105360', 'Market': 1, 'Price': 7.593903000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  7.170822 14
+[LOG] Order posted successfully: {'order_id': '7800c856-ee65-4cf4-a1e0-8e4266a2b2b3', 'Market': 1, 'Price': 7.170822, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 7.593903000000001}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.593903000000001}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.170822}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.170822}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 10 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '8ad9c797-1a31-453b-9808-e542b74fd258', 'Market': 1, 'Price': 14.142967155318852, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '2a6bff15-d2d1-44d9-9c04-bf84fe99bbef', 'Market': 1, 'Price': 14.693301132762777, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '44da8ed0-6ad0-4799-9e04-94f09e2bd2c8', 'Market': 1, 'Price': 14.703216248497727, 'Quantity': 23, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '132decdd-f2a3-4ea4-acae-4d5f6149a1ee', 'Market': 1, 'Price': 11.10196241209284, 'Quantity': 17, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -442,11 +397,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  8.35329 4.5
-[LOG] Order posted successfully: {'order_id': '60f7e4b9-032f-47ff-8d7d-f0f375802908', 'Market': 1, 'Price': 8.35329, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  7.887902 4.5
+[LOG] Order posted successfully: {'order_id': '27e31bcf-8350-4457-a3e6-2063a8d3172c', 'Market': 1, 'Price': 7.887902, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -457,25 +411,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  8.35329 14
-[LOG] Order posted successfully: {'order_id': 'cb3c26b2-efee-40dd-8519-23a059ce10cd', 'Market': 1, 'Price': 8.35329, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  7.887902 14
+[LOG] Order posted successfully: {'order_id': '128aefa2-920d-486c-8e2d-4743b0c63116', 'Market': 1, 'Price': 7.887902, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 8.35329}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 8.35329}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 7.887902}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.887902}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 11 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '3e17d047-839f-43ff-b3e5-c57f1c16bfda', 'Market': 1, 'Price': 12.984285227475306, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'b1e95ca8-5e4d-496f-af60-416e33f1210e', 'Market': 1, 'Price': 12.97327869519114, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '841342f0-48c8-441d-9611-211328233545', 'Market': 1, 'Price': 16.615244823305794, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'be5faf22-1847-42e7-be1a-74509e88dc79', 'Market': 1, 'Price': 16.35314777683781, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -486,11 +437,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.517961 4.5
-[LOG] Order posted successfully: {'order_id': '0e9f4f4f-8b16-4d67-8b7f-1dbd04614453', 'Market': 1, 'Price': 7.517961, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  7.0991100000000005 4.5
+[LOG] Order posted successfully: {'order_id': 'e5d7a853-f17e-4d0e-be89-0806053b8e64', 'Market': 1, 'Price': 7.0991100000000005, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -501,25 +451,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.517961 14
-[LOG] Order posted successfully: {'order_id': 'f287f2f6-1e97-48f1-85bb-d3456b854365', 'Market': 1, 'Price': 7.517961, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  7.0991100000000005 14
+[LOG] Order posted successfully: {'order_id': 'ef7b8373-4a9f-4b9f-a522-faa2aad4bf56', 'Market': 1, 'Price': 7.0991100000000005, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.517961}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.517961}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.0991100000000005}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.0991100000000005}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 12 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '13de9d36-e62e-4f88-8cf6-08e4433bbf8d', 'Market': 1, 'Price': 12.830669223490446, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '48140141-9455-4bce-8db1-82f71cfece1d', 'Market': 1, 'Price': 11.68943905517453, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'bcde40ff-0054-40d5-b311-819d62f06c38', 'Market': 1, 'Price': 14.007670474565806, 'Quantity': 17, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '66d5aaec-f927-45c1-98ef-50e58f36cf5d', 'Market': 1, 'Price': 5.951057159035834, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -530,11 +477,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  8.269756000000001 4.5
-[LOG] Order posted successfully: {'order_id': '7abf101a-ee1c-4446-8947-4cdea4b5046b', 'Market': 1, 'Price': 8.269756000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  7.809021 4.5
+[LOG] Order posted successfully: {'order_id': 'c9542b72-e6f2-4752-b615-dc9066127afb', 'Market': 1, 'Price': 7.809021, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -545,25 +491,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  8.269756000000001 14
-[LOG] Order posted successfully: {'order_id': 'ec56e405-e8a0-4d81-8f37-d129d1cbb7e7', 'Market': 1, 'Price': 8.269756000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  7.809021 14
+[LOG] Order posted successfully: {'order_id': '280c5538-d8fe-4c20-b07d-b434632474c2', 'Market': 1, 'Price': 7.809021, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 8.269756000000001}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 8.269756000000001}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 3, 'Price': 5.951057159035834}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 4, 'Price': 5.951057159035834}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 13 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '32ec4ef7-60d6-45ba-81c7-c5a9c87c9856', 'Market': 1, 'Price': 14.730664065985014, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '31b1cd1c-c2c4-41f1-9007-649899968e80', 'Market': 1, 'Price': 12.935255874593055, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'b01a600e-911a-4058-af02-0d5f7033c0b7', 'Market': 1, 'Price': 10.495665989107922, 'Quantity': 18, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '1f287a6a-daf8-42bd-8e09-acc0be20cb63', 'Market': 1, 'Price': 11.538909529622424, 'Quantity': 19, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -574,40 +517,32 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.442784 4.5
-[LOG] Order posted successfully: {'order_id': '3fe5177f-2dbd-4e9a-835d-9a2a08f21c03', 'Market': 1, 'Price': 7.442784, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  6.546166 4.5
+[LOG] Order posted successfully: {'order_id': '0992d025-b943-48e8-b980-4315598ab554', 'Market': 1, 'Price': 6.546166, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] LOB get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[Debug]  7.442784 14
-[LOG] Order posted successfully: {'order_id': 'f0014a2b-1692-440d-a5a1-489ded649b83', 'Market': 1, 'Price': 7.442784, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  6.546166 14
+[LOG] Order posted successfully: {'order_id': '2c7e3b47-b2c1-4f0f-a681-7671d882ec18', 'Market': 1, 'Price': 6.546166, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.442784}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.442784}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.546166}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.546166}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 14 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '71b9484a-3656-444d-a5a3-bfe757ff0bff', 'Market': 1, 'Price': 13.805007645666272, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'a9ff183e-f5e9-4614-881a-6bb9ec93d2da', 'Market': 1, 'Price': 13.956833835008636, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '86c1ff06-8cb1-435f-9dc9-c07ca8393475', 'Market': 1, 'Price': 17.458645087724364, 'Quantity': 23, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '734b81fc-f0de-4e78-b5ce-c73466508387', 'Market': 1, 'Price': 12.558208761787677, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -618,11 +553,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  8.187058 4.5
-[LOG] Order posted successfully: {'order_id': '8ec0ad9a-8560-44f9-8b90-0870d0c1aef0', 'Market': 1, 'Price': 8.187058, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.891553 4.5
+[LOG] Order posted successfully: {'order_id': '34524e81-3ef3-4d28-96c6-e50e144749a5', 'Market': 1, 'Price': 5.891553, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -633,25 +567,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  8.187058 14
-[LOG] Order posted successfully: {'order_id': 'cf014841-7d8c-4a57-ba2c-c5b8b0016421', 'Market': 1, 'Price': 8.187058, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.891553 14
+[LOG] Order posted successfully: {'order_id': 'a643415e-7497-4a13-8266-2b335a877898', 'Market': 1, 'Price': 5.891553, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 8.187058}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 8.187058}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 5.891553}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.891553}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 15 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '04a2c906-98f8-49e3-acd9-ec451376dd49', 'Market': 1, 'Price': 10.69197210445821, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '57dfe65d-c97c-4321-b2c4-3ed5bee08f84', 'Market': 1, 'Price': 14.889105910887519, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '804418ad-e4bb-464b-b456-adb9b818b005', 'Market': 1, 'Price': 13.01602192349914, 'Quantity': 18, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'a470646f-09c6-4f48-baee-deaf46583039', 'Market': 1, 'Price': 14.327499056756404, 'Quantity': 23, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -662,11 +593,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.368354000000001 4.5
-[LOG] Order posted successfully: {'order_id': '904e4fbc-83be-47b7-88fa-8448700d4afd', 'Market': 1, 'Price': 7.368354000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  6.480705 4.5
+[LOG] Order posted successfully: {'order_id': '32d64305-21c4-41b9-8be0-2a45bae61eec', 'Market': 1, 'Price': 6.480705, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -677,25 +607,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.368354000000001 14
-[LOG] Order posted successfully: {'order_id': '407e16fb-faa3-4db9-bf61-f8ed2e5206f7', 'Market': 1, 'Price': 7.368354000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  6.480705 14
+[LOG] Order posted successfully: {'order_id': 'd66c06b4-2f26-47d5-a559-650ffa84d23f', 'Market': 1, 'Price': 6.480705, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 7.368354000000001}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.368354000000001}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 6.480705}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.480705}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 16 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'efc9f4b9-9cb6-4227-aae3-f20bf7b67cdb', 'Market': 1, 'Price': 13.723871641292732, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '270d1a8a-8c84-46b1-8371-2a4855680657', 'Market': 1, 'Price': 12.859153126340013, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '728e5bda-0409-4a5e-80cb-075ab76ad583', 'Market': 1, 'Price': 13.668239204346465, 'Quantity': 22, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'd7e20fdd-0a72-4e97-942f-fbd09c1ac359', 'Market': 1, 'Price': 16.60995090575253, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -706,11 +633,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  8.105185 4.5
-[LOG] Order posted successfully: {'order_id': '8db8a08b-5132-48c1-9ef3-fc408f07d315', 'Market': 1, 'Price': 8.105185, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.83263 4.5
+[LOG] Order posted successfully: {'order_id': '8c441671-520d-4409-9957-eb9b7adf419a', 'Market': 1, 'Price': 5.83263, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -721,25 +647,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  8.105185 14
-[LOG] Order posted successfully: {'order_id': 'f5da178a-fb54-4425-b8c8-dfc6c607bb7a', 'Market': 1, 'Price': 8.105185, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.83263 14
+[LOG] Order posted successfully: {'order_id': '74c643bf-d506-4cdf-a7e1-e378a2cbdc35', 'Market': 1, 'Price': 5.83263, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 8.105185}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 8.105185}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 5.83263}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.83263}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 17 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'caafb7eb-004c-4ead-9761-8bcd61f580e1', 'Market': 1, 'Price': 12.47535169716648, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '2fbd58b1-172f-431c-888a-345ccf1365da', 'Market': 1, 'Price': 12.464403075392628, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'abb004e2-f57b-4756-9dbb-aa18f57387c2', 'Market': 1, 'Price': 13.082606987501633, 'Quantity': 16, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '7763679f-4fd9-41e5-852f-389ea8a61abb', 'Market': 1, 'Price': 14.83452989404206, 'Quantity': 22, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -750,11 +673,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.294662000000001 4.5
-[LOG] Order posted successfully: {'order_id': 'afb6d4f8-2282-4682-b8b0-974e4090f87b', 'Market': 1, 'Price': 7.294662000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  6.4158930000000005 4.5
+[LOG] Order posted successfully: {'order_id': 'b94b274e-3750-4bd5-a3d0-5f4762cc12cb', 'Market': 1, 'Price': 6.4158930000000005, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -765,25 +687,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.294662000000001 14
-[LOG] Order posted successfully: {'order_id': '5b145a3f-9963-4142-a051-c1d41f81869b', 'Market': 1, 'Price': 7.294662000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  6.4158930000000005 14
+[LOG] Order posted successfully: {'order_id': '59ed9eaa-ec95-4441-9ee6-a16f8eb01c9d', 'Market': 1, 'Price': 6.4158930000000005, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.294662000000001}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.294662000000001}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 6.4158930000000005}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.4158930000000005}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 18 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '93710605-5e4a-4155-b8f4-4aa0e9359172', 'Market': 1, 'Price': 14.557420732392794, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'f010e221-d79e-4fa8-8d6b-7d273697a54a', 'Market': 1, 'Price': 13.208979332991888, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'b12e3184-bec7-4dea-be90-a691043e6412', 'Market': 1, 'Price': 12.962031527294208, 'Quantity': 16, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '13960fea-2f2c-4ada-9b5a-3e809e8f17ed', 'Market': 1, 'Price': 10.353200214491212, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -794,11 +713,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  8.024126 4.5
-[LOG] Order posted successfully: {'order_id': 'd21bc9de-8bc7-4894-9125-bc3dabb533e4', 'Market': 1, 'Price': 8.024126, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.774301 4.5
+[LOG] Order posted successfully: {'order_id': '5ca43123-37e4-4e5e-ba77-edb241cea664', 'Market': 1, 'Price': 5.774301, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -809,25 +727,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  8.024126 14
-[LOG] Order posted successfully: {'order_id': 'b181e92a-8065-4f0b-8e46-f898d988e898', 'Market': 1, 'Price': 8.024126, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.774301 14
+[LOG] Order posted successfully: {'order_id': '73f673c1-05dc-4adb-a565-deaa18a283f9', 'Market': 1, 'Price': 5.774301, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 8.024126}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 8.024126}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 5.774301}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.774301}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 19 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'ba3ffaf8-e3d7-4c06-8acf-0fc02df40afe', 'Market': 1, 'Price': 13.060096360279182, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '0544c280-94e0-483b-9dfc-1b7816df49d3', 'Market': 1, 'Price': 14.111783164973978, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '72c2456e-1112-4515-bd39-8158616abd28', 'Market': 1, 'Price': 15.975117056391392, 'Quantity': 22, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '5b9068a1-47a3-4631-8272-abd6334561d3', 'Market': 1, 'Price': 14.548731450272635, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -838,11 +753,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.221717 4.5
-[LOG] Order posted successfully: {'order_id': 'ef218dce-49a5-4323-a25a-9c74b10f5628', 'Market': 1, 'Price': 7.221717, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  6.351730000000001 4.5
+[LOG] Order posted successfully: {'order_id': '7ebd868c-816b-4259-92fd-908440ca9f28', 'Market': 1, 'Price': 6.351730000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -853,25 +767,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.221717 14
-[LOG] Order posted successfully: {'order_id': '2794df97-55f2-465f-9ee6-2e645352e6e7', 'Market': 1, 'Price': 7.221717, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  6.351730000000001 14
+[LOG] Order posted successfully: {'order_id': '1dc2e281-602b-4a40-80dc-87c6986c7ab0', 'Market': 1, 'Price': 6.351730000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.221717}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.221717}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 6.351730000000001}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.351730000000001}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 20 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '2efe14a9-28aa-4ea6-a5be-9633158903a8', 'Market': 1, 'Price': 13.812340751579574, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'd992ed02-ed3a-4c75-99dc-b0b9ab8ed2b4', 'Market': 1, 'Price': 12.094029540340014, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '2803e15e-4c5e-49d6-8a13-2e30b3996dbd', 'Market': 1, 'Price': 14.055828218220187, 'Quantity': 18, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '02342a83-6413-412c-949f-cb3dd83528ad', 'Market': 1, 'Price': 16.07993124960201, 'Quantity': 22, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -882,11 +793,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.943892000000001 4.5
-[LOG] Order posted successfully: {'order_id': '6edcb5e3-2b72-4442-b541-d4a97de05253', 'Market': 1, 'Price': 7.943892000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.716557 4.5
+[LOG] Order posted successfully: {'order_id': 'e53f740d-9120-43cf-bf7e-c500d53647d6', 'Market': 1, 'Price': 5.716557, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -897,25 +807,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.943892000000001 14
-[LOG] Order posted successfully: {'order_id': 'fea3b394-b886-4161-8630-f8bb9e954f24', 'Market': 1, 'Price': 7.943892000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.716557 14
+[LOG] Order posted successfully: {'order_id': '0470eb42-7957-4d60-9847-d2836886cd60', 'Market': 1, 'Price': 5.716557, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 7.943892000000001}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.943892000000001}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 5.716557}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.716557}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 21 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '9fa76f4f-6a66-4dd2-ba62-8a626f160a56', 'Market': 1, 'Price': 12.93482716136957, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'c0517f8c-3c61-44d6-815c-f9de5f677fb0', 'Market': 1, 'Price': 14.908445971047525, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '7a8a64ee-9c1b-4589-91ad-de32f3b8ee6c', 'Market': 1, 'Price': 10.441834414989026, 'Quantity': 24, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '90998ad7-e9de-4388-a420-fa64c7fd403b', 'Market': 1, 'Price': 17.671330133627094, 'Quantity': 19, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -926,11 +833,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.149501 4.5
-[LOG] Order posted successfully: {'order_id': '79c1bd9f-14f9-4d64-9615-d7469f7917fe', 'Market': 1, 'Price': 7.149501, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  6.288216000000001 4.5
+[LOG] Order posted successfully: {'order_id': '121eef3d-1a6f-4148-bc40-f41835e4a2e6', 'Market': 1, 'Price': 6.288216000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -941,25 +847,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.149501 14
-[LOG] Order posted successfully: {'order_id': 'bc5bbabe-9486-4acf-a16b-7f3bf253420a', 'Market': 1, 'Price': 7.149501, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  6.288216000000001 14
+[LOG] Order posted successfully: {'order_id': 'afa60624-159b-403b-81dd-930026d6573c', 'Market': 1, 'Price': 6.288216000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.149501}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.149501}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 6.288216000000001}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.288216000000001}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 22 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'd6df4ed2-82e4-4ec0-b9c2-94539f5f0f48', 'Market': 1, 'Price': 12.321736599799817, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'f6999ce3-a210-4f68-8109-9621a11d6648', 'Market': 1, 'Price': 13.360561741205352, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'd70de68f-22ab-47b0-a6cf-3cd52015e1f7', 'Market': 1, 'Price': 10.363237322814134, 'Quantity': 23, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'c01a7218-79ae-4cbc-b258-ed94c4f993d3', 'Market': 1, 'Price': 13.913296718817628, 'Quantity': 18, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -970,11 +873,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.864450000000001 4.5
-[LOG] Order posted successfully: {'order_id': '544a3e66-cc91-4c79-9fb9-35710ad8b82d', 'Market': 1, 'Price': 7.864450000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.659398 4.5
+[LOG] Order posted successfully: {'order_id': '19c5fc57-c8af-4eb1-aa47-8955572ddba9', 'Market': 1, 'Price': 5.659398, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -985,25 +887,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.864450000000001 14
-[LOG] Order posted successfully: {'order_id': 'eb5158ce-3273-42d9-9777-6a4b63c730c1', 'Market': 1, 'Price': 7.864450000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.659398 14
+[LOG] Order posted successfully: {'order_id': '2e7c9631-7579-4742-af57-208ba2f67e75', 'Market': 1, 'Price': 5.659398, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 7.864450000000001}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.864450000000001}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 5.659398}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.659398}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 23 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '3879da78-0003-48d8-a783-a7d7ae86aa15', 'Market': 1, 'Price': 15.328974114998879, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '7cc56144-0c49-4975-8ba1-39dd0a77f6a0', 'Market': 1, 'Price': 13.55075565046893, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'e9a6a202-7de0-42eb-a579-729969667caf', 'Market': 1, 'Price': 11.289596300242646, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '8dcce6b1-c780-4ba9-a0bb-4011d9fa8a74', 'Market': 1, 'Price': 12.752662295611312, 'Quantity': 19, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1014,11 +913,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.078005 4.5
-[LOG] Order posted successfully: {'order_id': '5aeaa1ae-8987-41eb-9869-85eeb5993dae', 'Market': 1, 'Price': 7.078005, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  6.22534 4.5
+[LOG] Order posted successfully: {'order_id': '4032693b-159c-48c4-9c68-c85a4f33d384', 'Market': 1, 'Price': 6.22534, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1029,25 +927,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.078005 14
-[LOG] Order posted successfully: {'order_id': 'fa8fc6bc-6c89-4802-8ac0-b3249d258815', 'Market': 1, 'Price': 7.078005, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  6.22534 14
+[LOG] Order posted successfully: {'order_id': '61f0a1c8-6e5e-4265-9eb9-71d5e163313e', 'Market': 1, 'Price': 6.22534, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.078005}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.078005}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.22534}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.22534}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 24 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'aa29e37e-7a34-4fb6-8f4a-8dedb72e5a58', 'Market': 1, 'Price': 11.490833399583538, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '5072f0ea-e986-427a-9021-0873a70272e5', 'Market': 1, 'Price': 14.167520857627174, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'e497eee2-c722-4d07-a9f5-57f018dc50cd', 'Market': 1, 'Price': 10.207216060494515, 'Quantity': 19, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '11f76602-90b6-48de-abb5-a6e6a7c622e9', 'Market': 1, 'Price': 12.662953933808158, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1058,11 +953,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.785800000000001 4.5
-[LOG] Order posted successfully: {'order_id': '387d1287-30a1-40da-8e3c-b4c002c297fb', 'Market': 1, 'Price': 7.785800000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.602806 4.5
+[LOG] Order posted successfully: {'order_id': '915a5f09-0911-4a23-a741-53a9f1daa44f', 'Market': 1, 'Price': 5.602806, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1073,25 +967,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.785800000000001 14
-[LOG] Order posted successfully: {'order_id': '746f849f-78a0-4b73-96a0-6254a7d78ff0', 'Market': 1, 'Price': 7.785800000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.602806 14
+[LOG] Order posted successfully: {'order_id': 'c1da8488-c417-4e1e-a71c-c8d6a401a56c', 'Market': 1, 'Price': 5.602806, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.785800000000001}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.785800000000001}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.602806}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.602806}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 25 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'fd4c23c7-2a51-44c7-9dda-7898194db598', 'Market': 1, 'Price': 12.489024228285954, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '942381f1-9920-498c-a168-47dd346c35ff', 'Market': 1, 'Price': 10.266948190059916, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'b44a18c8-afa0-4cbe-8988-724a45c1048d', 'Market': 1, 'Price': 16.851667095930413, 'Quantity': 19, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'eee1a17b-5433-495c-9740-940e6855708c', 'Market': 1, 'Price': 11.277084281761162, 'Quantity': 19, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1102,11 +993,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.00722 4.5
-[LOG] Order posted successfully: {'order_id': '6d0f860a-41ce-43e1-ac80-826a4d5d606c', 'Market': 1, 'Price': 7.00722, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  6.1630910000000005 4.5
+[LOG] Order posted successfully: {'order_id': '384436ce-03f5-4915-8980-89abce189207', 'Market': 1, 'Price': 6.1630910000000005, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1117,25 +1007,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.00722 14
-[LOG] Order posted successfully: {'order_id': 'f0cf71a5-85a6-4567-9ab0-f57cf5ad1ab9', 'Market': 1, 'Price': 7.00722, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  6.1630910000000005 14
+[LOG] Order posted successfully: {'order_id': 'c971a0ed-79a4-4629-9f71-db8f476d132d', 'Market': 1, 'Price': 6.1630910000000005, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.00722}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.00722}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 6.1630910000000005}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.1630910000000005}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 26 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '9144d141-4fd7-41c6-ac6d-1b519e5c4c57', 'Market': 1, 'Price': 12.154913745546263, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'e47a7056-3b28-4015-8fc2-c7b7840591d2', 'Market': 1, 'Price': 14.904771264792728, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'a02c0ac2-4448-4376-a7de-f148c536ad08', 'Market': 1, 'Price': 16.91149053266321, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'd3cb2fd0-7d65-4dc0-a542-b2eb178b4e37', 'Market': 1, 'Price': 13.358658091624577, 'Quantity': 17, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1146,11 +1033,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.707942000000001 4.5
-[LOG] Order posted successfully: {'order_id': 'b80bc5d9-0196-4787-b65d-6d51d0ce4954', 'Market': 1, 'Price': 7.707942000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.546781 4.5
+[LOG] Order posted successfully: {'order_id': 'bc88e744-57d4-405f-8a42-80aede425110', 'Market': 1, 'Price': 5.546781, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1161,25 +1047,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.707942000000001 14
-[LOG] Order posted successfully: {'order_id': '8eda1a78-3375-46c9-bc46-f5c28342de81', 'Market': 1, 'Price': 7.707942000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.546781 14
+[LOG] Order posted successfully: {'order_id': 'f2c32006-2526-42eb-8d65-b22c81c13edd', 'Market': 1, 'Price': 5.546781, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.707942000000001}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.707942000000001}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 5.546781}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.546781}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 27 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '5e79ab9f-a241-4b0b-a9b4-bb78b2f0d110', 'Market': 1, 'Price': 12.119755032516561, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '45366919-aa4c-40ba-bfea-ad3bc93c39a0', 'Market': 1, 'Price': 12.767505498159883, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '2c8debf0-ca71-48d6-a11b-a49828a6a69d', 'Market': 1, 'Price': 14.397698131992716, 'Quantity': 24, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '44e543c4-415f-4d17-a2cf-1f73ceaced53', 'Market': 1, 'Price': 16.817803147795548, 'Quantity': 17, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1190,11 +1073,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.937146 4.5
-[LOG] Order posted successfully: {'order_id': '68f9e344-638e-4641-8066-5b92a627de7c', 'Market': 1, 'Price': 6.937146, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  6.101458000000001 4.5
+[LOG] Order posted successfully: {'order_id': '5a0ac1d6-bdf5-4746-af42-ba3abe92a783', 'Market': 1, 'Price': 6.101458000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1205,25 +1087,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.937146 14
-[LOG] Order posted successfully: {'order_id': '23668722-bb80-417d-b927-a7de82e86242', 'Market': 1, 'Price': 6.937146, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  6.101458000000001 14
+[LOG] Order posted successfully: {'order_id': '12d22874-aff0-48c3-91f4-2082a436057f', 'Market': 1, 'Price': 6.101458000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 6.937146}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.937146}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 6.101458000000001}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.101458000000001}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 28 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'a80fcc38-594c-421d-8976-b6dc3bf71e1a', 'Market': 1, 'Price': 13.870906628741265, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '7b728e1d-2c6c-4cd0-9b42-bef5a57bd686', 'Market': 1, 'Price': 13.206686087526027, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '14f4412e-e8c1-4695-b7d7-c2de9806a86f', 'Market': 1, 'Price': 11.556249372099007, 'Quantity': 22, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'fb31378a-2252-4958-85e1-1cff87733949', 'Market': 1, 'Price': 12.923872884232981, 'Quantity': 18, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1234,11 +1113,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.630865000000001 4.5
-[LOG] Order posted successfully: {'order_id': 'e8eb5958-5b86-4f96-a688-7ecc141191c3', 'Market': 1, 'Price': 7.630865000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.491314 4.5
+[LOG] Order posted successfully: {'order_id': 'e68ba762-f7fb-407b-bae9-6de3d3301e4b', 'Market': 1, 'Price': 5.491314, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1249,25 +1127,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.630865000000001 14
-[LOG] Order posted successfully: {'order_id': 'b3f38a39-64d4-4000-a9ff-7c839f8b8f70', 'Market': 1, 'Price': 7.630865000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.491314 14
+[LOG] Order posted successfully: {'order_id': 'a5ba646c-22de-4fa2-a9e6-0ed20c0cd4ab', 'Market': 1, 'Price': 5.491314, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.630865000000001}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.630865000000001}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 5.491314}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.491314}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 29 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '59e63b77-810e-452f-bc4f-eac3a52dedbd', 'Market': 1, 'Price': 14.477326357730648, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'd7814e75-c42f-46e4-ab39-078d2756375a', 'Market': 1, 'Price': 14.406668072347143, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'b311efc1-4013-4614-9103-71f62af37148', 'Market': 1, 'Price': 14.320442658894109, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'ffb49a3e-1b11-4291-a2f4-e57e6cf2c437', 'Market': 1, 'Price': 15.536892672582608, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1278,11 +1153,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.867783 4.5
-[LOG] Order posted successfully: {'order_id': 'bf380157-db51-4176-8bca-9c3740f89edd', 'Market': 1, 'Price': 6.867783, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  6.040441000000001 4.5
+[LOG] Order posted successfully: {'order_id': 'f5426857-dabb-446f-beee-4628a341245f', 'Market': 1, 'Price': 6.040441000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1293,25 +1167,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.867783 14
-[LOG] Order posted successfully: {'order_id': '5c188dc2-09c9-4270-ad71-feb8039486a0', 'Market': 1, 'Price': 6.867783, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  6.040441000000001 14
+[LOG] Order posted successfully: {'order_id': 'd801e341-408d-4647-8544-963ba148ab6a', 'Market': 1, 'Price': 6.040441000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 6.867783}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.867783}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 6.040441000000001}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.040441000000001}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 30 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '2cd44c59-ce29-4d67-8591-237e5eb67313', 'Market': 1, 'Price': 16.423905309214366, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'b0900bfa-2a78-4742-bb18-e3b71ac05dc7', 'Market': 1, 'Price': 11.14361653013131, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '56ff4c92-ea29-45dc-8299-cec269cb5929', 'Market': 1, 'Price': 15.423429804445956, 'Quantity': 24, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'b4c28030-5eeb-4465-9733-ad3ccd3e65e7', 'Market': 1, 'Price': 15.112272762584658, 'Quantity': 17, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1322,11 +1193,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.554558 4.5
-[LOG] Order posted successfully: {'order_id': 'a16fc412-5029-4db3-9c52-6c7234920390', 'Market': 1, 'Price': 7.554558, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.436396 4.5
+[LOG] Order posted successfully: {'order_id': '64f86231-128a-401e-821b-bc83b959300a', 'Market': 1, 'Price': 5.436396, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1337,25 +1207,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.554558 14
-[LOG] Order posted successfully: {'order_id': '1518b58d-780f-44f1-ac95-3759f9f8f772', 'Market': 1, 'Price': 7.554558, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.436396 14
+[LOG] Order posted successfully: {'order_id': '636a7ba9-91c0-4952-9a4f-2b8610049475', 'Market': 1, 'Price': 5.436396, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.554558}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.554558}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 5.436396}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.436396}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 31 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '2a0ce433-c8bb-4226-aa57-64ebc1d7d3fe', 'Market': 1, 'Price': 15.056384354055316, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '0da02fbb-7d26-4054-82ef-b3b3a368193c', 'Market': 1, 'Price': 11.48578356396322, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'd13f4d4d-5995-4dc8-81b6-edb3aea0b7e7', 'Market': 1, 'Price': 17.207950774753325, 'Quantity': 18, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '30dde152-1a06-4bb7-8034-4c8326035bc4', 'Market': 1, 'Price': 10.906036346672021, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1366,11 +1233,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.799104000000001 4.5
-[LOG] Order posted successfully: {'order_id': 'de140c7b-a05c-48c1-af3c-2c8665c04e43', 'Market': 1, 'Price': 6.799104000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.980040000000001 4.5
+[LOG] Order posted successfully: {'order_id': '9b22ec2c-27e9-4cfc-ae24-93b31334b777', 'Market': 1, 'Price': 5.980040000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1381,25 +1247,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.799104000000001 14
-[LOG] Order posted successfully: {'order_id': 'bdbabad8-11be-4ba3-840d-d59b5504a207', 'Market': 1, 'Price': 6.799104000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.980040000000001 14
+[LOG] Order posted successfully: {'order_id': '2008d0da-ea5a-4bbc-b399-3501e91259b5', 'Market': 1, 'Price': 5.980040000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 6.799104000000001}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.799104000000001}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.980040000000001}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.980040000000001}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 32 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '25285c2f-7ed8-423d-a876-bfd88ff4348a', 'Market': 1, 'Price': 16.423859389898002, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '9d46543e-ee3b-4026-89de-fbf00eb2ea1d', 'Market': 1, 'Price': 13.80893362351971, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'eaa5fee9-fb7a-4959-908c-65871498720f', 'Market': 1, 'Price': 10.997036466190721, 'Quantity': 19, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '4193ac8b-a690-4857-b69c-fa500c9ff315', 'Market': 1, 'Price': 23.09108241030959, 'Quantity': 22, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1410,11 +1273,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.479010000000001 4.5
-[LOG] Order posted successfully: {'order_id': 'decdad83-53af-44a2-8035-8feab6530606', 'Market': 1, 'Price': 7.479010000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.382036 4.5
+[LOG] Order posted successfully: {'order_id': '2fd87396-303c-4a13-9b44-036c83b5bfdc', 'Market': 1, 'Price': 5.382036, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1425,25 +1287,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.479010000000001 14
-[LOG] Order posted successfully: {'order_id': 'dc821a45-57e1-4b16-b418-37c3c4a7858b', 'Market': 1, 'Price': 7.479010000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.382036 14
+[LOG] Order posted successfully: {'order_id': '56306725-55dd-4631-b8d1-faa889b6c0f5', 'Market': 1, 'Price': 5.382036, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.479010000000001}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.479010000000001}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.382036}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.382036}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 33 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '34c2e844-6527-456f-aa64-1ca67d6d955a', 'Market': 1, 'Price': 16.131032873872808, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '292c56c9-8098-40fc-a5d3-6cf32dd7f28b', 'Market': 1, 'Price': 15.512747781307258, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'bfb2797b-8374-4a49-b542-bfce09515ea1', 'Market': 1, 'Price': 12.283218140197421, 'Quantity': 22, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '254799ea-a744-4c49-be79-049281535c57', 'Market': 1, 'Price': 19.847412038173943, 'Quantity': 17, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1454,11 +1313,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.731109 4.5
-[LOG] Order posted successfully: {'order_id': 'a5cdd7b4-f991-48ce-971f-674a496dae82', 'Market': 1, 'Price': 6.731109, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.920244 4.5
+[LOG] Order posted successfully: {'order_id': '0fa610f6-802c-45e3-8b64-2d4b8d4e0cae', 'Market': 1, 'Price': 5.920244, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1469,25 +1327,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.731109 14
-[LOG] Order posted successfully: {'order_id': '88d50a1d-37ee-44b9-a6d0-bd593ded23c9', 'Market': 1, 'Price': 6.731109, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.920244 14
+[LOG] Order posted successfully: {'order_id': '521d4c74-a2b2-4307-995d-b42120597bbb', 'Market': 1, 'Price': 5.920244, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 6.731109}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.731109}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 5.920244}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.920244}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 34 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '90e4c792-c73b-4f1a-b543-055632df0713', 'Market': 1, 'Price': 11.217549754579206, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '2fe4f181-8f2b-4672-abde-4234ecb57101', 'Market': 1, 'Price': 13.727720994797439, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '0632973a-0cda-4d2f-8387-a5342aec9e3e', 'Market': 1, 'Price': 14.340770044522731, 'Quantity': 19, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'e346d8ca-d626-4fae-8455-ba9dd29915bd', 'Market': 1, 'Price': 12.606412487464311, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1498,11 +1353,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.404221000000001 4.5
-[LOG] Order posted successfully: {'order_id': '74c80d50-ab07-4bd0-9ec7-9bbf3fc3f01e', 'Market': 1, 'Price': 7.404221000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.328216 4.5
+[LOG] Order posted successfully: {'order_id': '8d35b9d0-5908-4d1f-ac6e-f52f7ef9978d', 'Market': 1, 'Price': 5.328216, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1513,25 +1367,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.404221000000001 14
-[LOG] Order posted successfully: {'order_id': '81f5e7fc-dc09-499e-a4d5-3b9bceacf80a', 'Market': 1, 'Price': 7.404221000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.328216 14
+[LOG] Order posted successfully: {'order_id': '74547d34-a43d-4dc0-80a5-5ec0003e65b8', 'Market': 1, 'Price': 5.328216, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.404221000000001}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.404221000000001}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 5.328216}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.328216}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 35 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '1bce9fa2-69bd-404b-a61d-be4a48cf429f', 'Market': 1, 'Price': 12.421161893896599, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '177439f1-d367-4d8d-8700-c884b5d32171', 'Market': 1, 'Price': 14.185462851664619, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'dcc9fe5d-45d1-4a6e-9602-a7d56e7a9cb5', 'Market': 1, 'Price': 16.335432472399763, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'b6869481-ffb3-4f26-b571-777640cb0a61', 'Market': 1, 'Price': 11.441064505643507, 'Quantity': 23, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1542,11 +1393,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.663798 4.5
-[LOG] Order posted successfully: {'order_id': 'a5517e2c-7e9f-4636-8767-6eddbec16661', 'Market': 1, 'Price': 6.663798, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.861042 4.5
+[LOG] Order posted successfully: {'order_id': '2265e85b-db09-42fc-897b-91433df97250', 'Market': 1, 'Price': 5.861042, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1557,25 +1407,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.663798 14
-[LOG] Order posted successfully: {'order_id': '2db6cac0-af87-457a-b9e8-7f06ecbd5da4', 'Market': 1, 'Price': 6.663798, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.861042 14
+[LOG] Order posted successfully: {'order_id': '237f87c5-eb31-45c8-8e13-394c1147f012', 'Market': 1, 'Price': 5.861042, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 6.663798}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.663798}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 5.861042}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.861042}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 36 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'c0368d19-1e66-47b6-b33b-8862400f4db4', 'Market': 1, 'Price': 13.632329095056473, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'f1638dde-405a-41e8-8a8a-cf3aee124661', 'Market': 1, 'Price': 12.040201216769852, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '7e6b7d8e-139d-430e-a13d-b6a295d2c796', 'Market': 1, 'Price': 14.803295367838059, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '53d1bedf-200d-4e71-85b7-afe2749cee2e', 'Market': 1, 'Price': 14.777582086101459, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1586,11 +1433,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.33018 4.5
-[LOG] Order posted successfully: {'order_id': 'a11016b9-408e-47b3-b494-6c6cfd254b41', 'Market': 1, 'Price': 7.33018, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.274936 4.5
+[LOG] Order posted successfully: {'order_id': '9ea2c705-6cd0-47b4-a5d2-7fe075cb16aa', 'Market': 1, 'Price': 5.274936, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1601,25 +1447,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.33018 14
-[LOG] Order posted successfully: {'order_id': '7044af24-9d88-42ed-896d-062020f515d0', 'Market': 1, 'Price': 7.33018, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.274936 14
+[LOG] Order posted successfully: {'order_id': '4fa41776-fa22-485f-9231-367cca147fb7', 'Market': 1, 'Price': 5.274936, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.33018}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.33018}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 5.274936}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.274936}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 37 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '0829c56b-408f-4f88-83aa-993f97b109ff', 'Market': 1, 'Price': 14.982017193183122, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'f4318d8f-0917-4b26-9d8f-c6433d0664ec', 'Market': 1, 'Price': 15.43384542899166, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'b7b7bc49-37a7-4afd-9762-5ecd6a532e3b', 'Market': 1, 'Price': 15.092037095054964, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '67cd2ab3-ba17-45f0-a4e4-5f29c7d14c9a', 'Market': 1, 'Price': 12.852771750560386, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1630,11 +1473,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.597162000000001 4.5
-[LOG] Order posted successfully: {'order_id': '91f5e628-f15b-4b3d-bf78-2058dfa13a6c', 'Market': 1, 'Price': 6.597162000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.802434000000001 4.5
+[LOG] Order posted successfully: {'order_id': '6bfc0574-1426-4284-872f-c60ea23604d3', 'Market': 1, 'Price': 5.802434000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1645,25 +1487,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.597162000000001 14
-[LOG] Order posted successfully: {'order_id': '69f30f05-2b28-4262-9307-c78d6b6db195', 'Market': 1, 'Price': 6.597162000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.802434000000001 14
+[LOG] Order posted successfully: {'order_id': '7ef9ca1a-e54f-407e-9e6d-c008a13bb1fc', 'Market': 1, 'Price': 5.802434000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 6.597162000000001}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.597162000000001}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.802434000000001}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.802434000000001}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 38 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '7f243a8b-853c-43cf-9b3a-ed8221ad6dd2', 'Market': 1, 'Price': 12.984476260384255, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '14745aaa-012d-4c87-94d4-7651ef27dabb', 'Market': 1, 'Price': 16.86658476601169, 'Quantity': 1, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '74ea0ec9-6d8b-4b6d-9b29-0ba3afaeee4c', 'Market': 1, 'Price': 10.205871718239187, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '08cb2161-fafc-4981-bb73-9468ce867de8', 'Market': 1, 'Price': 21.151695451815957, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1674,11 +1513,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.256876 4.5
-[LOG] Order posted successfully: {'order_id': 'caf2206b-ea71-4a3f-af21-14ed5f73a733', 'Market': 1, 'Price': 7.256876, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.222187 4.5
+[LOG] Order posted successfully: {'order_id': 'd483d6bd-5a08-4041-b1ba-0db838bab0ec', 'Market': 1, 'Price': 5.222187, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1689,25 +1527,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.256876 14
-[LOG] Order posted successfully: {'order_id': '3edfcec4-1840-4b64-9f42-e23bd2b645aa', 'Market': 1, 'Price': 7.256876, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.222187 14
+[LOG] Order posted successfully: {'order_id': '53196ab9-58d5-4070-94c8-384aeb118011', 'Market': 1, 'Price': 5.222187, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.256876}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.256876}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 1, 'Price': 5.222187}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.222187}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 39 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '8f104b95-d73d-479f-98cb-2aa8629ab3d7', 'Market': 1, 'Price': 15.006522690969701, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '915722bf-92c4-43a7-954e-83388abe471b', 'Market': 1, 'Price': 13.125030980364714, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '4a96753b-3f23-44db-a6e0-012e2c9c5963', 'Market': 1, 'Price': 10.578774259437882, 'Quantity': 18, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '35e2543b-c573-45fe-b2bd-9b5bc775ab97', 'Market': 1, 'Price': 13.824841988110347, 'Quantity': 19, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1718,11 +1553,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.531192 4.5
-[LOG] Order posted successfully: {'order_id': 'bc307d01-e9a7-448d-b5bb-7fdc09ff432a', 'Market': 1, 'Price': 6.531192, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.744409000000001 4.5
+[LOG] Order posted successfully: {'order_id': 'c96c0a3f-7672-49db-93ba-0b9b7d5edf97', 'Market': 1, 'Price': 5.744409000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1733,25 +1567,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.531192 14
-[LOG] Order posted successfully: {'order_id': '5ddd925c-1936-46eb-9b34-85f4ed814fdd', 'Market': 1, 'Price': 6.531192, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.744409000000001 14
+[LOG] Order posted successfully: {'order_id': '028ed30f-52d7-44a1-8d55-b73482016f03', 'Market': 1, 'Price': 5.744409000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 6.531192}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.531192}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 5.744409000000001}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.744409000000001}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 40 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '9f4a354f-583e-4e17-8fa2-8540e8a63442', 'Market': 1, 'Price': 14.747182074380516, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'a5ed71a8-a2dd-4605-98ab-8869daaf94a6', 'Market': 1, 'Price': 12.89358174779131, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'b05a780b-f8e2-42f5-be78-0bab6eab694f', 'Market': 1, 'Price': 19.12901021864711, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '00a08caf-a60d-4976-94b1-5f0cfd92dec2', 'Market': 1, 'Price': 11.880689996302104, 'Quantity': 17, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1762,11 +1593,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.184309 4.5
-[LOG] Order posted successfully: {'order_id': 'f20f4783-49b8-4fcc-898c-f66de39eaee7', 'Market': 1, 'Price': 7.184309, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.169969 4.5
+[LOG] Order posted successfully: {'order_id': '8682251c-df05-460b-9d4f-f661c56228fd', 'Market': 1, 'Price': 5.169969, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1777,25 +1607,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.184309 14
-[LOG] Order posted successfully: {'order_id': 'f5b17674-bfbd-41bd-a419-56ef97594bc8', 'Market': 1, 'Price': 7.184309, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.169969 14
+[LOG] Order posted successfully: {'order_id': 'f5131e07-7f1e-4c0c-a71b-5da42773f864', 'Market': 1, 'Price': 5.169969, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.184309}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.184309}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 5.169969}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.169969}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 41 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '03dfdbb3-a917-4d16-84a9-33bc5d5b8d8e', 'Market': 1, 'Price': 12.930589898541976, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'ca90b029-a38b-42ad-9e0d-93f32287e126', 'Market': 1, 'Price': 14.47792850972839, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '6ad13f3b-556d-43ba-92f3-20bd1857519a', 'Market': 1, 'Price': 15.440718193111225, 'Quantity': 22, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'e7ea9d63-ae4d-4364-848d-86ba7a9582ed', 'Market': 1, 'Price': 16.6161213184924, 'Quantity': 22, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1806,11 +1633,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.465879 4.5
-[LOG] Order posted successfully: {'order_id': '5a00eee7-554a-4842-a3e7-b2c96ffd6ee7', 'Market': 1, 'Price': 6.465879, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.686967000000001 4.5
+[LOG] Order posted successfully: {'order_id': 'd1657751-3d48-44ff-a295-ed360dfb8692', 'Market': 1, 'Price': 5.686967000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1821,25 +1647,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.465879 14
-[LOG] Order posted successfully: {'order_id': 'bb7d1b8e-2b55-4942-af17-5aeaf4b9ec23', 'Market': 1, 'Price': 6.465879, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.686967000000001 14
+[LOG] Order posted successfully: {'order_id': '8246ab65-3745-429e-843c-12a70be6c5ab', 'Market': 1, 'Price': 5.686967000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.465879}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.465879}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 5.686967000000001}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.686967000000001}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 42 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '5e3aa562-d3c9-4ae5-8bc0-ab9a1cc54f47', 'Market': 1, 'Price': 12.794192069670666, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '9f56e914-766b-4da1-9cd2-cddb7e97d85b', 'Market': 1, 'Price': 13.03004949687614, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'fc75b11e-5525-4031-b6df-66e40f0df561', 'Market': 1, 'Price': 16.247628227706613, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '1fceb1a6-099d-4425-9a8e-9d799777a118', 'Market': 1, 'Price': 12.917802332151172, 'Quantity': 22, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1850,11 +1673,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.112468000000001 4.5
-[LOG] Order posted successfully: {'order_id': '0108b954-81e2-428c-ac75-9da47389d61e', 'Market': 1, 'Price': 7.112468000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.118272999999999 4.5
+[LOG] Order posted successfully: {'order_id': '35ef3860-e82a-4111-b8c0-ecdc404808ce', 'Market': 1, 'Price': 5.118272999999999, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1865,25 +1687,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.112468000000001 14
-[LOG] Order posted successfully: {'order_id': 'b12e2671-6ab0-4b04-b798-d65480126f29', 'Market': 1, 'Price': 7.112468000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.118272999999999 14
+[LOG] Order posted successfully: {'order_id': 'a0b53876-1e39-4251-b657-d609b8b6fc99', 'Market': 1, 'Price': 5.118272999999999, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 7.112468000000001}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.112468000000001}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 5.118272999999999}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 5.118272999999999}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 43 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '1af4aae8-4fc7-4ad2-823e-94561d6d2cd9', 'Market': 1, 'Price': 13.897594899872502, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'b0a961a7-4e07-43df-a1a3-485785bb8b9e', 'Market': 1, 'Price': 16.178889036335043, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'acff2087-90eb-4186-9a8c-1e5084b38aec', 'Market': 1, 'Price': 12.55521312231219, 'Quantity': 23, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '36981567-4b6b-41c1-bee5-15727a8e4d5e', 'Market': 1, 'Price': 3.87556970952979, 'Quantity': 19, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1894,11 +1713,10 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.401223 4.5
-[LOG] Order posted successfully: {'order_id': 'c651af9a-dbe6-4297-9120-3cc32e989bf8', 'Market': 1, 'Price': 6.401223, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  5.630097 4.5
+[LOG] Order posted successfully: {'order_id': 'f2be80f0-7c68-4855-85d2-c327b96baab0', 'Market': 1, 'Price': 5.630097, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1909,25 +1727,22 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.401223 14
-[LOG] Order posted successfully: {'order_id': '390e8a37-0dc5-44d2-8bce-ab86c344685e', 'Market': 1, 'Price': 6.401223, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  5.630097 14
+[LOG] Order posted successfully: {'order_id': '8bccdad0-3542-4eeb-9f42-7937a791a792', 'Market': 1, 'Price': 5.630097, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.401223}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.401223}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 3, 'Price': 3.87556970952979}
+{'Buyer': 'ZIP_Buy10', 'Seller': 'ZI_Sell1', 'Quantity': 4, 'Price': 3.87556970952979}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 44 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'b8b560a2-47ac-4ab4-af3e-d292042bf527', 'Market': 1, 'Price': 16.213128212844552, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'e4b9fde9-b2a5-4434-a780-66ecc9a11ca6', 'Market': 1, 'Price': 11.899128032928013, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '7a0ab7bc-9988-4ae2-8f99-756221d0d9e1', 'Market': 1, 'Price': 13.848196362857228, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'beba0bf2-1207-4a2a-9cb9-2d8fba18f8cf', 'Market': 1, 'Price': 14.061800845581649, 'Quantity': 22, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1938,55 +1753,41 @@ call  ZIP_Buy10 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  7.041342000000001 4.5
-[LOG] Order posted successfully: {'order_id': '44d9f71b-0a6a-4770-a865-dfc5c2b95b1b', 'Market': 1, 'Price': 7.041342000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  4.263127000000001 4.5
+[LOG] Order posted successfully: {'order_id': '9909bc55-19e8-40a5-a3ba-65fa8d70a31b', 'Market': 1, 'Price': 4.263127000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] LOB get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[Debug]  7.041342000000001 14
-[LOG] Order posted successfully: {'order_id': 'd7ac4c52-0ebe-465f-a913-e3c45292f1c9', 'Market': 1, 'Price': 7.041342000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  4.5 14
+[LOG] Order posted successfully: {'order_id': '1ea735ae-a50c-44da-a8dd-43213c29280d', 'Market': 1, 'Price': 4.5, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 7.041342000000001}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 7.041342000000001}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 4.5}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 45 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'd7d0ad20-c00d-4fbf-b7b3-72bae6a24194', 'Market': 1, 'Price': 14.377961940885875, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '56c13c96-8059-43a8-bd87-76fa759fef72', 'Market': 1, 'Price': 17.055264667421238, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'e7788569-eb0c-4631-aa12-5b47116e10a4', 'Market': 1, 'Price': 8.836304694877015, 'Quantity': 19, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'd1e98050-1b74-4a1f-8b4c-8cd113cc8e16', 'Market': 1, 'Price': 17.34388175418178, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] LOB get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[Debug]  6.337206 4.5
-[LOG] Order posted successfully: {'order_id': '28c8e428-48e9-4674-bab0-b768988795ad', 'Market': 1, 'Price': 6.337206, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  4.05 4.5
+[LOG] Order posted successfully: {'order_id': '98041408-a07e-4a35-98c7-b1c885cee13b', 'Market': 1, 'Price': 4.05, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -1997,40 +1798,31 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.337206 14
-[LOG] Order posted successfully: {'order_id': 'a1da4833-1444-403f-bfd3-149bf97c31e2', 'Market': 1, 'Price': 6.337206, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  4.5 14
+[LOG] Order posted successfully: {'order_id': '2dce9697-b239-4cae-b7f1-54447a883f53', 'Market': 1, 'Price': 4.5, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 6.337206}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.337206}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 4.5}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 46 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': '311f548e-6adc-4f00-b627-9811faf1461f', 'Market': 1, 'Price': 13.281283865847982, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'd123c52b-7072-4d49-9393-b78a2e752307', 'Market': 1, 'Price': 14.297174086973024, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'd3e5b6b0-bc52-4505-a6bb-607d49ff4ff2', 'Market': 1, 'Price': 17.13155483099557, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '49ebf143-25af-4d48-abd1-d09509a4d202', 'Market': 1, 'Price': 14.184556569566555, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] LOB get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[Debug]  6.970931 4.5
-[LOG] Order posted successfully: {'order_id': 'e071c5fc-cc5b-4a42-80b5-6b63caaba3a1', 'Market': 1, 'Price': 6.970931, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  4.05 4.5
+[LOG] Order posted successfully: {'order_id': 'c3dc551c-00dc-420b-aeea-431a028bf452', 'Market': 1, 'Price': 4.05, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -2041,40 +1833,31 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.970931 14
-[LOG] Order posted successfully: {'order_id': 'b6d856e0-7e33-488b-8e7d-206c6789fc9e', 'Market': 1, 'Price': 6.970931, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  4.5 14
+[LOG] Order posted successfully: {'order_id': 'aba162d0-8ef0-43f0-9770-b254570c68d8', 'Market': 1, 'Price': 4.5, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.970931}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.970931}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 4.5}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 47 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'f59ea488-fcc1-468b-936f-61483733d041', 'Market': 1, 'Price': 12.910305663157446, 'Quantity': 2, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'b9158733-2aa8-4949-a788-197e2c4e1668', 'Market': 1, 'Price': 15.389422360027158, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '609d099c-3c29-4c20-a521-990fa3a07e5c', 'Market': 1, 'Price': 16.28592708255696, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '5717aa23-c7b1-41ed-9eb1-f13c21f90142', 'Market': 1, 'Price': 16.759609911674232, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] LOB get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[Debug]  6.273837 4.5
-[LOG] Order posted successfully: {'order_id': '598fe8bc-d992-45f5-99e4-2ac22500ef57', 'Market': 1, 'Price': 6.273837, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  4.05 4.5
+[LOG] Order posted successfully: {'order_id': 'af8651e9-47d5-45ed-aaa1-33dc5dc58d46', 'Market': 1, 'Price': 4.05, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -2085,40 +1868,31 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.273837 14
-[LOG] Order posted successfully: {'order_id': 'd85521b8-4c9c-4aca-b8e3-c6a4ecf9368b', 'Market': 1, 'Price': 6.273837, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  4.5 14
+[LOG] Order posted successfully: {'order_id': '759b5ada-ef0f-4089-ae41-4f3ab8a595fc', 'Market': 1, 'Price': 4.5, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 2, 'Price': 6.273837}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.273837}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 4.5}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 48 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'dfe8bfc4-91de-49c6-9e0d-d920dc2c51fb', 'Market': 1, 'Price': 13.980014534672938, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': 'dea2ec2a-3c26-442b-9fd6-b1c85546f7f0', 'Market': 1, 'Price': 12.70416656621371, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': '206f6982-a711-4452-ab0a-d505d4c15966', 'Market': 1, 'Price': 10.556816605988407, 'Quantity': 22, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': 'f06001d4-2574-438e-a611-9587ae1a2d77', 'Market': 1, 'Price': 12.749484194173354, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] LOB get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[Debug]  6.901224 4.5
-[LOG] Order posted successfully: {'order_id': '3f853a22-b380-45a1-a920-ff22497f0478', 'Market': 1, 'Price': 6.901224, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  4.05 4.5
+[LOG] Order posted successfully: {'order_id': 'be00c6a6-018b-45e7-8172-44ec223891a9', 'Market': 1, 'Price': 4.05, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -2129,40 +1903,31 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.901224 14
-[LOG] Order posted successfully: {'order_id': '97089bd0-a4a4-4adb-8ccc-5176557d7817', 'Market': 1, 'Price': 6.901224, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  4.5 14
+[LOG] Order posted successfully: {'order_id': '1e538168-e58b-4131-91fa-3efa2d642c2f', 'Market': 1, 'Price': 4.5, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 6.901224}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.901224}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 4.5}
 [LOG] Order cleared successfully: ['Order list cleared']
 ================ tick 49 ===========================
 call  ZI_Buy10 to start posting order!
-[Agent] I'm a ZI buy agent
-[LOG] Order posted successfully: {'order_id': 'db7c33e9-ba24-40df-82df-8dadfaf63c7f', 'Market': 1, 'Price': 12.547597382309908, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
+[LOG] Order posted successfully: {'order_id': '7f647cf1-1e91-49a1-b940-967697bf1723', 'Market': 1, 'Price': 13.912562850389937, 'Quantity': 3, 'Side': 'B', 'agent_name': 'ZI_Buy10'}
 Get return from agent  ZI_Buy10 , next agent ready...
 call  ZI_Sell1 to start posting order!
-[Agent] I'm a ZI sell agent
-[LOG] Order posted successfully: {'order_id': 'a319312d-16de-4ae9-bf51-dfbe0cb864d9', 'Market': 1, 'Price': 14.538939947174708, 'Quantity': 20, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
+[LOG] Order posted successfully: {'order_id': '2a86b047-73f4-4e8c-b6d2-8c72f83b395a', 'Market': 1, 'Price': 19.01833335703725, 'Quantity': 21, 'Side': 'S', 'agent_name': 'ZI_Sell1'}
 Get return from agent  ZI_Sell1 , next agent ready...
 call  ZIP_Buy10 to start posting order!
-[Agent] I'm a ZIP buy agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] LOB get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[LOG] Hist get successfully!
-[Debug]  6.211098000000001 4.5
-[LOG] Order posted successfully: {'order_id': 'd8a3d420-9288-4131-a7d9-574b76025bfa', 'Market': 1, 'Price': 6.211098000000001, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
+[Debug]  4.05 4.5
+[LOG] Order posted successfully: {'order_id': 'e3adc97b-e36e-4caa-9fe0-66a5de1c2b14', 'Market': 1, 'Price': 4.05, 'Quantity': 4, 'Side': 'B', 'agent_name': 'ZIP_Buy10'}
 Get return from agent  ZIP_Buy10 , next agent ready...
 call  ZIP_Sell2 to start posting order!
-[Agent] I'm a ZIP sell agent
 [Debug] Called ZIP strategy
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
@@ -2173,11 +1938,10 @@ call  ZIP_Sell2 to start posting order!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
 [LOG] Hist get successfully!
-[Debug]  6.211098000000001 14
-[LOG] Order posted successfully: {'order_id': '1d66c1bd-5a6c-4d61-bd10-3fd8acced64a', 'Market': 1, 'Price': 6.211098000000001, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
+[Debug]  4.5 14
+[LOG] Order posted successfully: {'order_id': 'f1ba8bac-cbba-492a-96da-d56020e4c100', 'Market': 1, 'Price': 4.5, 'Quantity': 14, 'Side': 'S', 'agent_name': 'ZIP_Sell2'}
 Get return from agent  ZIP_Sell2 , next agent ready...
 Order book retrieved successfully.
 Success Trades:
-{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.211098000000001}
-{'Buyer': 'ZIP_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 4, 'Price': 6.211098000000001}
+{'Buyer': 'ZI_Buy10', 'Seller': 'ZIP_Sell2', 'Quantity': 3, 'Price': 4.5}
 [LOG] Order cleared successfully: ['Order list cleared']
