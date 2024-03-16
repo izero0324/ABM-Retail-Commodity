@@ -45,3 +45,11 @@ def hist_n_trade_by_agent(exp_name, agent_name, n):
         and tick > (SELECT tick from OrderBook_{exp_name} Order by tick Desc limit 1)-{n} \
         Order by tick DESC;"
     return fetch_df_by_sql(query)
+
+def trade_quantity_list(exp_name: str, n: int):
+    query = f"SELECT quantity FROM SuccessTrade_{exp_name} WHERE tick = (SELECT MAX(tick) FROM PriceSpread_{exp_name})-{n};"
+    return fetch_df_by_sql(query)
+
+def last_trade_price_list(exp_name: str, n: int):
+    query = f"SELECT trade_price FROM SuccessTrade_{exp_name} WHERE tick = (SELECT MAX(tick) FROM PriceSpread_{exp_name})-{n};"
+    return fetch_df_by_sql(query)

@@ -25,4 +25,4 @@ def single_random_agent(agent_name):
     side_rnd = random.randint(0,1)
     if side_rnd == 1:
         side = "S"
-    post_order( 1, agent_p, agent_q, agent_name, side)
+    post_order( 1, agent_p, agent_q, agent_name, side) #post_order(1, price, quant,name, Buy/Sell)

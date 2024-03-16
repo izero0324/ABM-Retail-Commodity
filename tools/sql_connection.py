@@ -113,6 +113,7 @@ def create_or_truncate_tables(cursor, experiment_name):
     OrderBook_table = 'OrderBook_' + experiment_name
     PriceSpread_table = 'PriceSpread_' + experiment_name
     SuccessTrade_table = 'SuccessTrade_' + experiment_name
+    LOB_table = 'LOB_' + experiment_name
     
     # SQLs for Creating TABLES
     TABLES = {
@@ -141,6 +142,14 @@ def create_or_truncate_tables(cursor, experiment_name):
             "  `trade_price` float,"
             "  `quantity` float"
             ")"
+        ),
+        f"{LOB_table}":(
+            f"CREATE TABLE IF NOT EXISTS {LOB_table} ("
+            "  `tick` int,"
+            "  `price` float,"
+            "  `quantity` float,"
+            "  `side` VARCHAR(255)"
+            ") "
         )
 
     }

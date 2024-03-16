@@ -32,7 +32,7 @@ class functions:
         # The n days hitorical price intervals
         # Two_hist_price = price_history(n) -> [ n days [min_deal_price,max_deal_price)] ]
         # Sample output
-        Two_hist_price = [[10.25,20.58],[14.5,12.77]]
+        Two_hist_price = get_price_history(2)
         # Identify if the most recent price trend is positive or negative
         S = np.mean(Two_hist_price [1]) - np.mean(Two_hist_price [0])
         return(self.sign_func(S))

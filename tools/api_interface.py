@@ -62,8 +62,25 @@ def get_price_history(n: int):
         print("Hist get successfully!")
         return response.json()
     else:
-        print("Failed to post order:", response.content)
+        print("Failed to get hist:", response.content)
         return 0
     
+def get_trade_quant_list(n: int):
+    url = 'http://0.0.0.0:8000/whole/quant/'+n
+    response = requests.get(url)
+    if response.status_code == 200:
+        print("Last quant get successfully!")
+        return response.json()
+    else:
+        print("Failed to get quant:", response.content)
+        return 0
 
-
+def get_trade_price_list(n: int):
+    url = 'http://0.0.0.0:8000/whole/price/'+n
+    response = requests.get(url)
+    if response.status_code == 200:
+        print("Last price list get successfully!")
+        return response.json()
+    else:
+        print("Failed to get price list:", response.content)
+        return 0

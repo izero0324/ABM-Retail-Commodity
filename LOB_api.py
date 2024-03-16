@@ -67,6 +67,18 @@ async def get_history_trade(agent:str, tick:int):
     trade_list = hist_n_trade_by_agent(exp_name,agent, tick)
     return trade_list
 
+# Get trade_price list
+@app.get("/whole/price/{tick}")
+async def get_trade_price_list(tick: int):
+    price_list = last_trade_price_list(exp_name, tick)
+    return price_list
+
+# Get n trade quantity
+@app.get("/whole/quant/{tick}")
+async def get_trade_quant_list(tick: int):
+    quant_list = trade_quantity_list(exp_name, tick)
+    return quant_list
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
