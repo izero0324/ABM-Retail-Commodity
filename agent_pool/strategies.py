@@ -36,31 +36,6 @@ class Strategies:
             q = round(np.random.normal(self.Ask_q_mean, self.Ask_q_std_dev))
         return (self.Side, p, q )
     
-    def dynamic_pricing_strategy(self):
-        # Dynamic pricing strategy: adjust the price and quantity according to the market demend level
-        n = 10 # Default 10 days
-        if self.Side == "B":
-            if functions().demand_level(n) == 'high':
-                price = min(functions().current_price() * 0.8, self.Max_bid_price)
-                quantity = min(self.Max_bid_quantity * 0.2, self.Max_bid_quantity)
-            elif functions().demand_level(n) == 'medium':
-                price = functions().current_price() * 0.5
-                quantity = self.Max_bid_quantity 
-            else:
-                price = min(functions().current_price() * 0.2, self.Max_bid_price)
-                quantity = min(self.Max_bid_quantity * 0.8, self.Max_bid_quantity) 
-        else:
-            if functions().demand_level(n) == 'high':
-                price = max(functions().current_price() * 0.8, self.Min_ask_price)
-                quantity = max(self.Min_ask_quantity * 0.2, self.Min_ask_quantity)
-            elif functions().demand_level(n) == 'medium':
-                price = functions().current_price()  * 0.5
-                quantity = self.Min_ask_quantity  
-            else:
-                price = max(functions().current_price() * 0.2, self.Min_ask_price)
-                quantity = max(self.Min_ask_quantity * 0.8, self.Min_ask_quantity) 
-        return (self.Side, price, quantity)
-    
     # Zero intellengence plus strategy
     def ZIP(self,GreedyLevel): # GreedyLevel from 0 to 1000 
         print('[Debug] Called ZIP strategy')
@@ -94,6 +69,31 @@ class Strategies:
             q = max(q,self.Min_ask_quantity)
         print('[Debug] ', p ,q)
         return(self.Side,p,q)
+    
+    def dynamic_pricing_strategy(self):
+        # Dynamic pricing strategy: adjust the price and quantity according to the market demend level
+        n = 10 # Default 10 days
+        if self.Side == "B":
+            if functions().demand_level(n) == 'high':
+                price = min(functions().current_price() * 0.8, self.Max_bid_price)
+                quantity = min(self.Max_bid_quantity * 0.2, self.Max_bid_quantity)
+            elif functions().demand_level(n) == 'medium':
+                price = functions().current_price() * 0.5
+                quantity = self.Max_bid_quantity 
+            else:
+                price = min(functions().current_price() * 0.2, self.Max_bid_price)
+                quantity = min(self.Max_bid_quantity * 0.8, self.Max_bid_quantity) 
+        else:
+            if functions().demand_level(n) == 'high':
+                price = max(functions().current_price() * 0.8, self.Min_ask_price)
+                quantity = max(self.Min_ask_quantity * 0.2, self.Min_ask_quantity)
+            elif functions().demand_level(n) == 'medium':
+                price = functions().current_price()  * 0.5
+                quantity = self.Min_ask_quantity  
+            else:
+                price = max(functions().current_price() * 0.2, self.Min_ask_price)
+                quantity = max(self.Min_ask_quantity * 0.8, self.Min_ask_quantity) 
+        return (self.Side, price, quantity)
     
     def penetration(self):
         if self.Side == 'S':
