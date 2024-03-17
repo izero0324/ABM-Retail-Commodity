@@ -1,6 +1,6 @@
 from agent_pool.agent_controller import agent_choose
 from tools.p_mech import pairing
-from tools.api_interface import post_clear_order
+from tools.api_interface import post_clear_order, get_temp_order_book
 '''
 A finite state machine controlling the flow of simulation
 1. Call agents to post orders
@@ -50,6 +50,16 @@ def get_orders(agent_list):
         except:
             print("[Controller] Agent ", agent, " failed to retrun order")
 
+def check_orders(agent_list):
+    print("[Controller] Checking Orders...")
+    order_book = get_temp_order_book()
+    done_agents = [order['agent_name'] for order in order_book]
+    for agent in agent_list:
+        if not agent in done_agents:
+            print("[Controller] Retry call agent:", agent)
+            agent_choose(agent)
+    print("[Controller] All agents posted!(Or Retried)")
+
 def controller(agent_list, tick_num, api_connection, exp_name):
     post_clear_order()
     
@@ -59,6 +69,7 @@ def controller(agent_list, tick_num, api_connection, exp_name):
         get_orders(agent_list)
         next_state()
         assert state_now() == "Check_order"
+        check_orders(agent_list)
         next_state()
         assert state_now() == "Pairing"
         pairing(api_connection, tick, exp_name)

@@ -3,13 +3,24 @@ import requests
 '''
 Policy
 '''
+default_url = 'http://0.0.0.0:8000/'
+
+def get_temp_order_book():
+    url = default_url + 'orders/'
+    response = requests.get(url)
+    if response.status_code == 200:
+        print("Order book retrieved successfully.")
+        return response.json()
+    else:
+        print("Failed to retrieve order book:", response.content)
+        return []
 
 def post_order(Market: int, Price: float, Quantity: int, Name: str, side: str):
     if type(Price) != float:
         Price = float(Price)
     if type(Quantity) != int:
         Quantity = round(Quantity)
-    url = 'http://0.0.0.0:8000/orders/'
+    url = default_url+'orders/'
     order_data = {
         "Market": Market,
         "Price" : Price,
@@ -26,7 +37,7 @@ def post_order(Market: int, Price: float, Quantity: int, Name: str, side: str):
         print("[API ERROR]Failed to post order:", response.content)
 
 def post_clear_order():
-    url = 'http://0.0.0.0:8000/clear/'
+    url = default_url+'clear/'
     response = requests.post(url)
 
     if response.status_code == 200:
@@ -43,7 +54,7 @@ def get_agent_history(type:str, agent_name: str, n: int):
     Output:
     dataframe of the specific agent on Trade/Order
     '''
-    url = 'http://0.0.0.0:8000/hist/'+type+'/'+agent_name+'/'+str(n)
+    url = default_url+'hist/'+type+'/'+agent_name+'/'+str(n)
     response = requests.get(url)
     if response.status_code == 200:
         print("[API LOG]    Hist get successfully!")
@@ -59,7 +70,7 @@ def get_price_history(n: int):
     Output:
     df: Price interval
     '''
-    url = 'http://0.0.0.0:8000/hist/price/'+str(n)
+    url = default_url+'hist/price/'+str(n)
     response = requests.get(url)
     if response.status_code == 200:
         print("[API LOG]    Hist get successfully!")
@@ -69,7 +80,7 @@ def get_price_history(n: int):
         return 0
     
 def get_trade_quant_list(n: int):
-    url = 'http://0.0.0.0:8000/whole/quant/'+str(n)
+    url = default_url+'whole/quant/'+str(n)
     response = requests.get(url)
     if response.status_code == 200:
         print("[API LOG]    Last quant get successfully!")
@@ -79,7 +90,7 @@ def get_trade_quant_list(n: int):
         return 0
 
 def get_trade_price_list(n: int):
-    url = 'http://0.0.0.0:8000/whole/price/'+str(n)
+    url = default_url+'whole/price/'+str(n)
     response = requests.get(url)
     if response.status_code == 200:
         print("[API LOG]    Last price list get successfully!")
@@ -89,7 +100,7 @@ def get_trade_price_list(n: int):
         return 0
 
 def get_order_book_after_pairing(n: int):
-    url = 'http://0.0.0.0:8000/LOB/'+str(n)
+    url = default_url+'LOB/'+str(n)
     response = requests.get(url)
     if response.status_code == 200:
         print("[API LOG]    LOB get successfully!")
