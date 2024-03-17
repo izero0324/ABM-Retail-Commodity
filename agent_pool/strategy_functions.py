@@ -5,6 +5,12 @@ class functions:
     '''
     Functions used in strategies
     '''
+    default_current_price = 13.5 #by rowan
+    default_price_trend = 1      #by rowan
+    default_quant_ratio = 1      #by rowan
+    default_trade_situation = 1  #by rowan
+    default_analyze_slope = 0    #by viola
+
     # Following code written by rowan
     def sign_func(self,S):
         '''
@@ -23,8 +29,11 @@ class functions:
             One_hist_price = get_price_history(1) # Expected format: [[min_price, max_price]]
             # Collect yesterdayexecution price
             return(np.mean(One_hist_price[0]))
-        except:
-            return 13.5
+        except Exception as e:
+            # In case the history isn't available return default price
+            print(f"[Warning]    An error occurred: {e}") 
+            print(f"[Warning]    Return default price: ",self.default_current_price)
+            return self.default_current_price
         
     def price_trend(self):
         '''
@@ -37,9 +46,11 @@ class functions:
             # Identify if the most recent price trend is positive or negative
             price_change = np.mean(Two_hist_price [1]) - np.mean(Two_hist_price [0])
             return(self.sign_func(price_change))
-        except:
+        except Exception as e:
             # In case of any exception, default to a positive trend
-            return 1
+            print(f"[Warning]    An error occurred: {e}") 
+            print(f"[Warning]    Return default trend: ",self.default_price_trend)
+            return self.default_price_trend
         
     def calculate_unexecuted_order_quantities(self, limit_order_book):
         # Calculate the quantity of all unexecuted order
@@ -58,10 +69,12 @@ class functions:
         try:
             BuySell_Ratio = buy_quantity / sell_quantity         # >1 is a good signal for seller
             SellBuy_Ratio = 1 / BuySell_Ratio          # >1 is a good signnal for buyer  
-        except:
+        except Exception as e:
             # In case one of the quantity is 0, default to balance the ratio
-            BuySell_Ratio= 1
-            SellBuy_Ratio= 1
+            print(f"[Warning]    An error occurred: {e}") 
+            print(f"[Warning]    Return default quant_ratio: ",self.default_quant_ratio)
+            BuySell_Ratio= self.default_quant_ratio
+            SellBuy_Ratio= self.default_quant_ratio
         return([buy_quantity, sell_quantity, SellBuy_Ratio, BuySell_Ratio])
     
     def trade_situation(self, agent_name, n):
@@ -87,33 +100,33 @@ class functions:
                 if execution[0] > 0:
                     return 1
             return -1
-        except:
+        except Exception as e:
+            print(f"[Warning]    An error occurred: {e}") 
+            print(f"[Warning]    Return default trade_situation: ",self.default_trade_situation)
             # In case there's no trades to be get, assume 1 for nutural
-            return 1
+            return self.default_trade_situation
 
     # The following was written by Viola:
-    
-    #Make strategies based on the trend of historical prices
     def analyze_trend(self, n):
-######### Here's function need to be defined
-        # The n days hitorical price intervals
-        # Ten_hist_price = price_history(n) -> [ n days [min_deal_price,max_deal_price)] ]
-        # Sample output
         '''
-        Ten_hist_price = [[10.25,20.58], [14.5,12.77], [14.5,12.77], [14.5,12.77]
-                          ,[14.5,12.77], [14.5,12.77], [14.5,12.77], [14.5,12.77]
-                          ,[14.5,12.77], [14.5,12.77]]  
+        For strategies based on the trend of historical prices.
+        Calculate n days average price from historical prices,
+        and analyze the trend using linear regression.
+        Input:
+        n: int # n-days 
+        Return:
+        slope: float #The slope of the average price
         '''
-        n_day_hist_price  = get_price_history(n)
-        
-        # Calculate 10 days average price
-        n_day_hist_average_price=[]
-        for i in n_day_hist_price:
-            n_day_hist_average_price.append(np.mean(i))
-        # Analyze the trend of 10 days historical prices using linear regression 
-        
-        x = np.arange(n)
-        slope, _ = np.polyfit(x, n_day_hist_average_price, 1)
+        try:
+            n_day_hist_price  = get_price_history(n)
+            average_prices = [np.mean(day_prices) for day_prices in n_day_hist_price]
+            days = np.arange(n)
+            slope, _ = np.polyfit(days, average_prices, 1)
+        except Exception as e:
+            print(f"[Warning]    An error occurred: {e}") 
+            print(f"[Warning]    Return default slope: ",self.default_analyze_slope)
+            slope = self.default_analyze_slope
+
         return slope
     
 # The following was written by Jiaqi Xia:
@@ -206,14 +219,14 @@ class functions:
             
         return buyer_order_quantities
     
-
-    #Func_4 : milk_production_quantity
     def production_quantity(mean_qty, std_dev):
+        '''Generate a production quantity based on a normal distribution.'''
         quantity = np.random.normal(mean_qty, std_dev)
         return quantity
 
 
     def buy_quantity(mean_qty, std_dev):
+        '''Generate a buying quantity based on a normal distribution.'''
         quantity = np.random.normal(mean_qty, std_dev)
         return quantity
 

@@ -1,5 +1,6 @@
 import argparse
 import json
+import subprocess
 
 from tools.controller import controller
 from tools.sql_connection import DatabaseConnectionManager, create_or_truncate_tables
@@ -53,7 +54,6 @@ def parse_arguments():
 
     return parser.parse_args()
 
-
 def main():
     '''
     Entry point
@@ -71,4 +71,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    with open("main_log.txt", "w") as main_log, open("background_log.txt", "w") as background_log:
+        subprocess.Popen(['python3', 'background_script.py'], stdout=background_log, stderr=background_log)
+        main_log.write("Main Process Start...\n")
+        main()

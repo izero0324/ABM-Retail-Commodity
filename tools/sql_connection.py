@@ -3,7 +3,7 @@ import sqlite3
 import mysql.connector
 from mysql.connector import errorcode
 
-def load_sql_config(config_file='tools/sql_config.json'):
+def load_sql_config(config_file='tools/sql_config_s.json'):
     '''
     Get sql configs from json
     '''
