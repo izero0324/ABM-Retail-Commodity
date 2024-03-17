@@ -1,14 +1,46 @@
 # ABM-Retail-Commodity
 Retail Commodity Pricing Strategy by ABM
 
+## Enviroment Framework
+![System](./picture/system.png)
+
+## Run simulations
+1. Setup
+    - Install MySQL : Just simply run `MySQL_init.py`, 
+      or if you have one locally, create the config file in tools folder
+    - Install requirements
+    - config_files:  create a `sql_config_s.json` in the `tools` folder stores SQL connection
+    '''Config format
+    {
+        "MySQL": {
+        "type": "mysql",
+        "user": "root", # Your user name
+        "password": "password", #Your password
+        "host": "localhost",
+        "database": "ABM_EXCHANGE", # Your database name
+        "raise_on_warnings": true
+        }
+    }
+    '''
+2. Run code
+    `python3 main.py --tick_num 50 --exp_name exp`
+    - Change the tick num for different ticks of simulations
+    - Remember to name your simulation
+    - Press CTRL+C to quit once your simulation is finished
+3. Debug:
+    Check your api server log in `background_log.txt` and simulation log in log.txt
+3. Visuallize Results
+
 ## Market Rules
 ### Producer -> Market -> Buyer
 1. Producer produce product and sale in Market
 2. Buyer goes to the market to buy product
-3. Multiple Markets (Limit order books)
+3. Multiple Markets (Limit order books) - under develop
 
-### Enviroment Framework
-![System](./picture/system.png)
+
+
+===
+
 #### Agents:
 1. Producer: 
     - S: Strategy
