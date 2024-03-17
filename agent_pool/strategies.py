@@ -25,8 +25,6 @@ class Strategies:
     def init(self, ID, Side):
         self.ID = ID
         self.Side = Side
-
-
         
     # Zero intellengence strategy
     def ZI(self):

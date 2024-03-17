@@ -1,104 +1,97 @@
 import numpy as np
 from tools.api_interface import *
 
-# Initial Setting
-# price 13.5
-# quant 3
-
-# A set of functions used in strategies
 class functions:
-    
-    # Sign function
+    '''
+    Functions used in strategies
+    '''
+    # Following code written by rowan
     def sign_func(self,S):
-        if S > 0: 
-            return(1)
-        if S <=0:
-            return(-1)
-        
-    # Four functions needed in ZIP:
-        
-    # 1. current price
+        '''
+        Returns 1 if s is positive, else -1.
+        '''
+        return 1 if S > 0 else -1
+
     def current_price(self):
-######### Here's function need to be defined
-        # The n days hitorical price intervals
-        # One_hist_price = price_history(n) -> [ n days [min_deal_price,max_deal_price)] ]
-        # Sample output
-        #One_hist_price = [[10.25,20.58]]
+        '''
+        Calculate the mean price of last tick from min_price and max_price
+        Returns:
+        float: The average (mean) price of the last trading period. If unable to obtain,
+               it returns a default value of 13.5.
+        '''
         try:
-            One_hist_price = get_price_history(1)
+            One_hist_price = get_price_history(1) # Expected format: [[min_price, max_price]]
             # Collect yesterdayexecution price
-            return(np.mean(One_hist_price [0]))
+            return(np.mean(One_hist_price[0]))
         except:
             return 13.5
         
-    # 2. the most recent price trend
     def price_trend(self):
-######### Here's function need to be defined
-        # The n days hitorical price intervals
-        # Two_hist_price = price_history(n) -> [ n days [min_deal_price,max_deal_price)] ]
-        # Sample output
+        '''
+        Determines the sign of the price trend over the last two days.
+        Returns:
+        int: Returns -1 for a negative trend, 1 for a positive trend.
+        '''
         try:
             Two_hist_price = get_price_history(2)
             # Identify if the most recent price trend is positive or negative
-            S = np.mean(Two_hist_price [1]) - np.mean(Two_hist_price [0])
-            return(self.sign_func(S))
+            price_change = np.mean(Two_hist_price [1]) - np.mean(Two_hist_price [0])
+            return(self.sign_func(price_change))
         except:
+            # In case of any exception, default to a positive trend
             return 1
         
-    # 3. Quantities of buy and sell orders and the ratio between them
-    def quant_ratio(self):
-######### Here's function need to be defined
-        # Latest limit order book, namely, limit order book after matching from yesterday 
-        # limit_order_book = [ n lists [price, quantity,S/B]]
-        # Sample output
-        limit_order_book = get_order_book_after_pairing(1)
-        
+    def calculate_unexecuted_order_quantities(self, limit_order_book):
         # Calculate the quantity of all unexecuted order
-        buy_num = 0
-        sell_num = 0
-        for i in range(len(limit_order_book)):
-            if limit_order_book[i][2] == "B":
-                buy_num += limit_order_book[i][1]
-            else:
-                sell_num += limit_order_book[i][1]
+        buy_quantity = sum(order[1] for order in limit_order_book if order[2] == "B")
+        sell_quantity = sum(order[1] for order in limit_order_book if order[2] == "S")
+        return buy_quantity, sell_quantity
+    
+    def quant_ratio(self):
+        '''
+        Ratio of quantities between buy and sell orders.
+        Returns:
+        list: [buy_quantity, sell_quantity, SellBuy_Ratio, BuySell_Ratio]
+        '''
+        limit_order_book = get_order_book_after_pairing(1)
+        buy_quantity, sell_quantity = self.calculate_unexecuted_order_quantities(limit_order_book)
         try:
-            # 3. ratio of quantities between buy and sell orders
-            BuySell_Ratio = buy_num / sell_num         # >1 is a good signal for seller
+            BuySell_Ratio = buy_quantity / sell_quantity         # >1 is a good signal for seller
             SellBuy_Ratio = 1 / BuySell_Ratio          # >1 is a good signnal for buyer  
         except:
+            # In case one of the quantity is 0, default to balance the ratio
             BuySell_Ratio= 1
             SellBuy_Ratio= 1
-        return([buy_num, sell_num, SellBuy_Ratio, BuySell_Ratio])
+        return([buy_quantity, sell_quantity, SellBuy_Ratio, BuySell_Ratio])
     
-    # 4. trade situation (do or do not exeucute for more than 3 days)
     def trade_situation(self, agent_name, n):
-######### Here's function need to be defined
-        # Three_execuation(n,ID) = execuation_history -> [n days (bid/ask_price, 
-        #                                                 trading_volumne, total_volumne) ]
-        # Sample output                                              
-        #n_execuation = [[1.55, 2, 5],[1.04, 0, 7],[1.1, 3, 0]] # [Price, traded_Q, Total_Q]
+        '''
+        Evaluates trade situation based on agent's trade history.
+        Input:
+        agent_name (str): Name of the agent.
+        n (int): Number of trade cycles to evaluate.
+        Returns:
+        int: -1 if no trades were made in all cycles, 1 otherwise.
+        '''
         try:
             n_execuation = []
-            for t in range(n):
-                n_execuation_success = get_agent_history('trade', agent_name, t+1)
-                n_execuation_total = get_agent_history('order', agent_name, t+1)
+            for cycle in range(n):
+                n_execuation_success = get_agent_history('trade', agent_name, cycle+1)
+                n_execuation_total = get_agent_history('order', agent_name, cycle+1)
                 traded = n_execuation_success[0][3:]
                 total = float(n_execuation_total[-1][-1])
                 result = traded.append(total)
                 n_execuation.append(result)
-            
-            
-            # Detect if the agent has not executed for more than 3 days
-            # 4. trade situation (do or do not exeucute for more than 3 days)
-            Trade_situation = -1
-            for i in range(len(n_execuation)):
-                if n_execuation[i][1] != 0:
-                    Trade_situation = 1
-            return(Trade_situation)
+            # Detect if the agent has not executed for more than n days
+            for execution in n_execuation:
+                if execution[0] > 0:
+                    return 1
+            return -1
         except:
+            # In case there's no trades to be get, assume 1 for nutural
             return 1
 
-# The following was written by Viola:
+    # The following was written by Viola:
     
     #Make strategies based on the trend of historical prices
     def analyze_trend(self, n):
