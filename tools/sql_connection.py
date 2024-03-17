@@ -3,7 +3,7 @@ import sqlite3
 import mysql.connector
 from mysql.connector import errorcode
 
-def load_sql_config(config_file='tools/sql_config.json'):
+def load_sql_config(config_file='tools/sql_config_s.json'):
     '''
     Get sql configs from json
     '''
@@ -41,63 +41,6 @@ class DatabaseConnectionManager:
                 # Only commit if no exceptions and database is MySQL
                 self.connection.commit()
                 
-            self.cursor.close()
-            self.connection.close()
-        if exc_type:
-            print(f"Error: {exc_val}")
-
-
-class SQLiteConnectionManager:
-    def __init__(self, db_file):
-        # Specify your SQLite database file name here
-        self.db_file = db_file
-        self.connection = None
-        self.cursor = None
-
-    def __enter__(self):
-        try:
-            self.connection = sqlite3.connect(self.db_file)
-            self.cursor = self.connection.cursor()
-            return self.cursor
-        except sqlite3.Error as err:
-            print(f"Error connecting to SQLite: {err}")
-            exit(1)
-
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        if self.connection:
-            if not exc_type:
-                # Only commit if no exceptions
-                self.connection.commit()
-            self.cursor.close()
-            self.connection.close()
-        if exc_type:
-            print(f"Error: {exc_val}")
-
-class MySQLConnectionManager:
-    def __init__(self):
-        # Remember to change the configs below!!!
-        self.config = {
-            "user": "root",
-            "password": "********", 
-            "host": "localhost",
-            "database": "ABM_EXCHANGE",
-            "raise_on_warnings": True
-        }
-        self.connection = None
-        self.cursor = None
-
-    def __enter__(self):
-        try:
-            self.connection = mysql.connector.connect(**self.config)
-            self.cursor = self.connection.cursor()
-            return self.cursor
-        except mysql.connector.Error as err:
-            print(f"Error connecting to MySQL: {err}")
-            exit(1)
-
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        if self.connection and self.connection.is_connected():
-            self.connection.commit()
             self.cursor.close()
             self.connection.close()
         if exc_type:

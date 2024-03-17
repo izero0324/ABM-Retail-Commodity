@@ -36,31 +36,6 @@ class Strategies:
             q = round(np.random.normal(self.Ask_q_mean, self.Ask_q_std_dev))
         return (self.Side, p, q )
     
-    def dynamic_pricing_strategy(self):
-        # Dynamic pricing strategy: adjust the price and quantity according to the market demend level
-        n = 10
-        if self.Side == "B":
-            if functions().demand_level(n) == 'high':
-                price = min(functions().current_price() * 0.8, self.Max_bid_price)
-                quantity = min(self.Max_bid_quantity * 0.2, self.Max_bid_quantity)
-            elif functions().demand_level(n) == 'medium':
-                price = functions().current_price() * 0.5
-                quantity = self.Max_bid_quantity 
-            else:
-                price = min(functions().current_price() * 0.2, self.Max_bid_price)
-                quantity = min(self.Max_bid_quantity * 0.8, self.Max_bid_quantity) 
-        else:
-            if functions().demand_level(n) == 'high':
-                price = max(functions().current_price() * 0.8, self.Min_ask_price)
-                quantity = max(self.Min_ask_quantity * 0.2, self.Min_ask_quantity)
-            elif functions().demand_level == 'medium':
-                price = functions().current_price()  * 0.5
-                quantity = self.Min_ask_quantity  
-            else:
-                price = max(functions().current_price() * 0.2, self.Min_ask_price)
-                quantity = max(self.Min_ask_quantity * 0.8, self.Min_ask_quantity) 
-        return (self.Side, price, quantity)
-    
     # Zero intellengence plus strategy
     def ZIP(self,GreedyLevel): # GreedyLevel from 0 to 1000 
         print('[Debug] Called ZIP strategy')
@@ -95,18 +70,43 @@ class Strategies:
         print('[Debug] ', p ,q)
         return(self.Side,p,q)
     
+    def dynamic_pricing_strategy(self):
+        # Dynamic pricing strategy: adjust the price and quantity according to the market demend level
+        n = 10 # Default 10 days
+        if self.Side == "B":
+            if functions().demand_level(n) == 'high':
+                price = min(functions().current_price() * 0.8, self.Max_bid_price)
+                quantity = min(self.Max_bid_quantity * 0.2, self.Max_bid_quantity)
+            elif functions().demand_level(n) == 'medium':
+                price = functions().current_price() * 0.5
+                quantity = self.Max_bid_quantity 
+            else:
+                price = min(functions().current_price() * 0.2, self.Max_bid_price)
+                quantity = min(self.Max_bid_quantity * 0.8, self.Max_bid_quantity) 
+        else:
+            if functions().demand_level(n) == 'high':
+                price = max(functions().current_price() * 0.8, self.Min_ask_price)
+                quantity = max(self.Min_ask_quantity * 0.2, self.Min_ask_quantity)
+            elif functions().demand_level(n) == 'medium':
+                price = functions().current_price()  * 0.5
+                quantity = self.Min_ask_quantity  
+            else:
+                price = max(functions().current_price() * 0.2, self.Min_ask_price)
+                quantity = max(self.Min_ask_quantity * 0.8, self.Min_ask_quantity) 
+        return (self.Side, price, quantity)
+    
     def penetration(self):
         if self.Side == 'S':
             # Estimating the lowest acceptable price based on buyer's willingness and competitor's pricing
-            target_price_based_on_buyers = max(functions().buyer_price_willingness_history_f()) - 0.01
-            target_price_based_on_sellers = min(functions().competitor_price_history_f())
+            target_price_based_on_buyers = max(functions().get_buyer_willingness_price_history()) - 0.01
+            target_price_based_on_sellers = min(functions().get_competitor_price_history(self.ID))
     
             # Choosing the higher price between the target prices while ensuring it's above cost
             proposed_price = max(target_price_based_on_buyers, target_price_based_on_sellers, Strategies.Min_ask_price)
             quantity = round(functions.production_quantity(Strategies.Ask_q_mean, Strategies.Ask_q_std_dev))
         else:
-            target_price_based_on_buyers = max(functions().buyer_price_willingness_history_f()) + 0.01
-            target_price_based_on_sellers = min(functions().competitor_price_history_f())
+            target_price_based_on_buyers = max(functions().get_buyer_willingness_price_history()) + 0.01
+            target_price_based_on_sellers = min(functions().get_competitor_price_history(self.ID))
             
             # Choosing the higher price between the target prices while ensuring it's above cost
             proposed_price = min(target_price_based_on_buyers, target_price_based_on_sellers, Strategies.Max_bid_price)
@@ -117,8 +117,8 @@ class Strategies:
     def dynamic(self):
         
         # Analyze market trends based on historical data
-        avg_sellers_price = np.mean(functions().competitor_price_history_f())
-        weighted_avg_buyer_price = np.average(functions().competitor_price_history_f(), weights=functions().buyer_order_quantities_f())
+        avg_sellers_price = np.mean(functions().get_competitor_price_history(self.ID))
+        weighted_avg_buyer_price = np.average(functions().get_competitor_price_history(self.ID), weights=functions().get_buyer_order_quantities())
         
         if self.Side == 'S':
             # Strategy: Set price slightly below the average competitor's price but not lower than weighted average buyer price
@@ -130,7 +130,7 @@ class Strategies:
         return ('S', proposed_price, quantity)
     
     def decide_order_trend_strategy(self):
-        trend = functions().analyze_trend()
+        trend = functions().analyze_trend(10) #Default 10 days
         # Classify the agent's side
         if self.Side == "B":
             quantity = functions.buy_quantity(self.Bid_q_mean, self.Bid_q_std_dev)
