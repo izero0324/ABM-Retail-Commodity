@@ -1,12 +1,12 @@
 import argparse
+import json
+import signal
+import subprocess
 import sys
 import time
-import json
-import subprocess
 
 from tools.controller import controller
 from tools.sql_connection import DatabaseConnectionManager, create_or_truncate_tables
-
 
 def add_agents_from_config(agent_list, config_file='config.json'):
     '''
@@ -20,8 +20,9 @@ def add_agents_from_config(agent_list, config_file='config.json'):
         config = json.load(file)
 
     for agent, value in config['agents'].items():
-        if value != 0:
-            agent_list.append(f"{agent}{value}")
+        for n in range(value):
+            agent_list.append(f"{agent}{n}")
+    print(f"Agent_list: {agent_list}")
 
 
 def initialize_experiment(tick_num=50, exp_name='exp', api_connection='http://0.0.0.0:8000/'):
@@ -65,21 +66,41 @@ def main():
     agent_list, tick_num, api_connection, exp_name = initialize_experiment(
         args.tick_num, args.exp_name, args.api_connection
     )
+    
+    sys.stdout = main_log # Store logs into log.txt from here
 
     with DatabaseConnectionManager() as cursor:
         create_or_truncate_tables(cursor, exp_name)
-
+    
     controller(agent_list, tick_num, api_connection, exp_name)
 
+def start_server(log):
+    # Start uvicorn subprocess
+    server_process = subprocess.Popen(['uvicorn', 'LOB_api:app', '--host', '0.0.0.0', '--port', '8000']
+                                      ,stdout=background_log, stderr=background_log)
+    return server_process
+
+def stop_server(server_process):
+    # Terminate the uvicorn subprocess
+    server_process.terminate()
+    server_process.wait()
 
 if __name__ == '__main__':
     print("Api server Starting ...")
     with open("log.txt", "w") as main_log, open("background_log.txt", "w") as background_log:
-        subprocess.Popen(['python3', 'LOB_api.py'], stdout=background_log, stderr=background_log)
-        time.sleep(3)
-        print("Api server started!")
-        sys.stdout = main_log
-        main_log.write("Main Process Start...\n")
-        main()
-    sys.stdout = sys.__stdout__
-    print("Simulation finished")
+        server_process = start_server(background_log)
+        time.sleep(1)
+        print("Api server started! ")
+        try:
+            main_log.write("Main Process Start...\n")
+            main()
+            sys.stdout = sys.__stdout__ # Restart showing logs in terminal
+            print("Simulation finished (Press CTRL+C to quit)")
+            # Wait for KeyboardInterrupt (Ctrl+C) to stop the server
+            signal.signal(signal.SIGINT, signal.default_int_handler)
+            signal.pause()
+        except KeyboardInterrupt:
+            # Handle KeyboardInterrupt to stop the server gracefully
+            stop_server(server_process)
+
+    

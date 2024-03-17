@@ -16,20 +16,28 @@ def get_temp_order_book():
         return []
 
 def post_order(Market: int, Price: float, Quantity: int, Name: str, side: str):
-    if type(Price) != float:
-        Price = float(Price)
-    if type(Quantity) != int:
-        Quantity = round(Quantity)
-    url = default_url+'orders/'
+    '''
+    Post an order to market.
+    Input:
+    market (int): Market identifier.
+    price (float): Order price.
+    quantity (int): Order quantity.
+    name (str): Agent name.
+    side (str): Order side ('buy' or 'sell').
+    '''
+    price = format(Price,'.2f')
+    quantity = round(Quantity)
+    if quantity <= 0:
+        print("[API LOG]    Quantity is zero or negative. Order not posted.")
+        return
     order_data = {
         "Market": Market,
-        "Price" : Price,
-        "Quantity" :  Quantity,
+        "Price" : price,
+        "Quantity" :  quantity,
         "Side": side ,
         "agent_name": Name
     }
-
-    response = requests.post(url, json=order_data)
+    response = requests.post(f'{default_url}orders/', json=order_data)
 
     if response.status_code == 200:
         print("[API LOG]    Order posted successfully:", response.json())
@@ -57,7 +65,7 @@ def get_agent_history(type:str, agent_name: str, n: int):
     url = default_url+'hist/'+type+'/'+agent_name+'/'+str(n)
     response = requests.get(url)
     if response.status_code == 200:
-        print("[API LOG]    Hist get successfully!")
+        #print("[API LOG]    Hist get successfully!")
         return response.json()
     else:
         print("[API ERROR]Failed to post order:", response.content)
