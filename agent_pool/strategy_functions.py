@@ -1,48 +1,44 @@
 import numpy as np
 from tools.api_interface import *
 
-# Initial Setting
-# price 13.5
-# quant 3
-
-# A set of functions used in strategies
 class functions:
+    '''
+    Functions used in strategies
+    '''
     
-    # Sign function
     def sign_func(self,S):
-        if S > 0: 
-            return(1)
-        if S <=0:
-            return(-1)
-        
-    # Four functions needed in ZIP:
-        
-    # 1. current price
+        '''
+        Returns 1 if s is positive, else -1.
+        '''
+        return 1 if S > 0 else -1
+
     def current_price(self):
-######### Here's function need to be defined
-        # The n days hitorical price intervals
-        # One_hist_price = price_history(n) -> [ n days [min_deal_price,max_deal_price)] ]
-        # Sample output
-        #One_hist_price = [[10.25,20.58]]
+        '''
+        Calculate the mean price of last tick from min_price and max_price
+        Returns:
+        float: The average (mean) price of the last trading period. If unable to obtain,
+               it returns a default value of 13.5.
+        '''
         try:
-            One_hist_price = get_price_history(1)
+            One_hist_price = get_price_history(1) # Expected format: [[min_price, max_price]]
             # Collect yesterdayexecution price
-            return(np.mean(One_hist_price [0]))
+            return(np.mean(One_hist_price[0]))
         except:
             return 13.5
         
-    # 2. the most recent price trend
     def price_trend(self):
-######### Here's function need to be defined
-        # The n days hitorical price intervals
-        # Two_hist_price = price_history(n) -> [ n days [min_deal_price,max_deal_price)] ]
-        # Sample output
+        '''
+        Determines the sign of the price trend over the last two days.
+        Returns:
+        int: Returns -1 for a negative trend, 1 for a positive trend.
+        '''
         try:
             Two_hist_price = get_price_history(2)
             # Identify if the most recent price trend is positive or negative
-            S = np.mean(Two_hist_price [1]) - np.mean(Two_hist_price [0])
-            return(self.sign_func(S))
+            price_change = np.mean(Two_hist_price [1]) - np.mean(Two_hist_price [0])
+            return(self.sign_func(price_change))
         except:
+            # In case of any exception, default to a positive trend
             return 1
         
     # 3. Quantities of buy and sell orders and the ratio between them
