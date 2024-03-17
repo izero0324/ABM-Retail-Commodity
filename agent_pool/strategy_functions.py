@@ -130,9 +130,7 @@ class functions:
 
         return slope
     
-# The following was written by Jiaqi Xia:
-
-    # Decide the market demand level according to the historical data
+    # The following was written by Jiaqi Xia:
     def demand_level(self, n):
         '''
         Determines the demand level based on the average trading quantities over the past n days.
@@ -162,7 +160,7 @@ class functions:
             print("[Warning]    Return default demand: 'medium'")
             return 'medium'
 
-# The following was wriiten by Jasmine:
+    # The following was wriiten by Jasmine:
     def if_trade_yesterday():
         '''
         deal_sign = 0 , if there is no order executed yesterday
@@ -172,7 +170,6 @@ class functions:
         trades = get_price_history(1)
         return 1 if trades else 0
     
-    #Func_1 : competitor_price
     def get_competitor_price_history(self,agent_name):
         '''
         If failed to trade yesterday, get competitor price as price.
@@ -216,8 +213,6 @@ class functions:
             print(f"[Warning]    Return default price: {self.default_current_price}")
             return list(self.default_current_price)
  
-    
-    #Func_3 : buyer_order_quantity
     def get_buyer_order_quantities(self):
         '''
         Get buyer's willing quantity
