@@ -10,6 +10,7 @@ class functions:
     default_quant_ratio = 1      #by rowan
     default_trade_situation = 1  #by rowan
     default_analyze_slope = 0    #by viola
+    default_current_quantity =4.5#by jasmine
 
     # Following code written by rowan
     def sign_func(self,S):
@@ -133,25 +134,33 @@ class functions:
 
     # Decide the market demand level according to the historical data
     def demand_level(self, n):
+        '''
+        Determines the demand level based on the average trading quantities over the past n days.
+        Input:
+        n: The number of days to look back
+        Returns:
+        demand level ('low', 'medium', or 'high')
+        '''
         market_demand_threshold_low = 50
-        market_demand_threshold_high = 100
-######### Here's function need to be defined
-        # The n days hitorical execuation quantities
-        # Ten_hist_exec_quant = exec_quant_history(n) -> [ n days execuation quantities ]
-        # Sample output
-        #Ten_hist_exec_quant = [15, 18, 19, 5, 25, 7, 15, 18, 0, 22] # get quant only
-        n_hist_exec_quant = get_trade_quant_list(n)
-        n_hist_exec_quant = [item for sublist in n_hist_exec_quant for item in sublist]
-
-        average_sales = np.mean(n_hist_exec_quant)
-        if average_sales < market_demand_threshold_low:
-            demand_level = 'low'
-        elif market_demand_threshold_low <= average_sales < market_demand_threshold_high:
-            demand_level = 'medium'
-        else:
-            demand_level = 'high'
-        return demand_level
-
+        market_demand_threshold_high = 100    
+        try:
+            n_hist_exec_quant = get_trade_quant_list(n)
+            flat_list = [item for sublist in n_hist_exec_quant for item in sublist]
+            if not flat_list:
+                print("[Warning]    No History")
+                print("[Warning]    Return default demand: 'medium'")
+                return 'medium'
+            average_sales = np.mean(flat_list)
+            if average_sales < market_demand_threshold_low:
+                return 'low'
+            elif market_demand_threshold_low <= average_sales < market_demand_threshold_high:
+                return 'medium'
+            else:
+                return 'high'
+        except Exception as e:
+            print(f"[Warning]    An error occurred: {e}") 
+            print("[Warning]    Return default demand: 'medium'")
+            return 'medium'
 
 # The following was wriiten by Jasmine:
     def if_trade_yesterday():
@@ -164,60 +173,70 @@ class functions:
         return 1 if trades else 0
     
     #Func_1 : competitor_price
-    def competitor_price_history_f(self,agent_name):   
-        if self.if_trade_yesterday(agent_name) == 0:
-            
-######### Here's function need to be defined
-        # Latest limit order book, namely, limit order book after matching from yesterday 
-        # limit_order_book = [ n lists [price, quantity,S/B]]
-        # Sample output
-            limit_order_book = get_order_book_after_pairing(1) # ADD WHOLE LOB
-           
-            competitor_price_history = [sublist[0] for sublist in limit_order_book if sublist[2] == "S"]
-        else:
-            
-######### Here's function need to be defined
-        # The n days hitorical price and quantity intervals
-        # One_hist = history(n) -> [ n days [deal_1_price, deal_1_quantity] , [deal_2_price, deal_2_quantity] ]
-        # Sample output
-            One_hist = get_trade_price_list(1)
-            competitor_price_history = [sublist[0] for sublist in One_hist] # Trade price list single tick n price [price, price, price]
-            
-        return competitor_price_history
+    def get_competitor_price_history(self,agent_name):
+        '''
+        If failed to trade yesterday, get competitor price as price.
+        Input:
+        agent_name(str): agent
+        Return:
+        Price_list(list)
+        ''' 
+        try:
+            if self.if_trade_yesterday(agent_name) == 0:
+                limit_order_book = get_order_book_after_pairing(1) # ADD WHOLE LOB
+                competitor_price_history = [sublist[0] for sublist in limit_order_book if sublist[2] == "S"]
+                return competitor_price_history
+            else:
+                One_hist = get_trade_price_list(1)
+                # Trade price list single tick n price [price, price, price]
+                trade_price_history = [sublist[0] for sublist in One_hist] 
+                return trade_price_history
+        except Exception as e:
+            print(f"[Warning]    An error occurred: {e}") 
+            print(f"[Warning]    Return default price: {self.default_current_price}")
+            return list(self.default_current_price)
 
-    
-    #Func_2 : buyer_price
-    def buyer_price_willingness_history_f(self):
-        if self.if_trade_yesterday() == 0:
-
-        # Sample output
-            limit_order_book = get_order_book_after_pairing(1)
-            
-            buyer_price_willingness_history = [sublist[0] for sublist in limit_order_book if sublist[2] == "B"]
-        else:
-            
-       # Sample output
-            One_hist = get_trade_price_list(1)
-            buyer_price_willingness_history = [sublist[0] for sublist in One_hist] # trade price
-             
-        return buyer_price_willingness_history
+    def get_buyer_willingness_price_history(self):
+        '''
+        Get the buyer's bid price. Raise the price if traded, else be sure to trade
+        Return:
+        Price_list(list) : Default price if no history found
+        '''
+        try:
+            if self.if_trade_yesterday() == 0:
+                limit_order_book = get_order_book_after_pairing(1)
+                buyer_price_willingness_history = [sublist[0] for sublist in limit_order_book if sublist[2] == "B"]
+            else:
+                One_hist = get_trade_price_list(1)
+                # Trade price list single tick n price [price, price, price]
+                buyer_price_willingness_history = [sublist[0] for sublist in One_hist]
+            return buyer_price_willingness_history
+        except Exception as e:
+            print(f"[Warning]    An error occurred: {e}") 
+            print(f"[Warning]    Return default price: {self.default_current_price}")
+            return list(self.default_current_price)
  
     
     #Func_3 : buyer_order_quantity
-    def buyer_order_quantities_f(self):
-        if self.if_trade_yesterday() == 0:
-            
-        # Sample output
-            limit_order_book = get_order_book_after_pairing(1)
-            
-            buyer_order_quantities = [sublist[1] for sublist in limit_order_book if sublist[2] == "B"]
-        else:
-            
-        # Sample output
-            One_hist = get_trade_price_list(1)
-            buyer_order_quantities = [sublist[1] for sublist in One_hist] #Trade quantity list [quant1, quant2, .. qaunt10]
-            
-        return buyer_order_quantities
+    def get_buyer_order_quantities(self):
+        '''
+        Get buyer's willing quantity
+        Return:
+        quantity(list): Default if no history.
+        '''
+        try:
+            if self.if_trade_yesterday() == 0:
+                limit_order_book = get_order_book_after_pairing(1)
+                buyer_order_quantities = [sublist[1] for sublist in limit_order_book if sublist[2] == "B"]
+            else:
+                One_hist = get_trade_price_list(1)
+                #Trade quantity list [quant1, quant2, .. qaunt10]
+                buyer_order_quantities = [sublist[1] for sublist in One_hist] 
+            return buyer_order_quantities
+        except Exception as e:
+            print(f"[Warning]    An error occurred: {e}") 
+            print(f"[Warning]    Return default quantity: {self.default_current_quantity}")
+            return list(self.default_current_quantity)
     
     def production_quantity(mean_qty, std_dev):
         '''Generate a production quantity based on a normal distribution.'''
