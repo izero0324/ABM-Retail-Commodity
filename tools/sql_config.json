@@ -10,5 +10,14 @@
     "sqlite": {
         "type": "sqlite",
         "db_file": "example.db"
+    },
+    "GCP": {
+        "type": "mysql",
+        "user": "sqlserver",
+        "password": "abm_cw_pw", 
+        "host": "https://34.147.130.219",
+        "database": "abm-cw-db",
+        "raise_on_warnings": true
     }
+
 }

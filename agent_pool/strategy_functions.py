@@ -95,7 +95,6 @@ class functions:
     
     #Make strategies based on the trend of historical prices
     def analyze_trend(self, n):
-        
 ######### Here's function need to be defined
         # The n days hitorical price intervals
         # Ten_hist_price = price_history(n) -> [ n days [min_deal_price,max_deal_price)] ]
@@ -142,11 +141,6 @@ class functions:
 
 
 # The following was wriiten by Jasmine:
-
-######### Here's thing need to be defined
-    # deal_sign = 0 , if there is no order executed yesterday
-    # deal_sign = 1 , if order(s) were executed yesterday
-    # Sample output
     def if_trade_yesterday():
         '''
         deal_sign = 0 , if there is no order executed yesterday
@@ -154,12 +148,7 @@ class functions:
         Sample output
         '''
         trades = get_price_history(1)
-        if len(trades) == 0:
-            return 0 # deal_sign
-        else:
-            return 1 # deal_sign
-
-        
+        return 1 if trades else 0
     
     #Func_1 : competitor_price
     def competitor_price_history_f(self,agent_name):   
