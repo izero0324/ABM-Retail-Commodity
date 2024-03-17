@@ -1,4 +1,6 @@
 import argparse
+import sys
+import time
 import json
 import subprocess
 
@@ -71,7 +73,13 @@ def main():
 
 
 if __name__ == '__main__':
-    with open("main_log.txt", "w") as main_log, open("background_log.txt", "w") as background_log:
-        subprocess.Popen(['python3', 'background_script.py'], stdout=background_log, stderr=background_log)
+    print("Api server Starting ...")
+    with open("log.txt", "w") as main_log, open("background_log.txt", "w") as background_log:
+        subprocess.Popen(['python3', 'LOB_api.py'], stdout=background_log, stderr=background_log)
+        time.sleep(3)
+        print("Api server started!")
+        sys.stdout = main_log
         main_log.write("Main Process Start...\n")
         main()
+    sys.stdout = sys.__stdout__
+    print("Simulation finished")

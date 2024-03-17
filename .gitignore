@@ -153,6 +153,7 @@ dmypy.json
 cython_debug/
 
 log.txt
+background_log.txt
 tools/sql_config_s.json
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
