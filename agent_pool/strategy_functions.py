@@ -191,7 +191,7 @@ class functions:
         except Exception as e:
             print(f"[Warning]    An error occurred: {e}") 
             print(f"[Warning]    Return default price: {self.default_current_price}")
-            return list(self.default_current_price)
+            return [self.default_current_price]
 
     def get_buyer_willingness_price_history(self):
         '''
@@ -211,7 +211,7 @@ class functions:
         except Exception as e:
             print(f"[Warning]    An error occurred: {e}") 
             print(f"[Warning]    Return default price: {self.default_current_price}")
-            return list(self.default_current_price)
+            return [self.default_current_price]
  
     def get_buyer_order_quantities(self):
         '''
@@ -231,7 +231,7 @@ class functions:
         except Exception as e:
             print(f"[Warning]    An error occurred: {e}") 
             print(f"[Warning]    Return default quantity: {self.default_current_quantity}")
-            return list(self.default_current_quantity)
+            return [self.default_current_quantity]
     
     def production_quantity(mean_qty, std_dev):
         '''Generate a production quantity based on a normal distribution.'''
