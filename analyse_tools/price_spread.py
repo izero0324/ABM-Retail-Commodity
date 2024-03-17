@@ -14,7 +14,7 @@ def plot_price_spread_dynamic(df, exp_name):
     # Set up the figure
     fig, ax = plt.subplots(figsize=(10, 6))
     ax.set_xlim((0, df[0].max()))  # Assuming 'df[0]' contains ticks
-    ax.set_ylim((0, max(df[1].max(), df[2].max())))  # Adjust y limits to data max
+    ax.set_ylim((min(df[1].min(), df[2].min())-1, max(df[1].max(), df[2].max())+1))  # Adjust y limits to data max
     
     lines = [plt.plot([], [], label='LowestSuccessTradePrice')[0],
              plt.plot([], [], label='HighestSuccessTradePrice')[0]]
