@@ -1,4 +1,5 @@
 import uuid
+import json
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import Optional, List
@@ -8,7 +9,12 @@ app = FastAPI()
 
 # Simulating NoSQL storage with in-memory dict.
 orders_db = {}
-exp_name = 'exp'
+
+def get_exp_name_from_config():
+    with open('config.json', 'r') as file:
+        config = json.load(file)
+        return config['exp_name']
+exp_name = get_exp_name_from_config()
 
 class Order(BaseModel):
     Market: int # Market ID

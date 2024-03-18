@@ -24,6 +24,16 @@ def add_agents_from_config(agent_list, config_file='config.json'):
             agent_list.append(f"{agent}{n}")
     print(f"Agent_list: {agent_list}")
 
+def exp_name_check(config_file='config.json'):
+    '''avoid people don't change configs!'''
+    args = parse_arguments()
+    with open(config_file, 'r') as file:
+        config = json.load(file)
+        try:
+            assert config['exp_name'] == args.exp_name
+        except AssertionError:
+            raise AssertionError('Check if you changed the config!')
+
 
 def initialize_experiment(tick_num=50, exp_name='exp', api_connection='http://0.0.0.0:8000/'):
     '''
@@ -62,7 +72,6 @@ def main():
     Entry point
     '''
     args = parse_arguments()
-
     agent_list, tick_num, api_connection, exp_name = initialize_experiment(
         args.tick_num, args.exp_name, args.api_connection
     )
@@ -86,6 +95,9 @@ def stop_server(server_process):
     server_process.wait()
 
 if __name__ == '__main__':
+    print("Experiment_name checking...")
+    exp_name_check()
+
     print("Api server Starting ...")
     with open("log.txt", "w") as main_log, open("background_log.txt", "w") as background_log:
         server_process = start_server(background_log)

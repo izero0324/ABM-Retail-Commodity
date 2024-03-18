@@ -1,8 +1,8 @@
-from analyse_tools.price_spread import *
+from analyse_tools.analyse_func import *
+from analyse_tools.plot_price import *
 import argparse
-import subprocess
-import time
 import sys
+import signal
 
 def parse_arguments():
     '''
@@ -12,7 +12,11 @@ def parse_arguments():
         The parsed arguments.
     '''
     parser = argparse.ArgumentParser(description='Run analyse with specified parameters.')
+    parser.add_argument('--compare', action="store_true", help='True for exp compare')
     parser.add_argument('--exp_name', type=str, default='exp', help='Experiment name.')
+    parser.add_argument('--exp_name2', type=str, default='ZI_ZIP', help='Experiment name2.')
+    parser.add_argument('--save', action="store_true", help='Call for storing mp4')
+
     return parser.parse_args()
 
 def main():
@@ -21,19 +25,23 @@ def main():
     '''
     args = parse_arguments()
     exp_name = args.exp_name
+    print(exp_name)
     price_spread_df = get_price_spread(exp_name)
-    print(price_spread_df)
-    plot_price_spread(price_spread_df)
+    save_graph = False
+    if args.save:
+        save_graph = True
+    if args.compare :
+        exp_name2 = args.exp_name2
+        price_spread_df2 = get_price_spread(exp_name2)
+        compare_price_spread_dynamic(price_spread_df, exp_name, price_spread_df2, exp_name2, save_graph)
+    else:
+        print(price_spread_df)
+        plot_price_spread_dynamic(price_spread_df, exp_name, save_graph)
+
 
 if __name__ == '__main__':
-    print("Api server Starting ...")
-    with open("log.txt", "w") as main_log, open("background_log.txt", "w") as background_log:
-        subprocess.Popen(['python3', 'LOB_api.py'], stdout=background_log, stderr=background_log)
-        time.sleep(3)
-        print("Api server started!")
-        sys.stdout = main_log
-        main_log.write("Main Process Start...\n")
-        main()
-    sys.stdout = sys.__stdout__
-    print("Simulation finished")
+    main()
+    print("Analyse finished (Press CTRL+C to quit)")
+    
+
     

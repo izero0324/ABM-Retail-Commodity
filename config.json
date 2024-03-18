@@ -12,5 +12,6 @@
     "DT_Sell": 0,
     "DYN_Sell": 0,
     "random_agent":0
-    }
+    },
+    "exp_name":"exp"
 }
