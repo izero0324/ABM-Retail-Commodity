@@ -1,4 +1,4 @@
-from analyse_tools.price_spread import *
+from analyse_tools.analyse_func import *
 from analyse_tools.plot_price import *
 import argparse
 import subprocess
@@ -27,6 +27,7 @@ def main():
     '''
     args = parse_arguments()
     exp_name = args.exp_name
+    print(exp_name)
     price_spread_df = get_price_spread(exp_name)
     save_graph = False
     if args.save:
@@ -53,9 +54,9 @@ def stop_server(server_process):
 if __name__ == '__main__':
     print("Api server Starting ...")
     with open("an_log.txt", "w") as main_log, open("an_background_log.txt", "w") as background_log:
-        server_process = start_server(background_log)
-        time.sleep(1)
-        print("Api server started! ")
+        #server_process = start_server(background_log)
+        #time.sleep(1)
+        #print("Api server started! ")
         try:
             main_log.write("Main Process Start...\n")
             main()
@@ -66,5 +67,6 @@ if __name__ == '__main__':
             signal.pause()
         except KeyboardInterrupt:
             # Handle KeyboardInterrupt to stop the server gracefully
-            stop_server(server_process)
+            # stop_server(server_process)
+            pass
     

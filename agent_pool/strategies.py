@@ -38,7 +38,7 @@ class Strategies:
     
     # Zero intellengence plus strategy
     def ZIP(self,GreedyLevel): # GreedyLevel from 0 to 1000 
-        print('[Debug] Called ZIP strategy')
+        #print('[Debug] Called ZIP strategy')
         try:
             # Get 4 parameters
             Current_Price = functions().current_price() # pounds
@@ -67,7 +67,7 @@ class Strategies:
             p = max(p,self.Min_ask_price)
             q = GreedyLevel * Quant_Ratio[0]
             q = max(q,self.Min_ask_quantity)
-        print('[Debug] ', p ,q)
+        #print('[Debug] ', p ,q)
         return(self.Side,p,q)
     
     def dynamic_pricing_strategy(self):

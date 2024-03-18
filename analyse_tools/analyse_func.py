@@ -10,4 +10,9 @@ def get_price_spread(exp_name):
         
     return pd.DataFrame(rows)
 
+def get_total_ticks():
+    tick_num = 1
+    return tick_num
+
+
 
