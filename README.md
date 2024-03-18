@@ -11,7 +11,7 @@ Retail Commodity Pricing Strategy by ABM
     - Install requirements
     - config_files:  create a `sql_config_s.json` in the `tools` folder stores SQL connection
 
-    '''Config format
+    ```Config format
     {
         "MySQL": {
         "type": "mysql",
@@ -22,7 +22,7 @@ Retail Commodity Pricing Strategy by ABM
         "raise_on_warnings": true
         }
     }
-    '''
+    ```
 
 2. Run code
     - Before every experiment: Check exp_name and mod `config.json`
@@ -40,6 +40,10 @@ Retail Commodity Pricing Strategy by ABM
 
 5. Visuallize Results
     - Price Spread Visuallization (Single experiment/ two experiment compare)
+
+https://github.com/izero0324/ABM-Retail-Commodity/assets/21019356/fc30a4bd-f027-41bb-9fd5-cd5053a7dfca
+
+
     - Limit order book change (under develop)
 
 ## Market Rules
@@ -50,7 +54,7 @@ Retail Commodity Pricing Strategy by ABM
 
 
 
-===
+---
 
 #### Agents:
 1. Producer: 
