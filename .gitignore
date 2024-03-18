@@ -152,7 +152,7 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-log.txt
+*log.txt
 background_log.txt
 tools/sql_config_s.json
 # PyCharm
