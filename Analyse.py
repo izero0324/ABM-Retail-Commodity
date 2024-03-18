@@ -40,8 +40,7 @@ def main():
 
 
 if __name__ == '__main__':
-    print(AgentLossRatio('ZI_ZIP', 'ZIP_Sell1'), AgentLossRatio('ZI_ZIP', 'ZI_Sell0'))
-    #main()
+    main()
     print("Analyse finished (Press CTRL+C to quit)")
     
 
