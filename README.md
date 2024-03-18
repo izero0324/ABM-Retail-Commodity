@@ -10,6 +10,7 @@ Retail Commodity Pricing Strategy by ABM
       or if you have one locally, create the config file in tools folder
     - Install requirements
     - config_files:  create a `sql_config_s.json` in the `tools` folder stores SQL connection
+
     '''Config format
     {
         "MySQL": {
@@ -22,14 +23,24 @@ Retail Commodity Pricing Strategy by ABM
         }
     }
     '''
+
 2. Run code
-    `python3 main.py --tick_num 50 --exp_name exp`
+    - Before every experiment: Check exp_name and mod `config.json`
+    - Run `python3 main.py --tick_num 50 --exp_name exp`
     - Change the tick num for different ticks of simulations
     - Remember to name your simulation
     - Press CTRL+C to quit once your simulation is finished
+    
 3. Debug:
     Check your api server log in `background_log.txt` and simulation log in log.txt
-3. Visuallize Results
+
+4. Analyse:
+    - Run the analyse.py
+    - Build your own analyse methods
+
+5. Visuallize Results
+    - Price Spread Visuallization (Single experiment/ two experiment compare)
+    - Limit order book change (under develop)
 
 ## Market Rules
 ### Producer -> Market -> Buyer
