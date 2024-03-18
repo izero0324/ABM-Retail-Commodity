@@ -1,0 +1,17 @@
+{
+    "agents":{
+    "ZI_Buy": 10,
+    "ZI_Sell": 1,
+    "ZIP_Buy": 10,
+    "ZIP_Sell": 2,
+    "MD_Buy": 0,
+    "MD_Sell": 0,
+    "PN_Buy": 0,
+    "PN_Sell": 0,
+    "DT_Buy": 0,
+    "DT_Sell": 0,
+    "DYN_Sell": 0,
+    "random_agent":0
+    },
+    "exp_name":"exp"
+}

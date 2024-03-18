@@ -1,18 +1,9 @@
 import requests
-from tools.sql_connection import MySQLConnectionManager
-def get_order_book(url):
-    response = requests.get(url)
-    if response.status_code == 200:
-        print("Order book retrieved successfully.")
-        return response.json()
-    else:
-        print("Failed to retrieve order book:", response.content)
-        return []
+from tools.api_interface import get_temp_order_book
+from tools.sql_connection import DatabaseConnectionManager
 
 def pairing(api_interface, tick_num, exp_name):
-    url = api_interface + 'orders/'
-    order_book = get_order_book(url)
-
+    order_book = get_temp_order_book()
     process_pairs(order_book,tick_num, exp_name)
 
 def process_pairs(order_book, tick_num, exp_name):
@@ -23,7 +14,7 @@ def process_pairs(order_book, tick_num, exp_name):
     sell_orders.sort(key=lambda x: (x['Price'], -x['Quantity']))
     success_trades = []
 
-    with MySQLConnectionManager() as cursor:
+    with DatabaseConnectionManager() as cursor:
         # Save original order book
         for order in order_book:
             cursor.execute(f"INSERT INTO OrderBook_{exp_name} (tick, agent_name, trade_price, quantity) VALUES (%s, %s, %s, %s)",
@@ -46,9 +37,7 @@ def process_pairs(order_book, tick_num, exp_name):
                 buy_orders.pop(0)
             if lowest_sell['Quantity'] <= 0:
                 sell_orders.pop(0)
-
-            
-
+      
         print("Success Trades:")
         for trade in success_trades:
             print(trade)
@@ -56,13 +45,19 @@ def process_pairs(order_book, tick_num, exp_name):
                            (tick_num, trade['Buyer'], trade['Seller'], trade['Price'], trade['Quantity']))
         
         # Record lowest and highest success trade prices
-        lowest_price = min(trade['Price'] for trade in success_trades)
-        highest_price = max(trade['Price'] for trade in success_trades)
+        try:
+            lowest_price = min(trade['Price'] for trade in success_trades)
+            highest_price = max(trade['Price'] for trade in success_trades)
+            price_spread_sql = f"INSERT INTO PriceSpread_{exp_name} (tick, LowestSuccessTradePrice, HighestSuccessTradePrice) VALUES (%s, %s, %s)"
+            cursor.execute(price_spread_sql, (tick_num, lowest_price, highest_price))
+        except:
 
-        price_spread_sql = f"INSERT INTO PriceSpread_{exp_name} (tick, LowestSuccessTradePrice, HighestSuccessTradePrice) VALUES (%s, %s, %s)"
-        cursor.execute(price_spread_sql, (tick_num, lowest_price, highest_price))
-    
-    
-
-    
-#pairing('http://0.0.0.0:8000/') #test pairing
+            pass
+        
+        # Store Leftover Order book
+        for order in buy_orders:
+            cursor.execute(f"INSERT INTO LOB_{exp_name} (tick, price, quantity, side) VALUES (%s, %s, %s, %s)",
+                           (tick_num, order['Price'], order['Quantity'], order['Side']))
+        for order in sell_orders:
+            cursor.execute(f"INSERT INTO LOB_{exp_name} (tick, price, quantity, side) VALUES (%s, %s, %s, %s)",
+                           (tick_num, order['Price'], order['Quantity'], order['Side']))

@@ -1,4 +1,5 @@
 import uuid
+import json
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import Optional, List
@@ -9,9 +10,15 @@ app = FastAPI()
 # Simulating NoSQL storage with in-memory dict.
 orders_db = {}
 
+def get_exp_name_from_config():
+    with open('config.json', 'r') as file:
+        config = json.load(file)
+        return config['exp_name']
+exp_name = get_exp_name_from_config()
+
 class Order(BaseModel):
     Market: int # Market ID
-    Price : int # Price
+    Price : float # Price
     Quantity : int # n times base quantity
     Side: str #P for producer, B for buyer
     agent_name: str # agent_name
@@ -49,11 +56,40 @@ async def clear_all_orders():
     return {"Order list cleared"}
 
 # Get history price
-@app.get("/history_price/{day}")
-async def get_history_price(day:int):
-    price_list = historical_price(day)
+@app.get("/hist/price/{tick}")
+async def get_history_price(tick:int):
+    price_list = hist_n_price(exp_name, tick)
     return price_list
-    
+
+# Get history order by agent
+@app.get("/hist/order/{agent}/{tick}")
+async def get_history_order(agent:str, tick:int):
+    order_list = hist_n_order_by_agent(exp_name,agent, tick)
+    return order_list
+
+# Get history trade by agent
+@app.get("/hist/trade/{agent}/{tick}")
+async def get_history_trade(agent:str, tick:int):
+    trade_list = hist_n_trade_by_agent(exp_name,agent, tick)
+    return trade_list
+
+# Get trade_price list
+@app.get("/whole/price/{tick}")
+async def get_trade_price_list(tick: int):
+    price_list = last_trade_price_list(exp_name, tick)
+    return price_list
+
+# Get n trade quantity
+@app.get("/whole/quant/{tick}")
+async def get_trade_quant_list(tick: int):
+    quant_list = trade_quantity_list(exp_name, tick)
+    return quant_list
+
+# Get lob after pair
+@app.get("/LOB/{tick}")
+async def get_LOB(tick:int):
+    lob = LOB_list(exp_name, tick)
+    return lob
 
 if __name__ == "__main__":
     import uvicorn
