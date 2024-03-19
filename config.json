@@ -1,9 +1,9 @@
 {
     "agents":{
     "ZI_Buy": 10,
-    "ZI_Sell": 1,
+    "ZI_Sell": 2,
     "ZIP_Buy": 10,
-    "ZIP_Sell": 2,
+    "ZIP_Sell": 1,
     "MD_Buy": 0,
     "MD_Sell": 0,
     "PN_Buy": 0,
