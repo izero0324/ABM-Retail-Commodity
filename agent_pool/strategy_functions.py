@@ -55,7 +55,7 @@ class functions:
         
     def calculate_unexecuted_order_quantities(self, limit_order_book):
         # Calculate the quantity of all unexecuted order
-        print('[DEBUG] LOB', limit_order_book)
+        #print('[DEBUG] LOB', limit_order_book)
         buy_quantity = max(1, sum(order[2] for order in limit_order_book if order[3] == "B"))
         sell_quantity = max(1, sum(order[2] for order in limit_order_book if order[3] == "S"))
         return buy_quantity, sell_quantity
@@ -68,7 +68,7 @@ class functions:
         '''
         limit_order_book = get_order_book_after_pairing(1)
         buy_quantity, sell_quantity = self.calculate_unexecuted_order_quantities(limit_order_book)
-        print(f"[DEBUG] buy_q{buy_quantity} sell_q{sell_quantity}")
+        #print(f"[DEBUG] buy_q{buy_quantity} sell_q{sell_quantity}")
         try:
             BuySell_Ratio = buy_quantity / sell_quantity         # >1 is a good signal for seller
             SellBuy_Ratio = 1 / BuySell_Ratio          # >1 is a good signnal for buyer  
