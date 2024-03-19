@@ -10,7 +10,7 @@ class functions:
     default_quant_ratio = 1               #by rowan
     default_trade_situation = 1           #by rowan
     default_analyze_slope = 0             #by viola
-    default_current_but_quantity = 416637 #by jasmine
+    default_current_but_quantity = 4166 #by jasmine
 
     # Following code written by rowan
     def sign_func(self,S):
@@ -55,8 +55,9 @@ class functions:
         
     def calculate_unexecuted_order_quantities(self, limit_order_book):
         # Calculate the quantity of all unexecuted order
-        buy_quantity = sum(order[1] for order in limit_order_book if order[2] == "B")
-        sell_quantity = sum(order[1] for order in limit_order_book if order[2] == "S")
+        print('[DEBUG] LOB', limit_order_book)
+        buy_quantity = max(1, sum(order[2] for order in limit_order_book if order[3] == "B"))
+        sell_quantity = max(1, sum(order[2] for order in limit_order_book if order[3] == "S"))
         return buy_quantity, sell_quantity
     
     def quant_ratio(self):
@@ -67,6 +68,7 @@ class functions:
         '''
         limit_order_book = get_order_book_after_pairing(1)
         buy_quantity, sell_quantity = self.calculate_unexecuted_order_quantities(limit_order_book)
+        print(f"[DEBUG] buy_q{buy_quantity} sell_q{sell_quantity}")
         try:
             BuySell_Ratio = buy_quantity / sell_quantity         # >1 is a good signal for seller
             SellBuy_Ratio = 1 / BuySell_Ratio          # >1 is a good signnal for buyer  
@@ -139,8 +141,8 @@ class functions:
         Returns:
         demand level ('low', 'medium', or 'high')
         '''
-        market_demand_threshold_low = 363000
-        market_demand_threshold_high = 123000  
+        market_demand_threshold_low = 3619
+        market_demand_threshold_high = 4423  
         try:
             n_hist_exec_quant = get_trade_quant_list(n)
             flat_list = [item for sublist in n_hist_exec_quant for item in sublist]
@@ -181,7 +183,7 @@ class functions:
         try:
             if self.if_trade_yesterday(agent_name) == 0:
                 limit_order_book = get_order_book_after_pairing(1) # ADD WHOLE LOB
-                competitor_price_history = [sublist[0] for sublist in limit_order_book if sublist[2] == "S"]
+                competitor_price_history = [sublist[1] for sublist in limit_order_book if sublist[3] == "S"]
                 return competitor_price_history
             else:
                 One_hist = get_trade_price_list(1)
@@ -202,7 +204,7 @@ class functions:
         try:
             if self.if_trade_yesterday() == 0:
                 limit_order_book = get_order_book_after_pairing(1)
-                buyer_price_willingness_history = [sublist[0] for sublist in limit_order_book if sublist[2] == "B"]
+                buyer_price_willingness_history = [sublist[1] for sublist in limit_order_book if sublist[3] == "B"]
             else:
                 One_hist = get_trade_price_list(1)
                 # Trade price list single tick n price [price, price, price]
@@ -222,11 +224,11 @@ class functions:
         try:
             if self.if_trade_yesterday() == 0:
                 limit_order_book = get_order_book_after_pairing(1)
-                buyer_order_quantities = [sublist[1] for sublist in limit_order_book if sublist[2] == "B"]
+                buyer_order_quantities = [sublist[2] for sublist in limit_order_book if sublist[3] == "B"]
             else:
                 One_hist = get_trade_price_list(1)
                 #Trade quantity list [quant1, quant2, .. qaunt10]
-                buyer_order_quantities = [sublist[1] for sublist in One_hist] 
+                buyer_order_quantities = [sublist[0] for sublist in One_hist] 
             return buyer_order_quantities
         except Exception as e:
             print(f"[Warning]    An error occurred: {e}") 

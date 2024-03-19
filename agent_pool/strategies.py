@@ -6,20 +6,20 @@ import numpy as np
 # A strategy set used by agents
 class Strategies:
     #Quantity constraint
-    Max_bid_quantity = 483026
+    Max_bid_quantity = 4830
     Min_ask_quantity = 3202
-    Bid_q_mean = 416638
-    Bid_q_std_dev = 22130
+    Bid_q_mean = 4166
+    Bid_q_std_dev = 221
     Ask_q_mean = 3652
     Ask_q_std_dev = 150
     
     #Price constraint
     Max_bid_price = 52
     Min_ask_price = 9
-    Bid_p_mean = 30
-    Bid_p_std_dev = 6
-    Ask_p_mean = 24
-    Ask_p_std_dev = 5
+    Bid_p_mean = 24
+    Bid_p_std_dev = 5
+    Ask_p_mean =  30
+    Ask_p_std_dev = 6
     
     # ID: agents name, Side: B / S
     def init(self, ID, Side):

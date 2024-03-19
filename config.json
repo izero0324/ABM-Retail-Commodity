@@ -1,9 +1,9 @@
 {
     "agents":{
-    "ZI_Buy": 1,
-    "ZI_Sell": 144,
+    "ZI_Buy": 2,
+    "ZI_Sell": 164,
     "ZIP_Buy": 1,
-    "ZIP_Sell": 144,
+    "ZIP_Sell": 20,
     "MD_Buy": 0,
     "MD_Sell": 0,
     "PN_Buy": 0,
@@ -13,5 +13,5 @@
     "DYN_Sell": 0,
     "random_agent":0
     },
-    "exp_name":"F2R_ZIP144"
+    "exp_name":"F2R_ZIP_144"
 }
