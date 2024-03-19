@@ -5,12 +5,12 @@ class functions:
     '''
     Functions used in strategies
     '''
-    default_current_price = 13.5 #by rowan
-    default_price_trend = 1      #by rowan
-    default_quant_ratio = 1      #by rowan
-    default_trade_situation = 1  #by rowan
-    default_analyze_slope = 0    #by viola
-    default_current_quantity =4.5#by jasmine
+    default_current_price = 26            #by rowan
+    default_price_trend = 1               #by rowan
+    default_quant_ratio = 1               #by rowan
+    default_trade_situation = 1           #by rowan
+    default_analyze_slope = 0             #by viola
+    default_current_but_quantity = 416637 #by jasmine
 
     # Following code written by rowan
     def sign_func(self,S):
