@@ -1,6 +1,7 @@
 from agent_pool.agent_controller import agent_choose
 from tools.p_mech import pairing
 from tools.api_interface import post_clear_order, get_temp_order_book
+import sys
 '''
 A finite state machine controlling the flow of simulation
 1. Call agents to post orders
@@ -60,7 +61,7 @@ def check_orders(agent_list):
             agent_choose(agent)
     print("[Controller] All agents posted!(Or Retried)")
 
-def controller(agent_list, tick_num, api_connection, exp_name):
+def controller(agent_list, tick_num, api_connection, exp_name, main_log):
     post_clear_order()
     
     for tick in range(tick_num):
@@ -77,6 +78,10 @@ def controller(agent_list, tick_num, api_connection, exp_name):
         assert state_now() == "Check_pair"
         next_state()
         post_clear_order()
+        sys.stdout = sys.__stdout__
+        print(f"{tick}/{tick_num} DONE")
+        sys.stdout = main_log
+        
 
         
 

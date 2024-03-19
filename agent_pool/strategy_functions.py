@@ -76,7 +76,7 @@ class functions:
             print(f"[Warning]    Return default quant_ratio: ",self.default_quant_ratio)
             BuySell_Ratio= self.default_quant_ratio
             SellBuy_Ratio= self.default_quant_ratio
-        return([buy_quantity, sell_quantity, SellBuy_Ratio, BuySell_Ratio])
+        return([SellBuy_Ratio, BuySell_Ratio])  ##revised
     
     def trade_situation(self, agent_name, n):
         '''
@@ -139,8 +139,8 @@ class functions:
         Returns:
         demand level ('low', 'medium', or 'high')
         '''
-        market_demand_threshold_low = 50
-        market_demand_threshold_high = 100    
+        market_demand_threshold_low = 363000
+        market_demand_threshold_high = 123000  
         try:
             n_hist_exec_quant = get_trade_quant_list(n)
             flat_list = [item for sublist in n_hist_exec_quant for item in sublist]

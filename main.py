@@ -81,7 +81,7 @@ def main():
     with DatabaseConnectionManager() as cursor:
         create_or_truncate_tables(cursor, exp_name)
     
-    controller(agent_list, tick_num, api_connection, exp_name)
+    controller(agent_list, tick_num, api_connection, exp_name, main_log)
 
 def start_server(log):
     # Start uvicorn subprocess

@@ -148,4 +148,19 @@ def AgentLossRatio(exp_name, agent_name):
         traded += get_agent_traded_pxq_at_tick(exp_name,agent_name, tick)
         ordered += get_agent_ordered_pxq_at_tick(exp_name, agent_name, tick)
     return traded/ordered
+
+def AllLossRatioList(exp_name, side='Buy'):
+    '''
+    SUM(All tick Traded Quantity * Price) / SUM(All tick Buyer's(or Seller) Order Quantity * Price)
+    Input:
+    exp_name(str)
+    side(str) : 'Buy' or 'Sell'
+    Return:
+    ratio(list)
+    '''
+    ticks = get_total_ticks(exp_name)
+    ratio_list = []
+    for tick in range(ticks+1):
+        ratio_list.append(get_all_traded_pxq_at_tick(exp_name, tick) / get_all_ordered_pxq_at_tick(exp_name, side, tick))
+    return ratio_list
     

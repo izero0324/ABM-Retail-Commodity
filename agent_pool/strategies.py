@@ -52,20 +52,20 @@ class Strategies:
         if self.Side == "B":
             # Convert parameters into factors
             Trend_Sign_factor =  1 + 0.1*Trend_Sign
-            Quant_Ratio_factor = 1 + 0.1 * (Quant_Ratio[2] - 1)
+            Quant_Ratio_factor = 1 + 0.1 * (Quant_Ratio[0] - 1)
             Trade_Situation_factor = -0.2 + abs(Trade_Situation+0.2) 
             p = Current_Price * Trend_Sign_factor * Quant_Ratio_factor * Trade_Situation_factor
             p = min(p,self.Max_bid_price)
-            q = GreedyLevel * Quant_Ratio[1]
+            q = GreedyLevel * Quant_Ratio[0]
             q = min(q,self.Max_bid_quantity)
         else:
             # Convert parameters into factors
             Trend_Sign_factor =  1 + 0.1*Trend_Sign
-            Quant_Ratio_factor = 1 + 0.1 * (Quant_Ratio[3] - 1)
+            Quant_Ratio_factor = 1 + 0.1 * (Quant_Ratio[1] - 1)
             Trade_Situation_factor = 0.2 + abs(Trade_Situation-0.2) 
             p = Current_Price * Trend_Sign_factor * Quant_Ratio_factor * Trade_Situation_factor
             p = max(p,self.Min_ask_price)
-            q = GreedyLevel * Quant_Ratio[0]
+            q = GreedyLevel * Quant_Ratio[1]
             q = max(q,self.Min_ask_quantity)
         #print('[Debug] ', p ,q)
         return(self.Side,p,q)
@@ -76,36 +76,36 @@ class Strategies:
         if self.Side == "B":
             if functions().demand_level(n) == 'high':
                 price = min(functions().current_price() * 0.8, self.Max_bid_price)
-                quantity = min(self.Max_bid_quantity * 0.2, self.Max_bid_quantity)
+                quantity = min(self.Max_bid_quantity * 0.8, self.Max_bid_quantity)
             elif functions().demand_level(n) == 'medium':
                 price = functions().current_price() * 0.5
                 quantity = self.Max_bid_quantity 
             else:
                 price = min(functions().current_price() * 0.2, self.Max_bid_price)
-                quantity = min(self.Max_bid_quantity * 0.8, self.Max_bid_quantity) 
+                quantity = min(self.Max_bid_quantity * 0.2, self.Max_bid_quantity) 
         else:
             if functions().demand_level(n) == 'high':
                 price = max(functions().current_price() * 0.8, self.Min_ask_price)
-                quantity = max(self.Min_ask_quantity * 0.2, self.Min_ask_quantity)
+                quantity = max(self.Min_ask_quantity * 0.8, self.Min_ask_quantity)
             elif functions().demand_level(n) == 'medium':
                 price = functions().current_price()  * 0.5
                 quantity = self.Min_ask_quantity  
             else:
                 price = max(functions().current_price() * 0.2, self.Min_ask_price)
-                quantity = max(self.Min_ask_quantity * 0.8, self.Min_ask_quantity) 
+                quantity = max(self.Min_ask_quantity * 0.2, self.Min_ask_quantity) 
         return (self.Side, price, quantity)
     
     def penetration(self):
         if self.Side == 'S':
             # Estimating the lowest acceptable price based on buyer's willingness and competitor's pricing
-            target_price_based_on_buyers = max(functions().get_buyer_willingness_price_history()) - 0.01
+            target_price_based_on_buyers = max(functions().get_buyer_willingness_price_history()) - 1
             target_price_based_on_sellers = min(functions().get_competitor_price_history(self.ID))
     
             # Choosing the higher price between the target prices while ensuring it's above cost
             proposed_price = max(target_price_based_on_buyers, target_price_based_on_sellers, Strategies.Min_ask_price)
             quantity = round(functions.production_quantity(Strategies.Ask_q_mean, Strategies.Ask_q_std_dev))
         else:
-            target_price_based_on_buyers = max(functions().get_buyer_willingness_price_history()) + 0.01
+            target_price_based_on_buyers = max(functions().get_buyer_willingness_price_history()) + 1
             target_price_based_on_sellers = min(functions().get_competitor_price_history(self.ID))
             
             # Choosing the higher price between the target prices while ensuring it's above cost

@@ -40,7 +40,11 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    #main()
+    ratio = AllLossRatio("F2R_ZIP1")
+    ratio_ls = AllLossRatioList("F2R_ZIP1")
+    print(ratio)
+    print(ratio_ls)
     print("Analyse finished (Press CTRL+C to quit)")
     
 
