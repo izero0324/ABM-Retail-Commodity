@@ -1,8 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
+from matplotlib.animation import FuncAnimation, writers
 
-def plot_LOB_ani(data):
+def plot_LOB_ani(data, save=False):
     # Assuming the DataFrame 'data' is already defined and loaded with the Limit Order Book info
     # Modify this plotting function for animation
     def animate(i):
@@ -34,7 +34,10 @@ def plot_LOB_ani(data):
     # Assuming ticks are sequential and start from 0, adjust as necessary
     num_ticks = data[0].max()  # Assuming ticks start at 0 and are sequential
     ani = FuncAnimation(fig, animate,interval=100, frames=num_ticks, repeat=False)
-
+    if save:
+        Writer = writers['ffmpeg']
+        writer = Writer(fps=20, metadata=dict(artist='Me'), bitrate=1800, extra_args=['-vcodec', 'libx264'])
+        ani.save(f'LOB.mp4', writer)
     plt.show()
 
 def plot_order_book(tick, df):
