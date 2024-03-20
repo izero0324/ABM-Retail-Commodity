@@ -150,7 +150,7 @@ class functions:
                 print("[Warning]    No History")
                 print("[Warning]    Return default demand: 'medium'")
                 return 'medium'
-            average_sales = np.mean(flat_list)
+            average_sales = np.sum(flat_list)/n
             if average_sales < market_demand_threshold_low:
                 return 'low'
             elif market_demand_threshold_low <= average_sales < market_demand_threshold_high:

@@ -1,5 +1,6 @@
 import pandas as pd
 from tools.sql_connection import DatabaseConnectionManager
+import sys
 
 def fetch_df_by_sql(SQL_string):
     with DatabaseConnectionManager() as cursor:
@@ -47,11 +48,11 @@ def hist_n_trade_by_agent(exp_name, agent_name, n):
     return fetch_df_by_sql(query)
 
 def trade_quantity_list(exp_name: str, n: int):
-    query = f"SELECT quantity FROM SuccessTrade_{exp_name} WHERE tick = (SELECT MAX(tick) FROM PriceSpread_{exp_name})-{n};"
+    query = f"SELECT quantity FROM SuccessTrade_{exp_name} WHERE tick >= (SELECT MAX(tick) FROM OrderBook_{exp_name})-{n};"
     return fetch_df_by_sql(query)
 
 def last_trade_price_list(exp_name: str, n: int):
-    query = f"SELECT trade_price FROM SuccessTrade_{exp_name} WHERE tick = (SELECT MAX(tick) FROM PriceSpread_{exp_name})-{n};"
+    query = f"SELECT trade_price FROM SuccessTrade_{exp_name} WHERE tick >= (SELECT MAX(tick) FROM OrderBook_{exp_name})-{n};"
     return fetch_df_by_sql(query)
 
 def LOB_list(exp_name: str, n: int):

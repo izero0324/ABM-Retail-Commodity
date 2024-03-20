@@ -73,6 +73,7 @@ class Strategies:
     def dynamic_pricing_strategy(self):
         # Dynamic pricing strategy: adjust the price and quantity according to the market demend level
         n = 10 # Default 10 days
+        print('[DEBUG] ', functions().demand_level(n), functions().current_price())
         if self.Side == "B":
             if functions().demand_level(n) == 'high':
                 price = min(functions().current_price() * 0.8, self.Max_bid_price)
@@ -81,8 +82,10 @@ class Strategies:
                 price = functions().current_price() * 0.5
                 quantity = self.Max_bid_quantity 
             else:
+                print('[DEBUG] ', functions().current_price() * 0.2, self.Max_bid_price)
                 price = min(functions().current_price() * 0.2, self.Max_bid_price)
                 quantity = min(self.Max_bid_quantity * 0.2, self.Max_bid_quantity) 
+                print('[DEBUG] ', price, quantity)
         else:
             if functions().demand_level(n) == 'high':
                 price = max(functions().current_price() * 0.8, self.Min_ask_price)

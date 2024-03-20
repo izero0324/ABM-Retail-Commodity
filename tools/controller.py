@@ -61,10 +61,30 @@ def check_orders(agent_list):
             agent_choose(agent)
     print("[Controller] All agents posted!(Or Retried)")
 
+def init_10_tick(api_connection, exp_name):
+    post_clear_order()
+    agent_list = ['ZI_Buyi1', 'ZI_Buyi2', 'ZI_Buyi3', 'ZI_Buyi4', 'ZI_Buyi5', 
+                  'ZI_Selli1', 'ZI_Selli2', 'ZI_Selli3', 'ZI_Selli4', 'ZI_Selli5']
+    for tick in range(10):
+        print(f"================ Pre-run tick {tick} ===========================")
+        assert state_now() == "Get_order" 
+        get_orders(agent_list)
+        next_state()
+        assert state_now() == "Check_order"
+        check_orders(agent_list)
+        next_state()
+        assert state_now() == "Pairing"
+        pairing(api_connection, tick, exp_name)
+        next_state()
+        assert state_now() == "Check_pair"
+        next_state()
+        post_clear_order()
+
 def controller(agent_list, tick_num, api_connection, exp_name, main_log):
     post_clear_order()
+    init_10_tick(api_connection, exp_name)
     
-    for tick in range(tick_num):
+    for tick in range(10,tick_num+10):
         print(f"================ tick {tick} ===========================")
         assert state_now() == "Get_order" 
         get_orders(agent_list)
@@ -79,7 +99,7 @@ def controller(agent_list, tick_num, api_connection, exp_name, main_log):
         next_state()
         post_clear_order()
         sys.stdout = sys.__stdout__
-        print(f"{tick}/{tick_num} DONE")
+        print(f"{tick-9}/{tick_num} DONE")
         sys.stdout = main_log
         
 

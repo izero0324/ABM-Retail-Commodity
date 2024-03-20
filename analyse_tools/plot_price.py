@@ -82,3 +82,28 @@ def plot_price_spread(df):
     plt.legend()
     plt.grid(True)
     plt.show()
+
+def plot_LossRatio(exp_name, LostRatio_ls, agents, agent_list):
+    max_tick = range(0, len(LostRatio_ls))
+    plt.plot(max_tick, LostRatio_ls, label='General')
+    agent_index = 0
+    for agent in agents:
+        plt.plot(max_tick, agent, label=agent_list[agent_index])
+        agent_index += 1
+
+    plt.title(f'Efficient Ratio of {exp_name}')
+    plt.xlabel('Ticks')
+    plt.ylabel('Efficient Ratio')
+    plt.legend()
+    plt.show()
+
+def plot_BS(Buy, Sell, exp_name):
+    ticks = range(0, max(len(Buy),len(Sell)))
+    plt.plot(ticks, Buy, label='Buy')
+    plt.plot(ticks, Sell, label='Sell')
+
+    plt.title(f'Efficient Ratio of {exp_name}')
+    plt.xlabel('Ticks')
+    plt.ylabel('Efficient Ratio')
+    plt.legend()
+    plt.show()

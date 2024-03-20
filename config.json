@@ -1,17 +1,17 @@
 {
     "agents":{
-    "ZI_Buy": 2,
-    "ZI_Sell": 164,
-    "ZIP_Buy": 1,
-    "ZIP_Sell": 20,
+    "ZI_Buy": 5,
+    "ZI_Sell": 5,
+    "ZIP_Buy": 5,
+    "ZIP_Sell": 5,
     "MD_Buy": 0,
     "MD_Sell": 0,
     "PN_Buy": 0,
     "PN_Sell": 0,
-    "DT_Buy": 0,
-    "DT_Sell": 0,
+    "DT_Buy": 5,
+    "DT_Sell": 5,
     "DYN_Sell": 0,
     "random_agent":0
     },
-    "exp_name":"F2R_ZIP_144"
+    "exp_name":"DT_5"
 }

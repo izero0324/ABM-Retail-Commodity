@@ -1,6 +1,13 @@
 import pandas as pd
 from tools.sql_connection import DatabaseConnectionManager
 
+def get_LOB(exp_name):
+    with DatabaseConnectionManager() as cursor:
+        query = f"SELECT * FROM LOB_{exp_name}"
+        cursor.execute(query)
+        rows = cursor.fetchall()
+        
+    return pd.DataFrame(rows)
 
 def get_price_spread(exp_name):
     '''
@@ -162,5 +169,23 @@ def AllLossRatioList(exp_name, side='Buy'):
     ratio_list = []
     for tick in range(ticks+1):
         ratio_list.append(get_all_traded_pxq_at_tick(exp_name, tick) / get_all_ordered_pxq_at_tick(exp_name, side, tick))
+        #print(ratio_list)
     return ratio_list
+
+def AgentLossRatioList(exp_name, agent_name):
+    '''
+    SUM(An Agent all tick Traded Quantity * Price) / SUM(An Agetn all tick Buyer's(or Seller) Order Quantity * Price)
+    Input:
+    exp_name(str)
+    agent_name(str)
+    Return:
+    ratio(float)
+    '''
+    ticks = get_total_ticks(exp_name)
+    ratio_list_by_agent = []
+    for tick in range(ticks+1):
+        ratio_list_by_agent.append(get_agent_traded_pxq_at_tick(exp_name,agent_name, tick)/
+                                   get_agent_ordered_pxq_at_tick(exp_name, agent_name, tick))
+        
+    return ratio_list_by_agent
     

@@ -1,8 +1,26 @@
 from analyse_tools.analyse_func import *
 from analyse_tools.plot_price import *
+from analyse_tools.plot_LOB import *
 import argparse
-import sys
-import signal
+import json
+
+
+def add_agents_from_config(agent_list, config_file='config.json'):
+    '''
+    Updates the agent list with agents from the config file.
+
+    Input:
+        agent_list: A list of current agents.
+        config_file: The path to the configuration file.
+    '''
+    with open(config_file, 'r') as file:
+        config = json.load(file)
+
+    for agent, value in config['agents'].items():
+        for n in range(value):
+            agent_list.append(f"{agent}{n}")
+    print(f"Agent_list: {agent_list}")
+    return agent_list
 
 def parse_arguments():
     '''
@@ -19,9 +37,9 @@ def parse_arguments():
 
     return parser.parse_args()
 
-def main():
+def PriceSpread():
     '''
-    Entry point
+    Get PriceSpread 
     '''
     args = parse_arguments()
     exp_name = args.exp_name
@@ -38,13 +56,49 @@ def main():
         print(price_spread_df)
         plot_price_spread_dynamic(price_spread_df, exp_name, save_graph)
 
+def LossRatio_by_agent(agent_list):
+    args = parse_arguments()
+    exp_name = args.exp_name
+    print(exp_name)
+    LossRatio_df = AllLossRatioList(exp_name)
+    all_agent_ER = []
+    for agent in agent_list:
+        all_agent_ER.append(AgentLossRatioList(exp_name, agent))
+    plot_LossRatio(exp_name, LossRatio_df,  all_agent_ER, agent_list)
+
+def LossRatio_BS():
+    args = parse_arguments()
+    exp_name = args.exp_name
+    print(exp_name)
+    LossRatio_df_B = AllLossRatioList(exp_name)
+    LossRatio_df_S = AllLossRatioList(exp_name, side='Sell')
+    plot_BS(LossRatio_df_B,  LossRatio_df_S, exp_name)
+
+def limit_order_book_by_tick(tick):
+    args = parse_arguments()
+    exp_name = args.exp_name
+    df = get_LOB(exp_name)
+    # df[df[0]==tick]
+    plot_order_book(tick, df)
+
+def ani_LOB():
+    args = parse_arguments()
+    exp_name = args.exp_name
+    df = get_LOB(exp_name)
+    plot_LOB_ani(df)
+
+
 
 if __name__ == '__main__':
-    main()
+    #agent_lists = ['ZI_Sell163', 'ZIP_Buy0', 'ZIP_Sell0']
+    #agent_list = add_agents_from_config(agent_lists)
+    #LossRatio_by_agent(agent_lists)
     #ratio = AllLossRatio("F2R_ZIP1")
     #ratio_ls = AllLossRatioList("F2R_ZIP1")
     ##print(ratio)
     #print(ratio_ls)
+    #PriceSpread()
+    ani_LOB()
     print("Analyse finished (Press CTRL+C to quit)")
     
 
