@@ -4,14 +4,14 @@
     "ZI_Sell": 5,
     "ZIP_Buy": 5,
     "ZIP_Sell": 5,
-    "MD_Buy": 0,
-    "MD_Sell": 0,
-    "PN_Buy": 0,
-    "PN_Sell": 0,
+    "MD_Buy": 5,
+    "MD_Sell": 5,
+    "PN_Buy": 5,
+    "PN_Sell": 5,
     "DT_Buy": 5,
     "DT_Sell": 5,
-    "DYN_Sell": 0,
+    "DYN_Sell": 5,
     "random_agent":0
     },
-    "exp_name":"DT_5"
+    "exp_name":"demo"
 }

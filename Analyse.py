@@ -85,7 +85,7 @@ def ani_LOB():
     args = parse_arguments()
     exp_name = args.exp_name
     df = get_LOB(exp_name)
-    plot_LOB_ani(df)
+    plot_LOB_ani(df, save=True)
 
 
 

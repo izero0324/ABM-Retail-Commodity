@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation, writers
 
 def plot_LOB_ani(data, save=False):
-    # Assuming the DataFrame 'data' is already defined and loaded with the Limit Order Book info
-    # Modify this plotting function for animation
+  
+    num_ticks = data[0].max()  # Assuming ticks start at 0 and are sequential
     def animate(i):
         plt.cla()  # Clear current axes to avoid overlaying plots
         tick = i
@@ -23,16 +23,13 @@ def plot_LOB_ani(data, save=False):
         plt.barh(sell_orders[1], -sell_orders[2], color='red', label='Sell', left=0)
         plt.xlabel('Quantity')
         plt.ylabel('Price')
-        plt.title(f'Limit Order Book at tick {tick}')
+        plt.title(f'Limit Order Book')
         plt.xlim(-max_qty, max_qty)  # Set x-axis to center at 0
         ax.xaxis.set_visible(False)
-        # We choose not to display the axes in this version as per earlier request, but you can adjust as needed
         plt.legend(['Buy', 'Sell'], loc='upper right')
 
     fig, ax = plt.subplots()
 
-    # Assuming ticks are sequential and start from 0, adjust as necessary
-    num_ticks = data[0].max()  # Assuming ticks start at 0 and are sequential
     ani = FuncAnimation(fig, animate,interval=100, frames=num_ticks, repeat=False)
     if save:
         Writer = writers['ffmpeg']

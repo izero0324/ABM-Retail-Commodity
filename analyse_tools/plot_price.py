@@ -36,7 +36,7 @@ def plot_price_spread_dynamic(df, exp_name, save=False):
     plt.grid(True)
 
     # Create animation
-    anim = FuncAnimation(fig, update, frames=len(df[0])+1, fargs=(df, lines), blit=True, repeat=False)
+    anim = FuncAnimation(fig, update, frames=len(df[0])+1,interval=50, fargs=(df, lines), blit=True, repeat=False)
     if save: anim.save(f'PriceSpread_{exp_name}.mp4', fps=20, extra_args=['-vcodec', 'libx264'])
     plt.show()
 

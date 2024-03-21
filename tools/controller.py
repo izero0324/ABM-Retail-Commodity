@@ -80,7 +80,7 @@ def init_10_tick(api_connection, exp_name):
         next_state()
         post_clear_order()
 
-def controller(agent_list, tick_num, api_connection, exp_name, main_log):
+def controller(agent_list, tick_num, api_connection, exp_name):
     post_clear_order()
     init_10_tick(api_connection, exp_name)
     
@@ -98,9 +98,6 @@ def controller(agent_list, tick_num, api_connection, exp_name, main_log):
         assert state_now() == "Check_pair"
         next_state()
         post_clear_order()
-        sys.stdout = sys.__stdout__
-        print(f"{tick-9}/{tick_num} DONE")
-        sys.stdout = main_log
         
 
         

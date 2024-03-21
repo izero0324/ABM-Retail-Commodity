@@ -76,29 +76,21 @@ def main():
         args.tick_num, args.exp_name, args.api_connection
     )
     
-    sys.stdout = main_log # Store logs into log.txt from here
 
     with DatabaseConnectionManager() as cursor:
         create_or_truncate_tables(cursor, exp_name)
     
-    controller(agent_list, tick_num, api_connection, exp_name, main_log)
+    controller(agent_list, tick_num, api_connection, exp_name)
 
-def start_server(log):
-    # Start uvicorn subprocess
-    server_process = subprocess.Popen(['uvicorn', 'LOB_api:app', '--host', '0.0.0.0', '--port', '8000']
-                                      ,stdout=background_log, stderr=background_log)
-    return server_process
-
-def stop_server(server_process):
-    # Terminate the uvicorn subprocess
-    server_process.terminate()
-    server_process.wait()
 
 if __name__ == '__main__':
     print("Experiment_name checking...")
     exp_name_check()
 
     print("Api server Starting ...")
+    main()
+    print("Simulation finished (Press CTRL+C to quit)")
+    '''
     with open("log.txt", "w") as main_log, open("background_log.txt", "w") as background_log:
         server_process = start_server(background_log)
         time.sleep(1)
@@ -114,5 +106,5 @@ if __name__ == '__main__':
         except KeyboardInterrupt:
             # Handle KeyboardInterrupt to stop the server gracefully
             stop_server(server_process)
-
+    '''
     
