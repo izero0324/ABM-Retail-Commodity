@@ -8,7 +8,7 @@ Retail Commodity Pricing Strategy by ABM
 1. Setup
     - Install MySQL : Just simply run `MySQL_init.py`, 
       or if you have one locally, create the config file in tools folder
-    - Install requirements
+    - Install requirements `pip3 install -r requirement.txt`
     - config_files:  create a `sql_config_s.json` in the `tools` folder stores SQL connection
 
     ```Config format
