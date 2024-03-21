@@ -90,7 +90,7 @@ if __name__ == '__main__':
     print("Api server Starting ...")
     main()
     print("Simulation finished (Press CTRL+C to quit)")
-    '''
+    ''' the codes below is for automated start up a api server
     with open("log.txt", "w") as main_log, open("background_log.txt", "w") as background_log:
         server_process = start_server(background_log)
         time.sleep(1)

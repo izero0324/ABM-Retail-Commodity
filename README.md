@@ -46,6 +46,15 @@ https://github.com/izero0324/ABM-Retail-Commodity/assets/21019356/fc30a4bd-f027-
 
     - Limit order book change (under develop)
 
+## Problem Solving:
+1. api server for Windows: you should use 127.0.0.1 as local instead of 0.0.0.0
+2. if there's any unexcepted errors, restart the api server
+3. if the api server can't start:
+    - Windows: `netstat -ano | find "8000"`, get the UID for the apiservice, `kill -f UID`
+    - Unit: `lsof -i :8000`, get the UID for the apiservice, `kill -9 UID`
+
+
+
 ## Market Rules
 ### Producer -> Market -> Buyer
 1. Producer produce product and sale in Market
