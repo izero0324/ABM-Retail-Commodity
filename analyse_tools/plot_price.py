@@ -4,14 +4,18 @@ import pandas as pd
 
 
 def update(frame, df, lines):
-    # Update data of line objects
+    '''
+    Update function for animation, update data of line objects
+    '''
     for line, column in zip(lines, [1, 2]):
         # Set data up to current frame (tick)
         line.set_data(df[0][:frame], df[column][:frame])
     return lines
 
-# Update function now takes two dfs
 def update_comparison(frame, df1, df2, lines):
+    '''
+    Update function for two dfs
+    '''
     if frame < len(df1[0]):
         lines[0].set_data(df1[0][:frame], df1[1][:frame])  # DF1 Lowest
         lines[1].set_data(df1[0][:frame], df1[2][:frame])  # DF1 Highest
@@ -21,7 +25,9 @@ def update_comparison(frame, df1, df2, lines):
     return lines
 
 def plot_price_spread_dynamic(df, exp_name, save=False):
-    # Set up the figure
+    '''
+    Function to plot the animated price spread
+    '''
     fig, ax = plt.subplots(figsize=(10, 6))
     ax.set_xlim((0, df[0].max())) 
     ax.set_ylim((min(df[1].min(), df[2].min())-1, max(df[1].max(), df[2].max())+1))  # Adjust y limits to data max
@@ -41,7 +47,9 @@ def plot_price_spread_dynamic(df, exp_name, save=False):
     plt.show()
 
 def compare_price_spread_dynamic(df1, exp_name1, df2, exp_name2, save=False):
-    # Set up the figure
+    '''
+    Function to plot the animated comparism of two price spread
+    '''
     fig, ax = plt.subplots(figsize=(10, 6)) 
     max_tick = max(df1[0].max(), df2[0].max())
     max_price = max(df1[1].max(), df1[2].max(), df2[1].max(), df2[2].max())
@@ -72,6 +80,9 @@ def compare_price_spread_dynamic(df1, exp_name1, df2, exp_name2, save=False):
 
 
 def plot_price_spread(df):
+    '''
+    Plotting the fixed price spread of a experiment
+    '''
     plt.figure(figsize=(10, 6))
     plt.plot(df[0], df[1], label='LowestSuccessTradePrice', linestyle='-')
     plt.plot(df[0], df[2], label='HighestSuccessTradePrice', linestyle='-')
@@ -84,6 +95,14 @@ def plot_price_spread(df):
     plt.show()
 
 def plot_LossRatio(exp_name, LostRatio_ls, agents, agent_list):
+    '''
+    Plot the LossRatio of one agent
+    Input:
+    exp_name(str): experiment name, 
+    LostRatio_ls(df): the loss ratio in list, 
+    agents(str): agent, 
+    agent_list(list): agent list 
+    '''
     max_tick = range(0, len(LostRatio_ls))
     plt.plot(max_tick, LostRatio_ls, label='General')
     agent_index = 0
@@ -98,6 +117,9 @@ def plot_LossRatio(exp_name, LostRatio_ls, agents, agent_list):
     plt.show()
 
 def plot_BS(Buy, Sell, exp_name):
+    '''
+    Plot buy/sell among all agents.
+    '''
     ticks = range(0, max(len(Buy),len(Sell)))
     plt.plot(ticks, Buy, label='Buy')
     plt.plot(ticks, Sell, label='Sell')
