@@ -26,7 +26,8 @@ Retail Commodity Pricing Strategy by ABM
 
 2. Run code
     - Before every experiment: Check exp_name and mod `config.json`
-    - Run `python3 main.py --tick_num 50 --exp_name exp`
+    - Start the APi Server: `python3 LOB_api.py`
+    - Switch to another terminal, run `python3 main.py --tick_num 50 --exp_name exp`
     - Change the tick num for different ticks of simulations
     - Remember to name your simulation
     - Press CTRL+C to quit once your simulation is finished
